@@ -32,7 +32,7 @@ Apresentar ao usuário uma avaliação ou feedback sobre seu currículo.
 Facilitar a visualização das informações extraídas do currículo pelo sistema.
 ---
 
-## 1.3 Justificativa  
+## 1.3 Justificativa 
 O desenvolvimento deste projeto se justifica pela crescente demanda por soluções tecnológicas que apoiem processos de recrutamento e seleção de forma mais eficiente. Atualmente, muitas empresas lidam com um grande volume de currículos para cada vaga disponível, o que torna a análise manual um processo demorado e pouco escalável.
 
 Além disso, muitos profissionais enfrentam dificuldades na elaboração de currículos adequados às exigências do mercado de trabalho. A falta de orientação nesse processo pode fazer com que candidatos qualificados não consigam apresentar corretamente suas competências e experiências.
@@ -46,6 +46,9 @@ Portanto, o desenvolvimento de um sistema de análise de currículos com IA pode
 
 O público-alvo do sistema é composto principalmente por profissionais que estão em busca de oportunidades no mercado de trabalho e desejam melhorar a qualidade de seus currículos.
 Esse público inclui estudantes universitários, recém-formados e profissionais em processo de recolocação profissional. Em geral, são usuários que possuem conhecimentos básicos de informática e utilizam a internet para buscar vagas de emprego e oportunidades de desenvolvimento profissional.
+
 Além disso, o sistema também pode ser utilizado por recrutadores e empresas, que precisam analisar um grande número de currículos durante processos seletivos. Nesse caso, a ferramenta pode servir como um apoio para a triagem inicial de candidatos, facilitando a identificação de perfis mais alinhados às vagas disponíveis.
+
 O sistema será utilizado em ambiente digital, por meio de computadores ou dispositivos conectados à internet, oferecendo uma interface simples e intuitiva para facilitar o acesso e a utilização da plataforma.
+
 ---
