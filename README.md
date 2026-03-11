@@ -1,10 +1,10 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicações Inovadoras`
 
-`SEMESTRE`
+`01/2026`
 
 O TalentScan busca melhorar a empregabilidade de pessoas através da análise automática de currículos utilizando inteligência artificial. O sistema fornece feedback sobre competências, estrutura do currículo e oportunidades de melhoria, auxiliando candidatos a se prepararem melhor para processos seletivos e aumentando suas chances de inserção no mercado de trabalho.
 
