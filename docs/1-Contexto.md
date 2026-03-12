@@ -1,21 +1,25 @@
 # 1. Introdução
+---
 
+Com o avanço da tecnologia e o aumento da competitividade no mercado de trabalho, a forma como os profissionais apresentam suas qualificações tornou-se cada vez mais importante. O currículo é um dos principais meios utilizados para demonstrar experiências, habilidades e formação profissional. No entanto, muitas pessoas encontram dificuldades ao elaborar esse documento, não sabendo como organizar as informações de maneira clara, objetiva e atrativa.
 
-Com o avanço da tecnologia e o aumento da competitividade no mercado de trabalho, os processos de recrutamento e seleção passaram a enfrentar novos desafios. Empresas frequentemente recebem um grande volume de currículos para análise, o que torna a triagem manual demorada e, muitas vezes, sujeita a erros ou inconsistências. Ao mesmo tempo, muitos candidatos enfrentam dificuldades na elaboração de seus currículos, não sabendo como apresentar de forma clara suas habilidades, experiências e qualificações.
+Além disso, nem sempre é fácil para o próprio candidato identificar se o currículo está bem estruturado ou se apresenta todas as informações relevantes sobre seu perfil profissional. Muitas vezes, erros de organização, ausência de informações importantes ou falta de clareza podem prejudicar a forma como o currículo é interpretado.
 
-Nesse contexto, o uso de tecnologias baseadas em Inteligência Artificial (IA) pode contribuir significativamente para tornar esse processo mais eficiente. Sistemas capazes de analisar currículos automaticamente podem auxiliar tanto empresas quanto candidatos, oferecendo análises mais rápidas, organizadas e baseadas em critérios objetivos.
+Nesse contexto, o uso de tecnologias baseadas em Inteligência Artificial (IA) pode contribuir para auxiliar profissionais na análise e melhoria de seus currículos. Sistemas capazes de analisar automaticamente as informações presentes no documento podem identificar pontos fortes, possíveis melhorias e oferecer uma visão mais estruturada do conteúdo apresentado.
 
-Diante dessa realidade, este projeto propõe o desenvolvimento de um Sistema de Análise de Currículo com Inteligência Artificial, cujo objetivo é permitir o envio e a análise automatizada de currículos, identificando informações relevantes e fornecendo uma avaliação inicial do perfil profissional. A proposta busca contribuir para melhorar o processo de recrutamento, ao mesmo tempo em que auxilia candidatos a compreender melhor como seus currículos estão sendo interpretados.
+Diante dessa realidade, este projeto propõe o desenvolvimento de um Sistema de Análise de Currículo com Inteligência Artificial, cujo objetivo é permitir o envio e a análise automatizada de currículos, identificando informações relevantes e fornecendo uma avaliação inicial do perfil profissional. A proposta busca auxiliar usuários a compreender melhor como seu currículo está estruturado, contribuindo para melhorias na apresentação de suas habilidades, experiências e qualificações.
 
 ---
 
 ## 1.1 Problema  
 
-O processo de recrutamento e seleção de profissionais pode ser complexo e trabalhoso, especialmente quando envolve a análise de um grande número de currículos. Muitas empresas ainda realizam essa triagem de forma manual, o que exige tempo e esforço por parte dos recrutadores, além de aumentar a possibilidade de inconsistências na avaliação dos candidatos.
+A elaboração de um currículo claro e bem estruturado pode ser um desafio para muitas pessoas. Muitos profissionais possuem experiências, habilidades e formações relevantes, mas encontram dificuldades em organizar essas informações de forma adequada dentro do currículo.
 
-Por outro lado, muitos profissionais que buscam oportunidades no mercado de trabalho não possuem conhecimento suficiente sobre como elaborar um currículo de forma clara e objetiva. Isso faz com que informações importantes sobre suas habilidades e experiências não sejam apresentadas de maneira adequada, reduzindo suas chances de se destacar nos processos seletivos.
+Em diversos casos, informações importantes acabam sendo apresentadas de maneira confusa, incompleta ou pouco destacada. Isso pode dificultar a compreensão do perfil profissional e reduzir o impacto do currículo como ferramenta de apresentação.
 
-Dessa forma, existe uma necessidade crescente de ferramentas tecnológicas que auxiliem tanto recrutadores quanto candidatos nesse processo. Um sistema capaz de analisar currículos de forma automatizada pode contribuir para tornar a triagem mais rápida, organizada e eficiente, além de oferecer feedbacks que ajudem os candidatos a melhorar seus currículos.
+Além disso, muitas pessoas não possuem acesso a orientações ou ferramentas que auxiliem na avaliação da qualidade de seus currículos. Dessa forma, torna-se difícil identificar quais informações estão bem apresentadas e quais poderiam ser melhoradas.
+
+Diante disso, surge a necessidade de ferramentas tecnológicas que auxiliem os usuários a analisar seus currículos de forma automatizada, identificando informações relevantes e oferecendo feedbacks que possam contribuir para a melhoria da estrutura e da apresentação do documento.
 
 ---
 
@@ -38,22 +42,23 @@ Facilitar a visualização das informações extraídas do currículo pelo siste
 
 ## 1.3 Justificativa 
 
-O desenvolvimento deste projeto se justifica pela crescente demanda por soluções tecnológicas que apoiem processos de recrutamento e seleção de forma mais eficiente. Atualmente, muitas empresas lidam com um grande volume de currículos para cada vaga disponível, o que torna a análise manual um processo demorado e pouco escalável.
+O desenvolvimento deste projeto se justifica pela necessidade de ferramentas que auxiliem profissionais a compreender melhor a estrutura e a qualidade de seus currículos. Muitas pessoas enfrentam dificuldades na elaboração desse documento, principalmente na organização das informações e na forma de apresentar suas competências e experiências.
 
-Além disso, muitos profissionais enfrentam dificuldades na elaboração de currículos adequados às exigências do mercado de trabalho. A falta de orientação nesse processo pode fazer com que candidatos qualificados não consigam apresentar corretamente suas competências e experiências.
+Sem uma análise ou orientação adequada, é comum que currículos não representem de forma clara o perfil profissional do usuário. Isso pode ocorrer devido à falta de experiência na elaboração do documento ou à ausência de ferramentas que ajudem a identificar pontos de melhoria.
 
-Nesse cenário, o uso de Inteligência Artificial pode contribuir para tornar o processo de análise curricular mais rápido, organizado e acessível. Um sistema capaz de identificar informações relevantes em currículos e fornecer avaliações automatizadas pode auxiliar empresas na triagem inicial de candidatos, além de oferecer suporte para que profissionais melhorem a forma como apresentam seu perfil profissional.
-Portanto, o desenvolvimento de um sistema de análise de currículos com IA pode trazer benefícios tanto para candidatos quanto para organizações, contribuindo para processos de seleção mais eficientes e transparentes.
+Nesse contexto, a utilização de Inteligência Artificial pode contribuir para oferecer uma análise automatizada do currículo, identificando informações relevantes e apresentando sugestões ou avaliações sobre o conteúdo do documento.
+
+Assim, um sistema capaz de analisar currículos e apresentar feedbacks pode auxiliar profissionais a compreender melhor como seu perfil está estruturado no documento, incentivando melhorias na organização e apresentação das informações.
+
 
 ---
 
 ## 1.4 Público-Alvo  
 
-O público-alvo do sistema é composto principalmente por profissionais que estão em busca de oportunidades no mercado de trabalho e desejam melhorar a qualidade de seus currículos.
-Esse público inclui estudantes universitários, recém-formados e profissionais em processo de recolocação profissional. Em geral, são usuários que possuem conhecimentos básicos de informática e utilizam a internet para buscar vagas de emprego e oportunidades de desenvolvimento profissional.
+O público-alvo do sistema é composto principalmente por profissionais que desejam analisar e melhorar a qualidade de seus currículos. Esse público inclui estudantes universitários, recém-formados e profissionais que estão em busca de aprimorar a forma como apresentam suas experiências, habilidades e qualificações.
 
-Além disso, o sistema também pode ser utilizado por recrutadores e empresas, que precisam analisar um grande número de currículos durante processos seletivos. Nesse caso, a ferramenta pode servir como um apoio para a triagem inicial de candidatos, facilitando a identificação de perfis mais alinhados às vagas disponíveis.
+Em geral, são usuários que possuem conhecimentos básicos de informática e utilizam a internet para desenvolver suas atividades acadêmicas ou profissionais.
 
-O sistema será utilizado em ambiente digital, por meio de computadores ou dispositivos conectados à internet, oferecendo uma interface simples e intuitiva para facilitar o acesso e a utilização da plataforma.
+O sistema será utilizado em ambiente digital, por meio de computadores ou dispositivos conectados à internet, oferecendo uma interface simples e intuitiva que permita ao usuário enviar seu currículo e visualizar a análise realizada pela plataforma.
 
 ---
