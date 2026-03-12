@@ -71,7 +71,8 @@ A seguir está uma lista inicial das principais funcionalidades previstas para o
 |----|----|----|
 | RF01 | Cadastro de usuário | Permitir que usuários criem uma conta na plataforma |
 | RF02 | Login de usuário | Permitir autenticação no sistema |
-| RF03 | Upload de currículo | Usuário pode enviar seu currículo para análise |
+| RF03 | Upload de currículo | Usuário pode enviar currículo para análise |
 | RF04 | Análise de currículo com IA | Sistema analisa o conteúdo do currículo |
 | RF05 | Feedback do currículo | Sistema apresenta sugestões de melhoria |
 | RF06 | Visualização da análise | Usuário pode visualizar os resultados da análise |
+| RF07 | Histórico de análises | Usuário pode acessar análises anteriores |
