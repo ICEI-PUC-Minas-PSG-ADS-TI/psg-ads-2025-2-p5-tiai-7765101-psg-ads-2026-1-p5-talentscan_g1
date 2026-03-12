@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# TalentScan
 
 `Análise e Desenvolvimento de Sistemas`
 
