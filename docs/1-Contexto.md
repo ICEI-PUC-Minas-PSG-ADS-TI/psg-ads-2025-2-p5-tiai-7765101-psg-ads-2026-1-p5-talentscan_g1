@@ -63,16 +63,36 @@ O sistema será utilizado em ambiente digital, por meio de computadores ou dispo
 
 ---
 
-## 1.5 Backlog Inicial
+## Contexto do Sistema
+
+### Lista Macro de Funcionalidades
 
 A seguir está uma lista inicial das principais funcionalidades previstas para o sistema TalentScan.
 
-| ID | Funcionalidade | Descrição |
-|----|----|----|
-| RF01 | Cadastro de usuário | Permitir que usuários criem uma conta na plataforma |
-| RF02 | Login de usuário | Permitir autenticação no sistema |
-| RF03 | Upload de currículo | Usuário pode enviar currículo para análise |
-| RF04 | Análise de currículo com IA | Sistema analisa o conteúdo do currículo |
-| RF05 | Feedback do currículo | Sistema apresenta sugestões de melhoria |
-| RF06 | Visualização da análise | Usuário pode visualizar os resultados da análise |
-| RF07 | Histórico de análises | Usuário pode acessar análises anteriores |
+### 1. Cadastro de Usuário
+
+Permitir que usuários criem uma conta na plataforma com informações pessoais e acesso seguro ao sistema.
+
+### 2. Login de Usuário
+
+Permitir autenticação no sistema de forma segura.
+
+### 3. Upload de Currículo
+
+Usuário pode enviar seu currículo para análise pela plataforma.
+
+### 4. Análise de Currículo com IA
+
+Sistema analisa automaticamente o conteúdo do currículo enviado pelo usuário.
+
+### 5. Feedback do Currículo
+
+Sistema apresenta sugestões de melhoria com base na análise realizada.
+
+### 6. Visualização da Análise
+
+Usuário pode visualizar os resultados detalhados da análise do seu currículo.
+
+### 7. Histórico de Análises
+
+Usuário pode acessar análises anteriores realizadas na plataforma.
