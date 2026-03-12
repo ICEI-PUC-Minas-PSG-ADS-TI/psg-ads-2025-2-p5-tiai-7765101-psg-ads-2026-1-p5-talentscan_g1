@@ -9,8 +9,8 @@
 O TalentScan busca melhorar a empregabilidade de pessoas através da análise automática de currículos utilizando inteligência artificial. O sistema fornece feedback sobre competências, estrutura do currículo e oportunidades de melhoria, auxiliando candidatos a se prepararem melhor para processos seletivos e aumentando suas chances de inserção no mercado de trabalho.
 
 ODS Alinhados: ODS 8 – Trabalho Decente e Crescimento Econômico
-Muitos candidatos, especialmente estudantes e profissionais em início de carreira, enfrentam dificuldades na elaboração de currículos eficazes e não possuem acesso a orientação profissional especializada. Como consequência, acabam apresentando currículos com informações incompletas, mal estruturadas ou que não destacam adequadamente suas competências.
 
+Muitos candidatos, especialmente estudantes e profissionais em início de carreira, enfrentam dificuldades na elaboração de currículos eficazes e não possuem acesso a orientação profissional especializada. Como consequência, acabam apresentando currículos com informações incompletas, mal estruturadas ou que não destacam adequadamente suas competências.
 Isso pode reduzir significativamente suas chances de inserção no mercado de trabalho.
 
 ## Integrantes
