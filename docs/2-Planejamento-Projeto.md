@@ -82,10 +82,10 @@ Os papéis abaixo são apenas para organização do time.
 
 ##  Definição dos Papéis – Sprint 1
 
-- 👨‍💻 Tech Lead:
-- 🗄️ Arquiteto de Dados:
-- 🧪 Gerente de Qualidade:
-- 📋 Facilitador Ágil:
+- 👨‍💻 Tech Lead: Washington Junio Lima
+- 🗄️ Arquiteto de Dados: Washington Junio Lima
+- 🧪 Gerente de Qualidade: Gabriel Baumgratz de Paula Botaro
+- 📋 Facilitador Ágil: Henrique Gonçalves Sousa
 
 > Caso os papéis mudem nas próximas Sprints, atualizar neste documento.
 
@@ -135,10 +135,11 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Preencher Visão do Produto, ODS e Backlog no README | 12/03 | 15/03 | ❌ |
-|             |        | Criar instância do Banco de Dados | 12/03 | 16/03 | ❌ |
-|             |        | Criar repositório e estruturar pastas | 12/03 | 18/03 | ❌ |
-|             |        | Criar tela Hello World conectada à API | 15/03 | 20/03 | ❌ |
+|Henrique Gonçalves sousa |Facilitador Ágil | Preencher Visão do Produto | 12/03 | 15/03 | ❌ |
+|Gabriel Baumgratz de Paula Botaro |Gerente de Qualidade | Preencher Visão ODS e Backlog no README | 12/03 | 15/03 | ❌ |
+|Henrique Gonçalves| sousa E Gabriel Baumgratz de Paula Botaro |Gerente de Qualidade  | Facilitador Ágil   | Criar instância do Banco de Dados | 12/03 | 16/03 | ❌ |
+|Washington Junio Lima |Arquiteto de Dados | Criar repositório e estruturar pastas | 12/03 | 18/03 | ✔️ |
+|Washington Junio Lima |Arquiteto de Dados | Criar tela Hello World conectada à API | 15/03 | 20/03 | ✔️ |
 
 ---
 
