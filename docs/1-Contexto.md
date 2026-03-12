@@ -62,3 +62,16 @@ Em geral, são usuários que possuem conhecimentos básicos de informática e ut
 O sistema será utilizado em ambiente digital, por meio de computadores ou dispositivos conectados à internet, oferecendo uma interface simples e intuitiva que permita ao usuário enviar seu currículo e visualizar a análise realizada pela plataforma.
 
 ---
+
+## 1.5 Backlog Inicial
+
+A seguir está uma lista inicial das principais funcionalidades previstas para o sistema TalentScan.
+
+| ID | Funcionalidade | Descrição |
+|----|----|----|
+| RF01 | Cadastro de usuário | Permitir que usuários criem uma conta na plataforma |
+| RF02 | Login de usuário | Permitir autenticação no sistema |
+| RF03 | Upload de currículo | Usuário pode enviar seu currículo para análise |
+| RF04 | Análise de currículo com IA | Sistema analisa o conteúdo do currículo |
+| RF05 | Feedback do currículo | Sistema apresenta sugestões de melhoria |
+| RF06 | Visualização da análise | Usuário pode visualizar os resultados da análise |
