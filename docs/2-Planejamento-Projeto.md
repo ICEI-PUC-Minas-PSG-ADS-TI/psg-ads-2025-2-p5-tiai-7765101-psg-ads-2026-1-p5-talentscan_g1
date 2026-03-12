@@ -135,9 +135,9 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|Henrique Gonçalves sousa |Facilitador Ágil | Preencher Visão do Produto | 12/03 | 15/03 | ❌ |
-|Gabriel Baumgratz de Paula Botaro |Gerente de Qualidade | Preencher Visão ODS e Backlog no README | 12/03 | 15/03 | ❌ |
-|Henrique Gonçalves sousa E Gabriel Baumgratz de Paula Botaro |Gerente de Qualidade E Facilitador Ágil   | Criar instância do Banco de Dados | 12/03 | 16/03 | ❌ |
+|Henrique Gonçalves sousa |Facilitador Ágil | Preencher Visão do Produto | 12/03 | 15/03 | ✔️ |
+|Gabriel Baumgratz de Paula Botaro |Gerente de Qualidade | Preencher Visão ODS e Backlog no README | 12/03 | 15/03 | ✔️ |
+|Henrique Gonçalves sousa E Gabriel Baumgratz de Paula Botaro |Gerente de Qualidade E Facilitador Ágil   | Criar instância do Banco de Dados | 12/03 | 16/03 |✔️ |
 |Washington Junio Lima |Arquiteto de Dados | Criar repositório e estruturar pastas | 12/03 | 18/03 | ✔️ |
 |Washington Junio Lima |Arquiteto de Dados | Criar tela Hello World conectada à API | 15/03 | 20/03 | ✔️ |
 
