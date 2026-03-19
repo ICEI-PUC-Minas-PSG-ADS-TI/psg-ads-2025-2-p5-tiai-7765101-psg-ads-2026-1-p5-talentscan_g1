@@ -30,13 +30,13 @@ Desenvolver um sistema web capaz de realizar a análise de currículos utilizand
 
 Objetivos Específicos
 
-Permitir que o usuário envie e armazene seu currículo na plataforma.
+- Permitir que o usuário envie e armazene seu currículo na plataforma.
 
-Implementar uma funcionalidade que analise automaticamente as informações presentes no currículo.
+- Implementar uma funcionalidade que analise automaticamente as informações presentes no currículo.
 
-Apresentar ao usuário uma avaliação ou feedback sobre seu currículo.
+- Apresentar ao usuário uma avaliação ou feedback sobre seu currículo.
 
-Facilitar a visualização das informações extraídas do currículo pelo sistema.
+- Facilitar a visualização das informações extraídas do currículo pelo sistema.
 
 ---
 
