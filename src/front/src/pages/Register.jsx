@@ -1,16 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Eye, EyeOff } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { registerUser } from "../services/authService";
 import Swal from "sweetalert2";
+import "./Register.css";
 
 function Register() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    password: ""
+    password: "",
+    confirmPassword: ""
   });
+
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -22,8 +27,37 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+  
+    if (formData.password !== formData.confirmPassword) {
+      return Swal.fire({
+        icon: "warning",
+        title: "Senhas diferentes",
+        text: "As senhas precisam ser iguais"
+      });
+    }
+
+    if (formData.password.length < 6) {
+      return Swal.fire({
+        icon: "warning",
+        title: "Senha inválida",
+        text: "Mínimo de 6 caracteres"
+      });
+    }
+
+    if (!/\d/.test(formData.password)) {
+      return Swal.fire({
+        icon: "warning",
+        title: "Senha inválida",
+        text: "A senha deve conter pelo menos 1 número"
+      });
+    }
+
     try {
-      const data = await registerUser(formData);
+      const data = await registerUser({
+        name: formData.name,
+        email: formData.email,
+        password: formData.password
+      });
 
       Swal.fire({
         icon: "success",
@@ -35,7 +69,8 @@ function Register() {
       setFormData({
         name: "",
         email: "",
-        password: ""
+        password: "",
+        confirmPassword: ""
       });
 
     } catch (err) {
@@ -52,134 +87,77 @@ function Register() {
     <>
       <Navbar />
 
-      <section
-        style={{
-          minHeight: "calc(100vh - 80px)",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "20px"
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            maxWidth: "420px",
-            backgroundColor: "rgba(15, 23, 42, 0.85)",
-            padding: "32px",
-            borderRadius: "16px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
-            border: "1px solid rgba(255,255,255,0.08)"
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "36px",
-              marginBottom: "10px",
-              textAlign: "center"
-            }}
-          >
-            Cadastro
-          </h1>
+      <section className="register-section">
+        <div className="register-box">
 
-          <p
-            style={{
-              textAlign: "center",
-              color: "#cbd5e1",
-              marginBottom: "24px"
-            }}
-          >
-            Crie sua conta para analisar currículos com IA.
+          <h1>Cadastro</h1>
+          <p className="subtitle">
+            Crie sua conta para analisar currículos com IA
           </p>
 
-          <form
-            onSubmit={handleSubmit}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "14px"
-            }}
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Digite seu nome"
-              value={formData.name}
-              onChange={handleChange}
-              style={{
-                padding: "14px",
-                borderRadius: "10px",
-                border: "1px solid #334155",
-                backgroundColor: "#0f172a",
-                color: "#fff",
-                outline: "none"
-              }}
-            />
+          <form onSubmit={handleSubmit} className="register-form">
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Digite seu email"
-              value={formData.email}
-              onChange={handleChange}
-              style={{
-                padding: "14px",
-                borderRadius: "10px",
-                border: "1px solid #334155",
-                backgroundColor: "#0f172a",
-                color: "#fff",
-                outline: "none"
-              }}
-            />
+            <div className="input-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Digite seu nome"
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </div>
 
-            <input
-              type="password"
-              name="password"
-              placeholder="Digite sua senha"
-              value={formData.password}
-              onChange={handleChange}
-              style={{
-                padding: "14px",
-                borderRadius: "10px",
-                border: "1px solid #334155",
-                backgroundColor: "#0f172a",
-                color: "#fff",
-                outline: "none"
-              }}
-            />
+            <div className="input-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Digite seu email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
 
-            <button
-              type="submit"
-              style={{
-                marginTop: "8px",
-                padding: "14px",
-                border: "none",
-                borderRadius: "10px",
-                backgroundColor: "#2563eb",
-                color: "#fff",
-                fontSize: "16px",
-                fontWeight: "bold",
-                cursor: "pointer"
-              }}
-            >
+            <div className="input-password">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Digite sua senha"
+                value={formData.password}
+                onChange={handleChange}
+              />
+
+              <button
+                type="button"
+                className="eye-btn"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+              </button>
+            </div>
+
+            <div className="input-group">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="confirmPassword"
+                placeholder="Confirme sua senha"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+              />
+            </div>
+
+            <button type="submit" className="register-btn">
               Cadastrar
             </button>
+
           </form>
 
-          <p
-            style={{
-              marginTop: "20px",
-              textAlign: "center",
-              color: "#cbd5e1"
-            }}
-          >
-            Já possui conta?{" "}
-            <Link to="/login" style={{ color: "#60a5fa", textDecoration: "none" }}>
-              Fazer login
-            </Link>
+          <p className="login-link">
+            Já possui conta? <Link to="/login">Fazer login</Link>
           </p>
+
         </div>
       </section>
+
       <Footer />
     </>
   );

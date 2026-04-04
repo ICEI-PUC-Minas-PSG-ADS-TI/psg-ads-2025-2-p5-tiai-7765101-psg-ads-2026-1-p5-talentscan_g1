@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import "./Navbar.css";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -20,58 +21,42 @@ function Navbar() {
   };
 
   return (
-    <nav
-      style={{
-        width: "100%",
-        backgroundColor: "#0f172a",
-        padding: "18px 40px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        borderBottom: "1px solid rgba(255,255,255,0.1)"
-      }}
-    >
-      <h2 style={{ color: "#fff", margin: 0 }}>TalentScan</h2>
+  <nav className="navbar">
 
-      <div style={{ display: "flex", gap: "24px", alignItems: "center" }}>
-        <Link to="/" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
-          Pagina Inicial
+  <div className="logo">
+    <Link to="/">TalentScan</Link>
+  </div>
+
+  <div className="nav-links">
+
+    {!user ? (
+      <>
+        <Link to="/">Home</Link>
+        <Link to="/login">Entrar</Link>
+        <Link to="/register" className="btn-primary">
+          Cadastro
         </Link>
+      </>
+    ) : (
+      <>
+        {/*  */}
+        <span className="user-name">
+          Olá, {user.name?.split(" ")[0]}
+        </span>
 
-        {!user ? (
-          <>
-            <Link to="/login" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
-              Entrar
-            </Link>
+        <Link to="/">Home</Link>
 
-            <Link to="/register" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
-              Cadastro
-            </Link>
-          </>
-        ) : (
-          <>
-            <Link to="/dashboard" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
-              Minhas Análises
-            </Link>
+        <Link to="/dashboard">Minhas Análises</Link>
 
-            <button
-              onClick={handleLogout}
-              style={{
-                backgroundColor: "transparent",
-                border: "1px solid #fff",
-                color: "#fff",
-                padding: "8px 14px",
-                borderRadius: "8px",
-                cursor: "pointer",
-                fontWeight: "bold"
-              }}
-            >
-              Sair
-            </button>
-          </>
-        )}
-      </div>
-    </nav>
+        <button onClick={handleLogout} className="btn-logout">
+          Sair
+        </button>
+      </>
+    )}
+
+  </div>
+
+</nav>
   );
 }
 
