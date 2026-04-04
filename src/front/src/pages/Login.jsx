@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "../components/Footer";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { loginUser } from "../services/authService";
@@ -167,6 +168,7 @@ function Login() {
           </p>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

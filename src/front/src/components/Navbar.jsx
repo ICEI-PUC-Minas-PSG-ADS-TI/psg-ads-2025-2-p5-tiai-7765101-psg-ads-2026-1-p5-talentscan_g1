@@ -35,13 +35,13 @@ function Navbar() {
 
       <div style={{ display: "flex", gap: "24px", alignItems: "center" }}>
         <Link to="/" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
-          Home
+          Pagina Inicial
         </Link>
 
         {!user ? (
           <>
             <Link to="/login" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
-              Login
+              Entrar
             </Link>
 
             <Link to="/register" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
@@ -51,7 +51,7 @@ function Navbar() {
         ) : (
           <>
             <Link to="/dashboard" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>
-              Dashboard
+              Minhas Análises
             </Link>
 
             <button
