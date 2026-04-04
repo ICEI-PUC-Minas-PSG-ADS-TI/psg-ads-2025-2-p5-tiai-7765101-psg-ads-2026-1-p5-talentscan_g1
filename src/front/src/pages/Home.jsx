@@ -59,7 +59,6 @@ function Home() {
             <FileText size={28} />
             <div>
               <h3>Curriculo_Profissional.pdf</h3>
-              <p>Analisado há 2 minutos</p>
             </div>
           </div>
 

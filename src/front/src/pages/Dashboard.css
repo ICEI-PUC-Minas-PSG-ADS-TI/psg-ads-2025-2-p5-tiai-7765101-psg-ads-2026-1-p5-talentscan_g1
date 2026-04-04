@@ -1,0 +1,192 @@
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* BOX PRINCIPAL */
+.upload-box {
+  text-align: center;
+  position: relative;
+}
+
+/* GLOW IGUAL HOME */
+.upload-box::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.25), transparent);
+  filter: blur(120px);
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* BADGE */
+.badge {
+  background: rgba(30, 41, 59, 0.6);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #38bdf8;
+  backdrop-filter: blur(5px);
+}
+
+/* TÍTULO */
+.upload-box h1 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.upload-box p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* AREA UPLOAD (ESTILO CARD HOME) */
+.upload-area {
+  border-radius: 20px;
+  width: 520px;
+  padding: 40px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.8),
+    rgba(2, 6, 23, 0.9)
+  );
+
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  backdrop-filter: blur(20px);
+
+  transition: 0.3s;
+}
+
+/* DRAG ATIVO */
+.upload-area.dragging {
+  border-color: #3b82f6;
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
+}
+
+/* ÍCONE */
+.icon {
+  width: 100px;
+  height: 100px;
+  background: #1f2937;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+
+  font-size: 40px; 
+  color: #2563eb;
+
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  background: #2563eb;
+  color: white;
+}
+/* TEXTOS */
+.main-text {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* BOTÃO (MESMO PADRÃO HOME) */
+.select-btn {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  padding: 12px 24px;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.5);
+  transition: 0.3s;
+}
+
+.select-btn:hover {
+  transform: scale(1.05);
+}
+
+/* BOTÃO ENVIAR */
+.upload-btn {
+  margin-top: 15px;
+
+  background: linear-gradient(90deg, #00c896, #00a67d);
+  padding: 14px 26px;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 10px 30px rgba(0, 200, 150, 0.5);
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  transform: scale(1.05);
+}
+
+/* NOME DO ARQUIVO */
+.file-name {
+  margin-top: 10px;
+  color: #38bdf8;
+  font-size: 13px;
+}
+
+/* INFO */
+.info {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #64748b;
+}
+
+/* RESULTADO */
+.resultado-container {
+  margin: 60px auto;
+  width: 800px;
+  color: white;
+}
+
+/* NOTA */
+.nota {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3b82f6;
+}
+
+/* CARDS RESULTADO */
+.resultado-box {
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(2, 6, 23, 0.7);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  margin-bottom: 20px;
+}
+
+.resultado-box h3 {
+  margin-bottom: 10px;
+}
+
+.resultado-box li {
+  color: #cbd5e1;
+  margin-bottom: 5px;
+}
+

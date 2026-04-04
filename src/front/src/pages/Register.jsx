@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { registerUser } from "../services/authService";
 import Swal from "sweetalert2";
 
@@ -179,6 +180,7 @@ function Register() {
           </p>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
