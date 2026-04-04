@@ -15,8 +15,11 @@ Considere:
 - Uso de palavras-chave
 - Organização
 
-Responda em JSON válido:
+ Responda APENAS com JSON válido.
+Sem explicações.
+Sem texto antes ou depois.
 
+Formato:
 {
   "nota": number,
   "pontosFortes": [string],
@@ -24,26 +27,34 @@ Responda em JSON válido:
   "sugestoes": [string]
 }
 
-A nota deve ser de 0 a 100.
-
 Currículo:
 ${texto}
 `;
 
-  const result = await model.generateContent(prompt);
-  const response = await result.response;
-
-  let resposta = response.text();
-
-  resposta = resposta.replace(/```json/g, "").replace(/```/g, "").trim();
-
   try {
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+
+    let resposta = response.text();
+
+    resposta = resposta.replace(/```json/g, "").replace(/```/g, "").trim();
+
+   
+    const jsonMatch = resposta.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      resposta = jsonMatch[0];
+    }
+
     return JSON.parse(resposta);
+
   } catch (erro) {
-    console.error("Erro ao converter JSON:", erro);
+    console.error("Erro na IA:", erro);
+
     return {
-      erro: "Falha ao interpretar resposta da IA",
-      respostaBruta: resposta
+      nota: 0,
+      pontosFortes: [],
+      pontosFracos: ["Erro ao processar análise da IA"],
+      sugestoes: ["Tente novamente com outro currículo"]
     };
   }
 }

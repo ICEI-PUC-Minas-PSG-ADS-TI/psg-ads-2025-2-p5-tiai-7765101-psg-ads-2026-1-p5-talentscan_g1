@@ -35,10 +35,10 @@ router.post("/upload", upload.single("curriculo"), async (req, res) => {
 
     fs.unlinkSync(caminho);
 
-    return res.json({
-      mensagem: "Análise salva com sucesso!",
-      analise: novaAnalise
-    });
+  return res.json({
+  mensagem: "Análise salva com sucesso!",
+  analise: novaAnalise.analise
+});
 
   } catch (erro) {
     console.error("Erro na análise:", erro);

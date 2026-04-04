@@ -52,16 +52,19 @@ function Dashboard() {
         didOpen: () => Swal.showLoading()
       });
 
-      const response = await fetch("http://localhost:3000/api/upload", {
-        method: "POST",
-        body: formData
-      });
+     const response = await fetch("http://localhost:3000/api/upload", {
+  method: "POST",
+  body: formData
+});
 
-      const data = await response.json();
+const data = await response.json();
 
-      Swal.close();
+// 👇 COLOCA AQUI
+console.log("RESPOSTA:", data);
 
-      setAnalise(data.analise);
+Swal.close();
+
+setAnalise(data.analise);
 
       Swal.fire({
         icon: "success",
@@ -153,46 +156,56 @@ function Dashboard() {
       </div>
 
       {/* RESULTADO */}
-      {analise && (
-        <div className="resultado-container">
+   {analise && (
+  <div className="resultado-container">
 
-          <h2>Resultado da Análise</h2>
+    <h2>Resultado da Análise</h2>
 
-          <div className="nota">
-            Nota: {analise.nota}
-          </div>
+    <div className="nota">
+      Nota: {analise?.nota ?? 0}
+    </div>
 
-          <div className="resultado-box">
-            <h3>Pontos Fortes</h3>
-            <ul>
-              {analise.pontosFortes.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
+    <div className="resultado-box">
+      <h3>Pontos Fortes</h3>
+      <ul>
+        {analise?.pontosFortes?.length > 0 ? (
+          analise.pontosFortes.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))
+        ) : (
+          <li>Nenhum ponto forte encontrado</li>
+        )}
+      </ul>
+    </div>
 
-          <div className="resultado-box">
-            <h3>Pontos Fracos</h3>
-            <ul>
-              {analise.pontosFracos.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
+    <div className="resultado-box">
+      <h3>Pontos Fracos</h3>
+      <ul>
+        {analise?.pontosFracos?.length > 0 ? (
+          analise.pontosFracos.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))
+        ) : (
+          <li>Nenhum ponto fraco encontrado</li>
+        )}
+      </ul>
+    </div>
 
-          <div className="resultado-box">
-            <h3>Sugestões</h3>
-            <ul>
-              {analise.sugestoes.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
+    <div className="resultado-box">
+      <h3>Sugestões</h3>
+      <ul>
+        {analise?.sugestoes?.length > 0 ? (
+          analise.sugestoes.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))
+        ) : (
+          <li>Nenhuma sugestão disponível</li>
+        )}
+      </ul>
+    </div>
 
-
-          </div>
-
-        </div>
-      )}
+  </div>
+)}
       <Footer />
     </>
 
