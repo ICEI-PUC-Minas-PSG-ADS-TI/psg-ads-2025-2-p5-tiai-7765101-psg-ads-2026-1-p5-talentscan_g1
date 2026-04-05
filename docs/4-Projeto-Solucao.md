@@ -81,7 +81,7 @@ Representação simplificada do Wireframe:
 **Descrição:** A interface contempla todos os campos exigidos pelo RF-01 e permite persistência no banco após validação no backend.
 
 ---
-## 📌 Exemplo Ilustrativo – Tela de Cadastro (RF-01)
+## 📌 Tela de Cadastro (RF-01)
 
 **História associada:** Como usuário, quero criar uma conta para acessar o sistema.
 

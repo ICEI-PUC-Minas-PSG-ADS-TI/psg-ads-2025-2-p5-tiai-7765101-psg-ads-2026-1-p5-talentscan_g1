@@ -70,66 +70,65 @@ Como administrador, quero alterar permissões para controlar o acesso ao sistema
 
 ### História 1 (relacionada ao RF-01)
 
-Como usuário
-Eu quero criar uma conta na plataforma
-Para que eu possa acessar as funcionalidades do sistema
+**Como usuário**  
+Eu quero criar uma conta na plataforma  
+Para que eu possa acessar as funcionalidades do sistema  
 
 ---
 
 ### História 2 (relacionada ao RF-02)
 
-Como usuário
-Eu quero fazer login com meu e-mail e senha
-Para que eu possa acessar minha conta
+**Como usuário**  
+Eu quero fazer login com meu e-mail e senha  
+Para que eu possa acessar minha conta  
 
 ---
+
 ### História 3 (relacionada ao RF-03)
 
-Como usuário
-Eu quero permanecer autenticado no sistema
-Para que eu não precise fazer login toda vez que acessar a plataforma
+**Como usuário**  
+Eu quero permanecer autenticado no sistema  
+Para que eu não precise fazer login toda vez que acessar a plataforma  
 
 ---
 
 ### História 4 (relacionada ao RF-04)
 
-Como usuário
-Eu quero acessar o dashboard após o login
-Para que eu possa visualizar minhas informações e análises
+**Como usuário**  
+Eu quero acessar o dashboard após o login  
+Para que eu possa visualizar minhas informações e análises  
 
 ---
 
 ### História 5 (relacionada ao RF-05)
 
-Como usuário
-Eu quero enviar meu currículo
-Para que ele seja analisado pelo sistema
+**Como usuário**  
+Eu quero enviar meu currículo  
+Para que ele seja analisado pelo sistema  
 
 ---
 
-
 ### História 6 (relacionada ao RF-06)
 
-Como usuário
-Eu quero que a inteligência artificial analise meu currículo
-Para identificar melhorias e pontos de destaque
+**Como usuário**  
+Eu quero que a inteligência artificial analise meu currículo  
+Para identificar melhorias e pontos de destaque  
 
 ---
 
 ### História 7 (relacionada ao RF-07)
 
-Como usuário
-Eu quero visualizar sugestões geradas pela IA
-Para melhorar meu currículo e aumentar minhas chances no mercado
+**Como usuário**  
+Eu quero visualizar sugestões geradas pela IA  
+Para melhorar meu currículo e aumentar minhas chances no mercado  
 
 ---
 
-
 ### História 8 (relacionada ao RF-08)
 
-Como usuário
-Eu quero sair da minha conta
-Para encerrar minha sessão com segurança
+**Como usuário**  
+Eu quero sair da minha conta  
+Para encerrar minha sessão com segurança  
 
 ---
 
