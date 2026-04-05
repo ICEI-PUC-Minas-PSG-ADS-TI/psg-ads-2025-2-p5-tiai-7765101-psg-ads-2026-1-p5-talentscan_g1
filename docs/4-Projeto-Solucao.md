@@ -15,28 +15,10 @@ Apresente um **diagrama macro** demonstrando como os componentes do sistema se c
 A arquitetura deve refletir o modelo de **fatias verticais**, evidenciando o fluxo:
 
 **Front-end → API (Back-end) → Banco de Dados**
-
-Semelhante à imagem abaixo:
-
-![Exemplo de Arquitetura](https://uds.com.br/blog/wp-content/uploads/2024/09/Imagem-1-Comparativo-ilustrativo-das-diferencas-entre-front-end-e-back-end.jpg)
-
-
-
- **Fonte:** [Guia Completo de Desenvolvimento de Software - UDS](https://uds.com.br/blog/desenvolvimento-de-software-guia-completo/) <br><br>
  
- ### 📎 Inserir o Diagrama de Arquitetura do Projeto do Grupo
-🚨 O grupo deverá inserir aqui a imagem
+<img src="images/diagrama macro.png" width="80%">
 
-
----
-🔧**Ferramentas recomendadas:**
-- Draw.io
-- Lucidchart
-- Figma
-
----
-
-## 4.2 Tecnologias Utilizadas (Sprint 1)
+## 4.2 Tecnologias Utilizadas
 
 Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhidos pelo Squad.
 
@@ -55,10 +37,6 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 | Prototipação de Interface              | Figma                                        |
 | Gestão e Versionamento                 | GitHub e GitHub Projects (Kanban)            |
 
-
- ⚠️ **Observação:**
- - GitHub Pages não executa back-end.
- - Utilize apenas tecnologias realmente implementadas.
 
 ---
 
