@@ -27,18 +27,17 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 
 ## Tabela de Requisitos Funcionais
 
-| ID    | Descrição do Requisito | Prioridade |
-|-------|------------------------|------------|
-| RF-01 | O sistema deve permitir que os usuários criem uma conta informando nome, e-mail, senha e endereço. | 🔴 ALTA |
-| RF-02 | O sistema deve permitir que os usuários adicionem produtos ao carrinho de compras. | 🟡 MÉDIA |
-| RF-03 | (Descreva aqui o requisito funcional 3 do seu sistema) | (Alta/Média/Baixa) |
-| RF-04 | (Descreva aqui o requisito funcional 4 do seu sistema) | (Alta/Média/Baixa) |
-| RF-05 | (Descreva aqui o requisito funcional 5 do seu sistema) | (Alta/Média/Baixa) |
-| RF-06 | (Descreva aqui o requisito funcional 6 do seu sistema) | (Alta/Média/Baixa) |
-| RF-07 | (Descreva aqui o requisito funcional 7 do seu sistema) | (Alta/Média/Baixa) |
-| RF-08 | (Descreva aqui o requisito funcional 8 do seu sistema) | (Alta/Média/Baixa) |
-| RF-09 | (Descreva aqui o requisito funcional 9 do seu sistema) | (Alta/Média/Baixa) |
-| RF-10 | (Descreva aqui o requisito funcional 10 do seu sistema) | (Alta/Média/Baixa) |
+| ID    | Descrição do Requisito                                                                   | Prioridade |
+| ----- | ---------------------------------------------------------------------------------------- | ---------- |
+| RF-01 | O sistema deve permitir que os usuários criem uma conta informando nome, e-mail e senha. | 🔴 ALTA    |
+| RF-02 | O sistema deve permitir que os usuários realizem login com e-mail e senha.               | 🔴 ALTA    |
+| RF-03 | O sistema deve armazenar os dados do usuário autenticado no navegador (localStorage).    | 🟡 MÉDIA   |
+| RF-04 | O sistema deve permitir que o usuário acesse o dashboard após o login.                   | 🔴 ALTA    |
+| RF-05 | O sistema deve permitir que o usuário envie um currículo para análise.                   | 🔴 ALTA    |
+| RF-06 | O sistema deve utilizar inteligência artificial para analisar o currículo enviado.       | 🔴 ALTA    |
+| RF-07 | O sistema deve exibir sugestões e melhorias geradas pela IA no dashboard.                | 🔴 ALTA    |
+| RF-08 | O sistema deve permitir que o usuário realize logout do sistema.                         | 🟡 MÉDIA   |
+
 
 ---
 
@@ -71,27 +70,69 @@ Como administrador, quero alterar permissões para controlar o acesso ao sistema
 
 ### História 1 (relacionada ao RF-01)
 
-Como __________________________________________  
-Eu quero _______________________________________  
-Para que _______________________________________
+Como usuário
+Eu quero criar uma conta na plataforma
+Para que eu possa acessar as funcionalidades do sistema
 
 ---
 
 ### História 2 (relacionada ao RF-02)
 
-Como __________________________________________  
-Eu quero _______________________________________  
-Para que _______________________________________
+Como usuário
+Eu quero fazer login com meu e-mail e senha
+Para que eu possa acessar minha conta
+
+---
+### História 3 (relacionada ao RF-03)
+
+Como usuário
+Eu quero permanecer autenticado no sistema
+Para que eu não precise fazer login toda vez que acessar a plataforma
 
 ---
 
-### História 3 (relacionada ao RF-__)
+### História 4 (relacionada ao RF-04)
 
-Como __________________________________________  
-Eu quero _______________________________________  
-Para que _______________________________________
+Como usuário
+Eu quero acessar o dashboard após o login
+Para que eu possa visualizar minhas informações e análises
 
 ---
+
+### História 5 (relacionada ao RF-05)
+
+Como usuário
+Eu quero enviar meu currículo
+Para que ele seja analisado pelo sistema
+
+---
+
+
+### História 6 (relacionada ao RF-06)
+
+Como usuário
+Eu quero que a inteligência artificial analise meu currículo
+Para identificar melhorias e pontos de destaque
+
+---
+
+### História 7 (relacionada ao RF-07)
+
+Como usuário
+Eu quero visualizar sugestões geradas pela IA
+Para melhorar meu currículo e aumentar minhas chances no mercado
+
+---
+
+
+### História 8 (relacionada ao RF-08)
+
+Como usuário
+Eu quero sair da minha conta
+Para encerrar minha sessão com segurança
+
+---
+
 
 > 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
 
@@ -113,14 +154,15 @@ Eles garantem a qualidade da solução.
 
 ## Tabela de Requisitos Não Funcionais
 
-| ID     | Descrição do Requisito | Prioridade |
-|--------|------------------------|------------|
-| RNF-01 | O sistema deve carregar as páginas em até 3 segundos. | 🟡 MÉDIA |
-| RNF-02 | O sistema deve proteger as informações dos clientes por meio de criptografia. | 🔴 ALTA |
-| RNF-03 | (Descreva aqui o requisito não funcional 3 do seu sistema) | (Alta/Média/Baixa) |
-| RNF-04 | (Descreva aqui o requisito não funcional 4 do seu sistema) | (Alta/Média/Baixa) |
-| RNF-05 | (Descreva aqui o requisito não funcional 5 do seu sistema) | (Alta/Média/Baixa) |
-| RNF-06 | (Descreva aqui o requisito não funcional 6 do seu sistema) | (Alta/Média/Baixa) |
+| ID     | Descrição do Requisito                                                               | Prioridade |
+| ------ | ------------------------------------------------------------------------------------ | ---------- |
+| RNF-01 | O sistema deve carregar as páginas em até 3 segundos.                                | 🟡 MÉDIA   |
+| RNF-02 | O sistema deve proteger os dados dos usuários durante a comunicação com o servidor.  | 🔴 ALTA    |
+| RNF-03 | O sistema deve possuir uma interface simples e intuitiva para facilitar o uso.       | 🔴 ALTA    |
+| RNF-04 | O sistema deve ser compatível com os principais navegadores (Chrome, Edge, Firefox). | 🟡 MÉDIA   |
+| RNF-05 | O sistema deve estar disponível para acesso via dispositivos desktop.                | 🟡 MÉDIA   |
+| RNF-06 | O sistema deve manter o funcionamento estável durante o uso simultâneo por usuários. | 🟡 MÉDIA   |
+| RNF-07 | O sistema deve retornar a análise do currículo realizada pela IA em até 7 segundos.  | 🔴 ALTA    |
 
 ---
 

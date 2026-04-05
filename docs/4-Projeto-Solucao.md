@@ -40,13 +40,19 @@ Semelhante à imagem abaixo:
 
 Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhidos pelo Squad.
 
-| Dimensão | Tecnologia Escolhida |
-|----------|----------------------|
-| Banco de Dados (SGBD) | Ex: SQL Server, PostgreSQL ou MongoDB |
-| Back-end (API) | Ex: C# (.NET Core) |
-| Front-end / Mobile | Ex: HTML + CSS + JavaScript, React ou Flutter |
-| Hospedagem / Deploy | Ex: Azure, AWS, Render ou Railway |
-| Gestão e Versionamento | GitHub e GitHub Projects (Kanban) |
+| Dimensão                               | Tecnologia Escolhida                         |
+| -------------------------------------- | -------------------------------------------- |
+| Banco de Dados (NoSQL)                 | MongoDB Atlas com Mongoose                   |
+| Back-end (API)                         | Node.js com Express                          |
+| Front-end                              | React (Vite) com JavaScript (JSX) e CSS      |
+| Inteligência Artificial                | Google Generative AI (@google/generative-ai) |
+| Upload e Processamento de Arquivos     | Multer, pdf-parse e Mammoth                  |
+| Gerenciamento de Rotas (Front-end)     | React Router DOM                             |
+| Interface e Experiência do Usuário     | SweetAlert2 e Lucide React                   |
+| Gerenciamento de Variáveis de Ambiente | Dotenv                                       |
+| Comunicação entre sistemas             | CORS                                         |
+| Gestão e Versionamento                 | GitHub e GitHub Projects (Kanban)            |
+
 
  ⚠️ **Observação:**
  - GitHub Pages não executa back-end.
@@ -75,6 +81,25 @@ Representação simplificada do Wireframe:
 **Descrição:** A interface contempla todos os campos exigidos pelo RF-01 e permite persistência no banco após validação no backend.
 
 ---
+## 📌 Exemplo Ilustrativo – Tela de Cadastro (RF-01)
+
+**História associada:** Como usuário, quero criar uma conta para acessar o sistema.
+
+Representação simplificada do Wireframe:
+
+<img src="images/TelaCadastro.png" width="80%">
+
+**Descrição:** A interface contempla todos os campos exigidos pelo RF-01 e permite persistência no banco após validação no backend.
+
+---
+
+
+
+
+
+
+
+
 🔧 **Ferramentas sugeridas:**
 - Figma  
 - MarvelApp  
