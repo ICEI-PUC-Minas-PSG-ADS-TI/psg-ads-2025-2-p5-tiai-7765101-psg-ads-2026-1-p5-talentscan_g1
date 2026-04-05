@@ -69,48 +69,47 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 - Um Requisito Funcional (RF-XX)
 - Uma História de Usuário
 
-
-## 📌 Exemplo Ilustrativo – Tela de Cadastro (RF-01)
-
-**História associada:** Como usuário, quero criar uma conta para acessar o sistema.
-
-Representação simplificada do Wireframe:
-
-<img src="images/TelaCadastro.png" width="80%">
-
-**Descrição:** A interface contempla todos os campos exigidos pelo RF-01 e permite persistência no banco após validação no backend.
-
----
 ## 📌 Tela de Cadastro (RF-01)
 
 **História associada:** Como usuário, quero criar uma conta para acessar o sistema.
 
-Representação simplificada do Wireframe:
+<img src="images/cadastro.png" width="80%">
 
-<img src="images/TelaCadastro.png" width="80%">
-
-**Descrição:** A interface contempla todos os campos exigidos pelo RF-01 e permite persistência no banco após validação no backend.
+**Descrição:** A interface contempla todos os campos exigidos pelo RF-01, permitindo o cadastro do usuário de forma completa. Após a validação dos dados no backend, as informações são persistidas no banco de dados, garantindo a integridade do registro.
 
 ---
 
 
+## 📌 Tela de Login (RF-02)
 
+**História associada:** Como usuário, quero fazer login com meu e-mail e senha para acessar minha conta.
 
+<img src="images/login.png" width="80%">
 
+**Descrição:** A interface de login contempla todos os campos exigidos pelo RF-02, permitindo que o usuário informe seu e-mail e senha previamente cadastrados. Os dados são validados no backend e, em caso de sucesso, o usuário é autenticado e redirecionado para o dashboard. Em caso de erro, o sistema exibe mensagens de feedback informando credenciais inválidas.
 
-
-
-🔧 **Ferramentas sugeridas:**
-- Figma  
-- MarvelApp  
-- Balsamiq  
 ---
 
-### 📎 Inserir AQUI Wireframes/ Mockups do Projeto de Software
+## 📌 Tela de Envio de Currículo (RF-05)
 
-🚨 O grupo deverá inserir aqui a imagem
+**História associada:** Como usuário, eu quero enviar meu currículo para que ele seja analisado pelo sistema.
+
+<img src="images/envcurriculo.png" width="80%">
+
+**Descrição:** A interface permite que o usuário envie seu currículo para análise, contemplando todos os requisitos do RF-05. O sistema aceita arquivos em formatos como PDF e DOCX, realiza o upload para o backend e processa o conteúdo do documento. Após o envio, o currículo é preparado para análise pela inteligência artificial, garantindo o correto tratamento das informações.
+
+---
 
 
+## 📌 Tela Inicial / Home (RF-09)
+
+**História associada:** Como usuário, eu quero acessar a página inicial (Home) para visualizar e acessar as principais funcionalidades do sistema.
+
+<img src="images/homeo1.png" width="80%">
+<img src="images/homeo2.png" width="80%">
+<img src="images/homeo3.png" width="80%">
+
+**Descrição:** A página inicial permite que o usuário visualize informações gerais do sistema e acesse funcionalidades como cadastro, login e envio de currículo. A interface contempla todos os requisitos do RF-09, funcionando como ponto de entrada da aplicação e facilitando a navegação do usuário.
 
 ---
 

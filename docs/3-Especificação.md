@@ -37,6 +37,7 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-06 | O sistema deve utilizar inteligência artificial para analisar o currículo enviado.       | 🔴 ALTA    |
 | RF-07 | O sistema deve exibir sugestões e melhorias geradas pela IA no dashboard.                | 🔴 ALTA    |
 | RF-08 | O sistema deve permitir que o usuário realize logout do sistema.                         | 🟡 MÉDIA   |
+| RF-09 | O sistema deve possuir uma página inicial (Home) com acesso ao sistema.                  | 🔴 ALTA    |
 
 
 ---
@@ -51,16 +52,6 @@ Cada história deve seguir o padrão ensinado na disciplina:
 
 ⚠️ **ATENÇÃO:**  
 Cada História de Usuário deve estar associada a um Requisito Funcional específico (RF-XX).
-
----
-
-## Exemplos
-
-**História 1 (relacionada ao RF-01):**  
-Como usuário, quero registrar minhas tarefas para não esquecer de fazê-las.
-
-**História 2 (relacionada ao RF-02):**  
-Como administrador, quero alterar permissões para controlar o acesso ao sistema.
 
 ---
 
@@ -124,14 +115,13 @@ Para melhorar meu currículo e aumentar minhas chances no mercado
 
 ---
 
-### História 8 (relacionada ao RF-08)
+### História 9 (relacionada ao RF-09)
 
 **Como usuário**  
-Eu quero sair da minha conta  
-Para encerrar minha sessão com segurança  
+Eu quero acessar a página inicial (Home)  
+Para navegar pelas funcionalidades do sistema  
 
 ---
-
 
 > 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
 
