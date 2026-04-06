@@ -200,15 +200,14 @@ Elas podem envolver:
 
 ## Tabela de Restrições
 
-|| ID   | Restrição                                                                                                 |
-| ---- | --------------------------------------------------------------------------------------------------------- |
-| R-01 | O projeto deverá ser entregue até o final do semestre.                                                    |
-| R-02 | O software deve ser compatível com sistemas operacionais Windows e Linux.                                 |
-| R-03 | O sistema deve utilizar a API Gemini Flash 2.5 como tecnologia obrigatória para análise de currículos.    |
-| R-04 | O sistema deve ser desenvolvido utilizando Node.js, Express e MongoDB.                                    |
-| R-05 | O sistema deve ser executado em ambiente web, acessível por navegadores modernos.                         |
+| ID  | Restrição |
+|-----|-----------|
+| R-01 | O projeto deverá ser entregue até o final do semestre. |
+| R-02 | O sistema deve utilizar a API Gemini Flash 2.5 como tecnologia obrigatória para análise de currículos. |
+| R-03 | O software deve ser compatível com Windows e Linux. |
+| R-04 | O sistema deve ser desenvolvido utilizando Node.js, Express e MongoDB.  |
+| R-05 | O sistema deve ser executado em ambiente web, acessível por navegadores modernos. |
 | R-06 | O sistema deve seguir a LGPD (Lei Geral de Proteção de Dados) no tratamento das informações dos usuários. |
-
 
 ---
 ## 3.5 Regras de Negócio
