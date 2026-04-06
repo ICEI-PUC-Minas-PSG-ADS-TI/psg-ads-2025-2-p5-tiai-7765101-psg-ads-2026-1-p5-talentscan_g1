@@ -59,7 +59,6 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 
 ---
 
-
 ## 📌 Tela de Login (RF-02)
 
 **História associada:** Como usuário, quero fazer login com meu e-mail e senha para acessar minha conta.
@@ -76,10 +75,19 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 
 <img src="images/envcurriculo.png" width="80%">
 
-**Descrição:** A interface permite que o usuário envie seu currículo para análise, contemplando todos os requisitos do RF-05. O sistema aceita arquivos em formatos como PDF e DOCX, realiza o upload para o backend e processa o conteúdo do documento. Após o envio, o currículo é preparado para análise pela inteligência artificial, garantindo o correto tratamento das informações.
+**Descrição:** Interface repaginada onde o usuário faz o upload do arquivo do currículo para ser enviado ao backend.
 
 ---
 
+## 📌 Tela de Dashboard e Resultados da IA (RF-04, RF-06, RF-07)
+
+**História associada:** Como usuário, quero visualizar sugestões geradas pela IA para melhorar meu currículo e aumentar minhas chances no mercado.
+
+<img src="images/dashboardcv.png" width="80%">
+
+**Descrição:** Dashboard logado do usuário (RF-04). Aqui o sistema exibe os resultados após a IA analisar o currículo (RF-06), listando os pontos fortes, fracos e a nota final (RF-07).
+
+---
 
 ## 📌 Tela Inicial / Home (RF-09)
 
