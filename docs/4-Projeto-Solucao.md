@@ -10,13 +10,13 @@
 
 ## 4.1 Arquitetura da Solução (Sprint 1 e 2)
 
-Apresente um **diagrama macro** demonstrando como os componentes do sistema se comunicam.
+O TalentScan segue uma arquitetura de aplicação web  com separação entre front-end, back-end, banco de dados e integração com inteligência artificial.
 
-A arquitetura deve refletir o modelo de **fatias verticais**, evidenciando o fluxo:
+O fluxo principal é:
 
-**Front-end → API (Back-end) → Banco de Dados**
+Usuário (Navegador) → Front-end (React + JavaScript + CSS) → API (Node.js + Express) → Banco de Dados (MongoDB) → Integração com IA (Gemini)
  
-<img src="images/diagrama macro.png" width="80%">
+<img src="images/digrama.png" width="80%">
 
 ## 4.2 Tecnologias Utilizadas
 
@@ -41,13 +41,6 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 ---
 
 ##  4.3 Wireframes ou Mockups (A partir da Sprint 2)
-
-Apresente os protótipos das telas (Wireframes/Mockups) apenas das funcionalidades que estão sendo implementadas na Sprint atual.
-
-Cada Wireframe ou Mockups devem estar associados a pelo menos:
-
-- Um Requisito Funcional (RF-XX)
-- Uma História de Usuário
 
 ## 📌 Tela de Cadastro (RF-01)
 
@@ -116,21 +109,13 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 
 ## 4.4 Modelagem de Dados (Sprint 2 e 3)
 
-O sistema exige persistência de dados.
-
-A documentação do banco seguirá a abordagem de **entrega contínua**, sendo expandida conforme evolução do projeto.
-
 ---
 
 ### 4.4.1 Script Físico (Entrega na Sprint 2 - MVP)
 
-Para a primeira fatia vertical (MVP), o Squad deverá entregar o **script de criação das tabelas ou coleções utilizadas**.
-
 ---
 
-### Para Banco NoSQL
-
-Incluir a estrutura dos documentos JSON (Schema).
+### Banco NoSQL
 
 **users:**
 

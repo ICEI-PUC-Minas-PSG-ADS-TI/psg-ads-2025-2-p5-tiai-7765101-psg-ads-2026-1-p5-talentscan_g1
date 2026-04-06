@@ -46,15 +46,6 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 
 # 3.2 Histórias de Usuário
 
-Cada história deve seguir o padrão ensinado na disciplina:
-
-> **Como** [persona],  
-> **eu quero** [funcionalidade],  
-> **para que** [benefício].
-
-⚠️ **ATENÇÃO:**  
-Cada História de Usuário deve estar associada a um Requisito Funcional específico (RF-XX).
-
 ---
 
 ## Histórias do Projeto
@@ -209,16 +200,15 @@ Elas podem envolver:
 
 ## Tabela de Restrições
 
-| ID  | Restrição |
-|-----|-----------|
-| R-01 | O projeto deverá ser entregue até o final do semestre. |
-| R-02 | O sistema deve funcionar apenas dentro da rede interna da empresa. |
-| R-03 | O software deve ser compatível com Windows e Linux. |
-| R-04 | (Descreva aqui a restrição 4 do seu projeto) |
-| R-05 | (Descreva aqui a restrição 5 do seu projeto) |
-| R-06 | (Descreva aqui a restrição 6 do seu projeto) |
-| R-07 | (Descreva aqui a restrição 7 do seu projeto) |
-| R-08 | (Descreva aqui a restrição 8 do seu projeto) |
+|| ID   | Restrição                                                                                                 |
+| ---- | --------------------------------------------------------------------------------------------------------- |
+| R-01 | O projeto deverá ser entregue até o final do semestre.                                                    |
+| R-02 | O software deve ser compatível com sistemas operacionais Windows e Linux.                                 |
+| R-03 | O sistema deve utilizar a API Gemini Flash 2.5 como tecnologia obrigatória para análise de currículos.    |
+| R-04 | O sistema deve ser desenvolvido utilizando Node.js, Express e MongoDB.                                    |
+| R-05 | O sistema deve ser executado em ambiente web, acessível por navegadores modernos.                         |
+| R-06 | O sistema deve seguir a LGPD (Lei Geral de Proteção de Dados) no tratamento das informações dos usuários. |
+
 
 ---
 ## 3.5 Regras de Negócio
