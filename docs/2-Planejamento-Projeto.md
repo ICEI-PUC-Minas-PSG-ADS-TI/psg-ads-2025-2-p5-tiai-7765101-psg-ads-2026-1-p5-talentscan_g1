@@ -147,7 +147,7 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável             | Papel               | Tarefa                                                                 | Início | Prazo | Status |
 |------------------------|--------------------|------------------------------------------------------------------------|--------|--------|--------|
-| Washington Junio Lima  | Arquiteto de Dados | Melhoria da interface e experiência do usuário (UI/UX) nas telas de cadastro e login | 22/03 | 30/03 | ✔️ |
+| Washington Junio Lima  | Arquiteto de Dados | Melhoria da interface e experiência do usuário (UI/UX) nas telas de cadastro e login | 22/03 | 05/04 | ✔️ |
 | Washington Junio Lima  | Arquiteto de Dados | Desenvolvimento da página inicial (Home) com navegação do sistema      | 25/03 | 05/04 | ✔️ |
 | Washington Junio Lima  | Arquiteto de Dados | Integração da IA no dashboard para análise de currículos               | 28/03 | 05/04 | ✔️ |
 | Washington Junio Lima  | Arquiteto de Dados | Exibição de resultados da IA (pontos fortes, fracos e sugestões)       | 30/03 | 05/04 | ✔️ |
