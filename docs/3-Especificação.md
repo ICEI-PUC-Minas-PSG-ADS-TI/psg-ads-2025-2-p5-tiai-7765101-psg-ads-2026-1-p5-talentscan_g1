@@ -128,7 +128,7 @@ Para navegar pelas funcionalidades do sistema
 ### História 10 (relacionada ao RF-10)
 
 **Como usuário**  
-Eu quero visualizar meus dados pessoais em uma tela de perfil
+Eu quero visualizar meus dados pessoais em uma tela de perfil.
 Para acompanhar as informações cadastradas na plataforma 
 
 ---
@@ -136,7 +136,7 @@ Para acompanhar as informações cadastradas na plataforma
 ### História 11 (relacionada ao RF-11)
 
 **Como usuário**  
-Eu quero editar meu nome, e-mail e telefone
+Eu quero editar meu nome, e-mail e telefone.
 Para manter meus dados atualizados no sistema
 
 ---
@@ -144,7 +144,7 @@ Para manter meus dados atualizados no sistema
 ### História 12 (relacionada ao RF-12)
 
 **Como usuário**  
-Eu quero alterar minha senha
+Eu quero alterar minha senha.
 Para aumentar a segurança da minha conta 
 
 ---
@@ -152,7 +152,7 @@ Para aumentar a segurança da minha conta
 ### História 13 (relacionada ao RF-13)
 
 **Como usuário**  
-Eu quero sair da minha conta pela área de perfil
+Eu quero sair da minha conta pela área de perfil.
 Para encerrar minha sessão com segurança
 
 ---
