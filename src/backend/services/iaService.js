@@ -14,6 +14,7 @@ Considere:
 - Experiência
 - Uso de palavras-chave
 - Organização
+Com base nisso, atribua uma nota de 0 a 100
 
  Responda APENAS com JSON válido.
 Sem explicações.

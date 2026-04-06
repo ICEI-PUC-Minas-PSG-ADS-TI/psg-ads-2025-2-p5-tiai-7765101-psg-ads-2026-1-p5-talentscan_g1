@@ -4,7 +4,7 @@ Adicione aqui os scripts SQL.
 
 **users:**
 ```json
- name: {
+name: {
     type: String,
     required: true
   },
@@ -13,6 +13,11 @@ Adicione aqui os scripts SQL.
     type: String,
     required: true,
     unique: true
+  },
+
+  phone: {
+    type: String,
+    default: ""
   },
 
   password: {
@@ -26,7 +31,6 @@ Adicione aqui os scripts SQL.
   }
 
 });
-
 ```
 
 **analises:**
