@@ -93,6 +93,19 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 
 ---
 
+## 📌 Tela Inicial / Home (RF-10-11-12-13)
+
+**História associada:** Como usuário, eu quero visualizar e editar meus dados pessoais para manter minhas informações atualizadas e minha conta segura.
+
+<img src="images/Editar1.png" width="80%">
+<img src="images/Editar2.png" width="80%">
+<img src="images/Editar3.png" width="80%">
+<img src="images/Editar4.png" width="80%">
+
+**Descrição:** A tela de perfil foi desenvolvida para centralizar as informações pessoais e as configurações da conta do usuário. Nela, o sistema apresenta nome, e-mail e telefone cadastrados, além de disponibilizar ações para editar perfil, alterar senha e sair da conta.
+
+---
+
 ## 4.4 Modelagem de Dados (Sprint 2 e 3)
 
 O sistema exige persistência de dados.
@@ -128,7 +141,23 @@ Incluir a estrutura dos documentos JSON (Schema).
   "__v": 0
 }
 }
+
 ```
+**users:**
+```json
+
+{
+  "_id": "ObjectId",
+  "name": "string",
+  "email": "string",
+  "phone": "string",
+  "password": "string",
+  "createdAt": "date"
+}
+
+
+```
+
 **analises:**
 
 ```json
