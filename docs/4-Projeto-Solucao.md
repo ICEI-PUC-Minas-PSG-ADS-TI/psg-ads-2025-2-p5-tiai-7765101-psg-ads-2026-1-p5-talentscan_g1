@@ -93,7 +93,7 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 
 ---
 
-## 📌 Tela Inicial / Editar perfil (RF-10-11-12-13)
+## 📌 Tela editar perfil / Editar perfil (RF-10-11-12-13)
 
 **História associada:** Como usuário, eu quero visualizar e editar meus dados pessoais para manter minhas informações atualizadas e minha conta segura.
 
