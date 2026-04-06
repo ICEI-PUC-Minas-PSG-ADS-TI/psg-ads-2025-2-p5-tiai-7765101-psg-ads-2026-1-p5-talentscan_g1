@@ -38,8 +38,10 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-07 | O sistema deve exibir sugestões e melhorias geradas pela IA no dashboard.                | 🔴 ALTA    |
 | RF-08 | O sistema deve permitir que o usuário realize logout do sistema.                         | 🟡 MÉDIA   |
 | RF-09 | O sistema deve possuir uma página inicial (Home) com acesso ao sistema.                  | 🔴 ALTA    |
-
-
+| RF-10 | O sistema deve permitir ao usuário visualizar seus dados pessoais em uma tela de perfil. | 🟡 MÉDIA   |
+| RF-11 | O sistema deve permitir ao usuário editar nome, e-mail e telefone.                       | 🟡 MÉDIA   |
+| RF-12 | O sistema deve permitir ao usuário alterar sua senha.                                    | 🟡 MÉDIA   |
+| RF-13 | O sistema deve permitir ao usuário encerrar sua sessão a partir da tela de perfil.       | 🟡 MÉDIA   |
 ---
 
 # 3.2 Histórias de Usuário
@@ -123,6 +125,39 @@ Para navegar pelas funcionalidades do sistema
 
 ---
 
+### História 10 (relacionada ao RF-10)
+
+**Como usuário**  
+Eu quero visualizar meus dados pessoais em uma tela de perfil
+Para acompanhar as informações cadastradas na plataforma 
+
+---
+
+### História 11 (relacionada ao RF-11)
+
+**Como usuário**  
+Eu quero editar meu nome, e-mail e telefone
+Para manter meus dados atualizados no sistema
+
+---
+
+### História 12 (relacionada ao RF-12)
+
+**Como usuário**  
+Eu quero alterar minha senha
+Para aumentar a segurança da minha conta 
+
+---
+
+### História 13 (relacionada ao RF-13)
+
+**Como usuário**  
+Eu quero sair da minha conta pela área de perfil
+Para encerrar minha sessão com segurança
+
+---
+
+
 > 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
 
 ---
@@ -152,7 +187,9 @@ Eles garantem a qualidade da solução.
 | RNF-05 | O sistema deve estar disponível para acesso via dispositivos desktop.                | 🟡 MÉDIA   |
 | RNF-06 | O sistema deve manter o funcionamento estável durante o uso simultâneo por usuários. | 🟡 MÉDIA   |
 | RNF-07 | O sistema deve retornar a análise do currículo realizada pela IA em até 7 segundos.  | 🔴 ALTA    |
-
+| RNF-08 | O sistema deve apresentar uma interface simples e intuitiva para gerenciamento do perfil do usuário.  | 🟡 MÉDIA   |
+| RNF-09 | O sistema deve atualizar os dados do perfil e refletir as alterações no sistema sem necessidade de novo cadastro.  | 🟡 MÉDIA   |
+| RNF-10 |O sistema deve exibir feedback visual ao confirmar alterações de perfil, senha e logout.  | 🟡 MÉDIA   |
 ---
 
 # 3.4 Restrições do Projeto
