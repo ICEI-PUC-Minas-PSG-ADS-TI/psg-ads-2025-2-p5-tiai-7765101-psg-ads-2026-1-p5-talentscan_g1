@@ -156,6 +156,8 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 | Washington Junio Lima  | Arquiteto de Dados | Exibição de resultados da IA (pontos fortes, fracos e sugestões)       | 30/03 | 05/04 | ✔️ |
 | Henrique Gonçalves Sousa  | Facilitador Ágil | Funcionalidade de alteração de senha    | 30/03 | 05/04 | ✔️ |
 | Henrique Gonçalves Sousa  | Facilitador Ágil | Implementação de logout diretamente na área de perfil  | 30/03 | 05/04 | ✔️ |
+| Gabriel Baumgratz de Paula Botaro | Gerente de Qualidade | Upload de Currículo: Envio (Front), Processamento (Back) e Salvar no BD | 28/03 | 05/04 | ✔️ |
+| Gabriel Baumgratz de Paula Botaro | Gerente de Qualidade | Dashboard IA: Enviar texto para Gemini e exibir nota/feedbacks na tela | 30/03 | 05/04 | ✔️ |
 ---
 
 # 🔵 Sprint 3 – Core
