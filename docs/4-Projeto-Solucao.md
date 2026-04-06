@@ -134,6 +134,7 @@ Incluir a estrutura dos documentos JSON (Schema).
   },
   "name": "Junio",
   "email": "junio@teste.com",
+   "phone": "999999999",
   "password": "123456",
   "createdAt": {
     "$date": "2026-04-04T17:22:23.049Z"
@@ -141,6 +142,8 @@ Incluir a estrutura dos documentos JSON (Schema).
   "__v": 0
 }
 }
+
+```
 
 ```
 
