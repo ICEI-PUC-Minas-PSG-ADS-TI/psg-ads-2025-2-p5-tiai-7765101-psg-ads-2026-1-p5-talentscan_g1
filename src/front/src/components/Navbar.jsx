@@ -21,42 +21,41 @@ function Navbar() {
   };
 
   return (
-  <nav className="navbar">
+    <nav className="navbar">
 
-  <div className="logo">
-    <Link to="/">TalentScan</Link>
-  </div>
+      <div className="logo">
+        <Link to="/">TalentScan</Link>
+      </div>
 
-  <div className="nav-links">
+      <div className="nav-links">
 
-    {!user ? (
-      <>
-        <Link to="/">Home</Link>
-        <Link to="/login">Entrar</Link>
-        <Link to="/register" className="btn-primary">
-          Cadastro
-        </Link>
-      </>
-    ) : (
-      <>
-        {/*  */}
-        <span className="user-name">
-          Olá, {user.name?.split(" ")[0]}
-        </span>
+        {!user ? (
+          <>
+            <Link to="/">Home</Link>
+            <Link to="/login">Entrar</Link>
+            <Link to="/register" className="btn-primary">
+              Cadastro
+            </Link>
+          </>
+        ) : (
+          <>
+            <span className="user-name">
+              <Link to="/profile">Editar perfil</Link>
+            </span>
 
-        <Link to="/">Home</Link>
+            <Link to="/">Home</Link>
+            
+            <Link to="/dashboard">Minhas Análises</Link>
 
-        <Link to="/dashboard">Minhas Análises</Link>
+            <button onClick={handleLogout} className="btn-logout">
+              Sair
+            </button>
+          </>
+        )}
 
-        <button onClick={handleLogout} className="btn-logout">
-          Sair
-        </button>
-      </>
-    )}
-
-  </div>
-
-</nav>
+      </div>
+      
+    </nav>
   );
 }
 

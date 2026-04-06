@@ -75,7 +75,135 @@ const login = async (req, res) => {
   }
 };
 
+const getProfile = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const user = await User.findById(id);
+
+    if (!user) {
+      return res.status(404).json({
+        message: "Usuário não encontrado"
+      });
+    }
+
+    res.json({ user });
+  } catch (error) {
+    res.status(500).json({
+      message: "Erro ao buscar perfil",
+      error: error.message
+    });
+  }
+};
+
+const updateProfile = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { name, email, phone } = req.body;
+
+    const user = await User.findById(id);
+
+    if (!user) {
+      return res.status(404).json({
+        message: "Usuário não encontrado"
+      });
+    }
+
+    if (!name || !email) {
+      return res.status(400).json({
+        message: "Nome e email são obrigatórios"
+      });
+    }
+
+    const existingUser = await User.findOne({ email, _id: { $ne: id } });
+
+    if (existingUser) {
+      return res.status(400).json({
+        message: "Email já cadastrado"
+      });
+    }
+
+    const updatedUser = await User.findByIdAndUpdate(
+      id,
+      {
+        name,
+        email,
+        phone: phone || ""
+      },
+      {
+        returnDocument: "after",
+        runValidators: true
+      }
+    );
+
+    res.json({
+      message: "Perfil atualizado com sucesso",
+      user: updatedUser
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Erro ao atualizar perfil",
+      error: error.message
+    });
+  }
+};
+
+const updatePassword = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { currentPassword, newPassword } = req.body;
+
+    const user = await User.findById(id);
+
+    if (!user) {
+      return res.status(404).json({
+        message: "Usuário não encontrado"
+      });
+    }
+
+    if (!currentPassword || !newPassword) {
+      return res.status(400).json({
+        message: "Preencha a senha atual e a nova senha"
+      });
+    }
+
+    if (user.password !== currentPassword) {
+      return res.status(400).json({
+        message: "Senha atual incorreta"
+      });
+    }
+
+    if (newPassword.length < 6) {
+      return res.status(400).json({
+        message: "A nova senha deve ter no mínimo 6 caracteres"
+      });
+    }
+
+    if (!/\d/.test(newPassword)) {
+      return res.status(400).json({
+        message: "A nova senha deve conter pelo menos 1 número"
+      });
+    }
+
+    user.password = newPassword;
+
+    await user.save();
+
+    res.json({
+      message: "Senha atualizada com sucesso"
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Erro ao atualizar senha",
+      error: error.message
+    });
+  }
+};
+
 module.exports = {
   register,
-  login
+  login,
+  getProfile,
+  updateProfile,
+  updatePassword
 };
