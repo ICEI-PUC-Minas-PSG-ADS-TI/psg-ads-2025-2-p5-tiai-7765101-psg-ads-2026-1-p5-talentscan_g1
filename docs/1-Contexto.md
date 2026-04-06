@@ -96,3 +96,16 @@ Usuário pode visualizar os resultados detalhados da análise do seu currículo.
 ### 7. Histórico de Análises
 
 Usuário pode acessar análises anteriores realizadas na plataforma.
+
+### 8. Perfil do Usuário
+
+Permitir que o usuário visualize e gerencie suas informações pessoais e configurações da conta.
+
+### 9. Edição de Perfil
+
+Permitir a atualização de nome, e-mail e telefone cadastrados no sistema
+
+### 10. Alteração de Senha
+
+Permitir que o usuário altere sua senha para manter a segurança da conta.
+
