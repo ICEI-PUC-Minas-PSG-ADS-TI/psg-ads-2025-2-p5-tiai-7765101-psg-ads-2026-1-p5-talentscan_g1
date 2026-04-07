@@ -44,16 +44,11 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-13 | O sistema deve permitir ao usuário encerrar sua sessão a partir da tela de perfil.       | 🟡 MÉDIA   |
 | RF-14 | O sistema deve exibir uma lista com todas as análises de currículo já realizadas pelo    | 🔴 ALTA    |
 usuário,contendo data, pontuação e status.
-| RF-15 |O sistema deve permitir que o usuário visualize o relatório completo de uma análise       | 🟡 MÉDIA   |
-selecionada por meio do botão “Relatório”.
-| RF-16 |O sistema deve permitir que o usuário faça o download do relatório de análise em formato  | 🟡 MÉDIA   |
-PDF através do botão “PDF”.
-| RF-18 |O sistema deve permitir que o usuário marque análises como favoritas, possibilitando      | 🟡 MÉDIA   |
-acesso rápido a essas análises.
-| RF-19 |O sistema deve permitir que o usuário exclua uma análise específica do histórico através  | 🔴 ALTA    |
-do botão “Excluir”.
-| RF-20|O sistema deve apresentar um gráfico mostrando a evolução das pontuações do usuário ao 
-longo do tempo.                                                                                    | 🔴 ALTA    |
+| RF-15 |O sistema deve permitir que o usuário visualize o relatório completo de uma análise selecionada por meio do botão “Relatório”.
+| RF-16 |O sistema deve permitir que o usuário faça o download do relatório de análise em formato PDF através do botão “PDF”.
+| RF-18 |O sistema deve permitir que o usuário marque análises como favoritas, possibilitando acesso rápido a essas análises.
+| RF-19 |O sistema deve permitir que o usuário exclua uma análise específica do histórico através do botão “Excluir”.
+| RF-20 |O sistema deve apresentar um gráfico mostrando a evolução das pontuações do usuário aolongo do tempo.                                                                                    
 # 3.2 Histórias de Usuário
 
 ---
