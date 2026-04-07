@@ -18,6 +18,7 @@ Isso pode reduzir significativamente suas chances de inserção no mercado de tr
 * Gabriel Baumgratz de Paula Botaro
 * Henrique Gonçalves Sousa 
 * Washington Junio Lima
+* André Oliveira Burle
 
 ## Orientador
 
