@@ -156,7 +156,7 @@ Para encerrar minha sessão com segurança
 
 **Como usuário**  
 
-Eu quero visualizar uma lista com todas as análises de currículo que já realizei
+Eu quero visualizar uma lista com todas as análises de currículo que já realizei.
 Para que eu possa acompanhar meu histórico de desempenho e verificar a evolução das minhas análises ao longo do tempo.
 
 ---
@@ -164,7 +164,7 @@ Para que eu possa acompanhar meu histórico de desempenho e verificar a evoluç�
 ### História 15 (relacionada ao RF-15)
 
 **Como usuário**  
-Eu quero visualizar o relatório completo de uma análise selecionada através do botão “Relatório”
+Eu quero visualizar o relatório completo de uma análise selecionada através do botão “Relatório”.
 Para que eu possa entender detalhadamente os pontos fortes e melhorias sugeridas para o meu currículo.
 
 ---
@@ -173,7 +173,7 @@ Para que eu possa entender detalhadamente os pontos fortes e melhorias sugeridas
 
 **Como usuário**  
 
-Eu quero baixar o relatório de análise em formato PDF através do botão “PDF”
+Eu quero baixar o relatório de análise em formato PDF através do botão “PDF”.
 Para que eu possa salvar o documento e consultá-lo posteriormente, mesmo fora da plataforma.
 
 ---
@@ -182,7 +182,7 @@ Para que eu possa salvar o documento e consultá-lo posteriormente, mesmo fora d
 
 **Como usuário**  
 
-Eu quero marcar análises como favoritas
+Eu quero marcar análises como favoritas.
 Para que eu possa acessar rapidamente as análises mais importantes sem precisar procurar no histórico.
 
 ---
@@ -191,7 +191,7 @@ Para que eu possa acessar rapidamente as análises mais importantes sem precisar
 
 **Como usuário**  
 
-Eu quero excluir uma análise específica do histórico através do botão “Excluir”
+Eu quero excluir uma análise específica do histórico através do botão “Excluir”.
 Para que eu possa remover análises antigas ou irrelevantes e manter meu histórico organizado.
 
 ---
@@ -200,7 +200,7 @@ Para que eu possa remover análises antigas ou irrelevantes e manter meu histór
 
 **Como usuário**  
 
-Eu quero visualizar um gráfico com a evolução das minhas pontuações ao longo do tempo
+Eu quero visualizar um gráfico com a evolução das minhas pontuações ao longo do tempo.
 Para que eu possa acompanhar meu progresso e identificar se meu currículo está melhorando.
 
 ---
