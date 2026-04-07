@@ -45,9 +45,9 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-14 | O sistema deve exibir uma lista com todas as análises de currículo já realizadas pelo usuário,contendo data, pontuação e status.| 🔴 ALTA    |
 | RF-15 |O sistema deve permitir que o usuário visualize o relatório completo de uma análise selecionada por meio do botão “Relatório”.| 🟡 MÉDIA   |
 | RF-16 |O sistema deve permitir que o usuário faça o download do relatório de análise em formato PDF através do botão “PDF”.| 🟡 MÉDIA   |
-| RF-18 |O sistema deve permitir que o usuário marque análises como favoritas, possibilitando acesso rápido a essas análises.| 🟡 MÉDIA   |
-| RF-19 |O sistema deve permitir que o usuário exclua uma análise específica do histórico através do botão “Excluir”.| 🔴 ALTA    |
-| RF-20 |O sistema deve apresentar um gráfico mostrando a evolução das pontuações do usuário aolongo do tempo.| 🔴 ALTA    |                                                                                    
+| RF-17 |O sistema deve permitir que o usuário marque análises como favoritas, possibilitando acesso rápido a essas análises.| 🟡 MÉDIA   |
+| RF-18 |O sistema deve permitir que o usuário exclua uma análise específica do histórico através do botão “Excluir”.| 🔴 ALTA    |
+| RF-19 |O sistema deve apresentar um gráfico mostrando a evolução das pontuações do usuário ao longo do tempo.| 🔴 ALTA    |                                                                                    
 # 3.2 Histórias de Usuário
 
 ---
@@ -152,7 +152,58 @@ Para encerrar minha sessão com segurança
 
 ---
 
+### História 14 (relacionada ao RF-14)
 
+**Como usuário**  
+
+Eu quero visualizar uma lista com todas as análises de currículo que já realizei
+Para que eu possa acompanhar meu histórico de desempenho e verificar a evolução das minhas análises ao longo do tempo.
+
+---
+
+### História 15 (relacionada ao RF-15)
+
+**Como usuário**  
+Eu quero visualizar o relatório completo de uma análise selecionada através do botão “Relatório”
+Para que eu possa entender detalhadamente os pontos fortes e melhorias sugeridas para o meu currículo.
+
+---
+
+### História 16 (relacionada ao RF-16)
+
+**Como usuário**  
+
+Eu quero baixar o relatório de análise em formato PDF através do botão “PDF”
+Para que eu possa salvar o documento e consultá-lo posteriormente, mesmo fora da plataforma.
+
+---
+
+### História 11 (relacionada ao RF-17)
+
+**Como usuário**  
+
+Eu quero marcar análises como favoritas
+Para que eu possa acessar rapidamente as análises mais importantes sem precisar procurar no histórico.
+
+---
+
+### História 18 (relacionada ao RF-18)
+
+**Como usuário**  
+
+Eu quero excluir uma análise específica do histórico através do botão “Excluir”
+Para que eu possa remover análises antigas ou irrelevantes e manter meu histórico organizado.
+
+---
+
+### História 19 (relacionada ao RF-19)
+
+**Como usuário**  
+
+Eu quero visualizar um gráfico com a evolução das minhas pontuações ao longo do tempo
+Para que eu possa acompanhar meu progresso e identificar se meu currículo está melhorando.
+
+---
 > 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
 
 ---
