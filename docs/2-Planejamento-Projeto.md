@@ -158,7 +158,7 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 | Henrique Gonçalves Sousa  | Facilitador Ágil | Implementação de logout diretamente na área de perfil  | 30/03 | 05/04 | ✔️ |
 | Gabriel Baumgratz de Paula Botaro | Gerente de Qualidade | Upload de Currículo: Envio (Front), Processamento (Back) e Salvar no BD | 28/03 | 05/04 | ✔️ |
 | Gabriel Baumgratz de Paula Botaro | Gerente de Qualidade | Dashboard IA: Enviar texto para Gemini e exibir nota/feedbacks na tela | 30/03 | 05/04 | ✔️ |
-| André Oliveira Burle  | Facilitador Ágil | Desenvolvimento da página de de pesquisa do histórico do usuário | 30/03 | 06/04 | ✔️ |
+| André Oliveira Burle  | Facilitador Ágil | Desenvolvimento da página de pesquisa do histórico do usuário | 30/03 | 06/04 | ✔️ |
 | André Oliveira Burle  | Facilitador Ágil | Exibição das opções de filtragem, favoritar curríiculos e download em PDF  | 30/03 | 06/04 | ✔️ |
 ---
 
