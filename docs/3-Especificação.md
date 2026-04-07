@@ -42,8 +42,7 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-11 | O sistema deve permitir ao usuário editar nome, e-mail e telefone.                       | 🟡 MÉDIA   |
 | RF-12 | O sistema deve permitir ao usuário alterar sua senha.                                    | 🟡 MÉDIA   |
 | RF-13 | O sistema deve permitir ao usuário encerrar sua sessão a partir da tela de perfil.       | 🟡 MÉDIA   |
-| RF-14 | O sistema deve exibir uma lista com todas as análises de currículo já realizadas pelo    | 🔴 ALTA    |
-usuário,contendo data, pontuação e status.
+| RF-14 | O sistema deve exibir uma lista com todas as análises de currículo já realizadas pelo usuário,contendo data, pontuação e status.
 | RF-15 |O sistema deve permitir que o usuário visualize o relatório completo de uma análise selecionada por meio do botão “Relatório”.
 | RF-16 |O sistema deve permitir que o usuário faça o download do relatório de análise em formato PDF através do botão “PDF”.
 | RF-18 |O sistema deve permitir que o usuário marque análises como favoritas, possibilitando acesso rápido a essas análises.
