@@ -178,7 +178,7 @@ Para que eu possa salvar o documento e consultá-lo posteriormente, mesmo fora d
 
 ---
 
-### História 11 (relacionada ao RF-17)
+### História 17 (relacionada ao RF-17)
 
 **Como usuário**  
 
