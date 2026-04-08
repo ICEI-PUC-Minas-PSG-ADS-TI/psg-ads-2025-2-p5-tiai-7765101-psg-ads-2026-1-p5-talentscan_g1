@@ -1,13 +1,14 @@
-import "./HistoricoAnalises.css";
+import "./Historico.css";
 
-export default function HistoricoAnalises() {
+function Historico() {
   return (
-    <div className="page-container">
+    <div className="historico-page">
+
       {/* HEADER */}
-      <header className="header">
+      <header className="historico-header">
         <div className="logo">TalentScan</div>
 
-        <nav className="nav">
+        <nav className="historico-nav">
           <a href="#">Home</a>
           <a href="#">Dashboard</a>
           <a href="#" className="active">Histórico</a>
@@ -18,14 +19,13 @@ export default function HistoricoAnalises() {
       </header>
 
       {/* MAIN */}
-      <main className="main">
+      <main className="historico-main">
+
         {/* TITLE + ACTIONS */}
         <div className="page-title">
           <div>
             <h1>📌 Histórico de Análises</h1>
-            <p>
-              Acompanhe suas análises anteriores, veja sua evolução e revise relatórios antigos.
-            </p>
+            <p>Acompanhe suas análises anteriores, veja sua evolução e revise relatórios antigos.</p>
           </div>
 
           <div className="actions-top">
@@ -163,9 +163,7 @@ export default function HistoricoAnalises() {
           <table>
             <thead>
               <tr>
-                <th>
-                  <input type="checkbox" />
-                </th>
+                <th><input type="checkbox" /></th>
                 <th>Data</th>
                 <th>Arquivo</th>
                 <th>Tipo</th>
@@ -178,17 +176,13 @@ export default function HistoricoAnalises() {
 
             <tbody>
               <tr>
-                <td>
-                  <input type="checkbox" />
-                </td>
+                <td><input type="checkbox" /></td>
                 <td>06/04/2026</td>
-                <td>curriculo_teste_v3.pdf</td>
+                <td>curriculo_andre_v3.pdf</td>
                 <td>Júnior</td>
                 <td>Tecnologia</td>
                 <td className="score">92/100</td>
-                <td>
-                  <span className="status complete">Completo</span>
-                </td>
+                <td><span className="status complete">Completo</span></td>
                 <td>
                   <div className="row-actions">
                     <button className="btn-mini primary">📄 Relatório</button>
@@ -203,17 +197,13 @@ export default function HistoricoAnalises() {
               </tr>
 
               <tr>
-                <td>
-                  <input type="checkbox" />
-                </td>
+                <td><input type="checkbox" /></td>
                 <td>05/04/2026</td>
-                <td>curriculo_teste_v2.pdf</td>
+                <td>curriculo_andre_v2.pdf</td>
                 <td>Estágio</td>
                 <td>Tecnologia</td>
                 <td className="score">85/100</td>
-                <td>
-                  <span className="status complete">Completo</span>
-                </td>
+                <td><span className="status complete">Completo</span></td>
                 <td>
                   <div className="row-actions">
                     <button className="btn-mini primary">📄 Relatório</button>
@@ -228,17 +218,13 @@ export default function HistoricoAnalises() {
               </tr>
 
               <tr>
-                <td>
-                  <input type="checkbox" />
-                </td>
+                <td><input type="checkbox" /></td>
                 <td>30/03/2026</td>
-                <td>curriculo_teste_v1.pdf</td>
+                <td>curriculo_andre_v1.pdf</td>
                 <td>Estágio</td>
                 <td>Administração</td>
                 <td className="score">78/100</td>
-                <td>
-                  <span className="status complete">Completo</span>
-                </td>
+                <td><span className="status complete">Completo</span></td>
                 <td>
                   <div className="row-actions">
                     <button className="btn-mini primary">📄 Relatório</button>
@@ -253,17 +239,13 @@ export default function HistoricoAnalises() {
               </tr>
 
               <tr>
-                <td>
-                  <input type="checkbox" />
-                </td>
+                <td><input type="checkbox" /></td>
                 <td>20/03/2026</td>
                 <td>curriculo_teste.pdf</td>
                 <td>Júnior</td>
                 <td>Marketing</td>
                 <td className="score">70/100</td>
-                <td>
-                  <span className="status processing">Em processamento</span>
-                </td>
+                <td><span className="status processing">Em processamento</span></td>
                 <td>
                   <div className="row-actions">
                     <button className="btn-mini primary">📄 Relatório</button>
@@ -278,17 +260,13 @@ export default function HistoricoAnalises() {
               </tr>
 
               <tr>
-                <td>
-                  <input type="checkbox" />
-                </td>
+                <td><input type="checkbox" /></td>
                 <td>10/03/2026</td>
                 <td>curriculo_incompleto.docx</td>
                 <td>Estágio</td>
                 <td>Tecnologia</td>
                 <td className="score">62/100</td>
-                <td>
-                  <span className="status error">Erro</span>
-                </td>
+                <td><span className="status error">Erro</span></td>
                 <td>
                   <div className="row-actions">
                     <button className="btn-mini primary">📄 Relatório</button>
@@ -301,21 +279,55 @@ export default function HistoricoAnalises() {
                   </div>
                 </td>
               </tr>
+
             </tbody>
           </table>
         </section>
+
       </main>
 
       {/* FOOTER */}
       <footer className="footer">
-        <p>
-          © 2026 TalentScan - Sistema de análise inteligente de currículos.
-          <br />
-          <br />
-          <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> |{" "}
-          <a href="#">Suporte</a> | <a href="#">Contato</a>
-        </p>
+        <div className="footer-container">
+
+          <div className="footer-brand">
+            <h2>TalentScan</h2>
+            <p>
+              Melhore seu currículo com inteligência artificial e
+              aumente suas chances no mercado.
+            </p>
+          </div>
+
+          <div className="footer-links">
+            <div>
+              <h4>Produto</h4>
+              <a href="#">Como funciona</a>
+              <a href="#">Funcionalidades</a>
+              <a href="#">Dashboard</a>
+            </div>
+
+            <div>
+              <h4>Empresa</h4>
+              <a href="#">Sobre</a>
+              <a href="#">Contato</a>
+            </div>
+
+            <div>
+              <h4>Legal</h4>
+              <a href="#">Privacidade</a>
+              <a href="#">Termos</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="footer-bottom">
+          <p>© 2026 TalentScan. Todos os direitos reservados.</p>
+        </div>
       </footer>
+
     </div>
   );
 }
+
+export default Historico;
