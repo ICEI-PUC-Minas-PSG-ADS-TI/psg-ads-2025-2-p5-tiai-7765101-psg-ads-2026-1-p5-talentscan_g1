@@ -102,6 +102,7 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 <img src="images/Editar2.png" width="80%">
 <img src="images/Editar3.png" width="80%">
 <img src="images/Editar4.png" width="80%">
+<img src="images/historico.png" width="80%">
 
 **Descrição:** A tela de perfil foi desenvolvida para centralizar as informações pessoais e as configurações da conta do usuário. Nela, o sistema apresenta nome, e-mail e telefone cadastrados, além de disponibilizar ações para editar perfil, alterar senha e sair da conta.
 
