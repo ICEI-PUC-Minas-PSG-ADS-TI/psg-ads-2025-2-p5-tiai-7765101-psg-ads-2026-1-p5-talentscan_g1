@@ -102,9 +102,18 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 <img src="images/Editar2.png" width="80%">
 <img src="images/Editar3.png" width="80%">
 <img src="images/Editar4.png" width="80%">
-<img src="images/historico.png" width="80%">
 
 **Descrição:** A tela de perfil foi desenvolvida para centralizar as informações pessoais e as configurações da conta do usuário. Nela, o sistema apresenta nome, e-mail e telefone cadastrados, além de disponibilizar ações para editar perfil, alterar senha e sair da conta.
+
+---
+
+## 📌 Tela histórico (RF-15, RF-16, RF-17, RF-18, RF-19)
+
+**História associada:** Como usuário, eu quero visualizar um gráfico com a evolução das minhas pontuações ao longo do tempo. Para que eu possa acompanhar meu progresso e identificar se meu currículo está melhorando.
+
+<img src="images/historico.png" width="80%">
+
+**Descrição:** A tela de histórico foi desenvolvida para que o usuário pesquise o hisórico e visualize todas as análises de currículos já realizadas, com data, pontuação e status. Também oferece filtros e pesquisa para facilitar a organização. Além disso, permite acessar relatórios, baixar em PDF, favoritar e excluir análises.
 
 ---
 
