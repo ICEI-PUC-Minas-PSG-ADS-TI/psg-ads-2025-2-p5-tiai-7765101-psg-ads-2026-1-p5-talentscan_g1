@@ -44,6 +44,7 @@ function Navbar() {
             </span>
 
             <Link to="/">Home</Link>
+            <Link to="/progress">Progresso</Link>
             
             <Link to="/dashboard">Minhas Análises</Link>
 
