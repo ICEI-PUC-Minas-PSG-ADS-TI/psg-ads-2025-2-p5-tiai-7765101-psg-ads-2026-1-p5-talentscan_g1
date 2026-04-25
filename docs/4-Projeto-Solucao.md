@@ -16,7 +16,7 @@ O fluxo principal é:
 
 Usuário (Navegador) → Front-end (React + JavaScript + CSS) → API (Node.js + Express) → Banco de Dados (MongoDB) → Integração com IA (Gemini)
  
-<img src="images/digrama.png" width="80%">
+<img src="images/arquitetura da Solução.png" width="80%">
 
 ## 4.2 Tecnologias Utilizadas
 
@@ -29,11 +29,12 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 | Front-end                              | React (Vite) com JavaScript (JSX) e CSS      |
 | Inteligência Artificial                | Google Generative AI (@google/generative-ai) |
 | Upload e Processamento de Arquivos     | Multer, pdf-parse e Mammoth                  |
-| Gerenciamento de Rotas (Front-end)     | React Router DOM                             |
+| Gerenciamento de Rotas (Front-end)     | React Router                                 |
 | Interface e Experiência do Usuário     | SweetAlert2 e Lucide React                   |
 | Gerenciamento de Variáveis de Ambiente | Dotenv                                       |
 | Comunicação entre sistemas             | CORS                                         |
 | Testes de API                          | Postman                                      |
+| Modelagem de Dados                     | dbdiagram.io (diagrama físico)               |
 | Prototipação de Interface              | Figma                                        |
 | Gestão e Versionamento                 | GitHub e GitHub Projects (Kanban)            |
 
@@ -199,54 +200,18 @@ O arquivo .sql ou .js deve ser salvo na pasta: src/bd
 ---
 ### 4.4.2 Representação do Modelo Físico de Dados (Entrega na Sprint 3 - Core)
 
+##  Modelo Físico de Dados – TalentScan
 
-> **Fundamentação:** Os modelos de dados físicos fornecem detalhes minuciosos que auxiliam administradores e desenvolvedores na implementação da lógica de negócios em um banco de dados real.
-> Eles incluem elementos não especificados no modelo lógico, como:
-> - Tipos de dados específicos da plataforma
-> - Restrições
-> - Índices
-> - Triggers (quando aplicável)
-> - Procedimentos armazenados (quando aplicável)
->
->Por representarem um banco real, devem respeitar:
-> - Convenções de nomenclatura
-> - Restrições da plataforma
-> - Uso adequado de palavras reservadas <br>
+<img src="images/modelofisico.png" width="80%">
+
+O diagrama físico de dados representa a estrutura real das coleções implementadas no MongoDB para o sistema TalentScan. Embora o banco utilizado seja não relacional, as coleções foram representadas como tabelas com o objetivo de facilitar a visualização de elementos estruturais, como chaves primárias, chaves estrangeiras e seus respectivos relacionamentos.
+
+A coleção **User** armazena os dados dos usuários do sistema, incluindo identificador único, nome, e-mail, telefone, senha e data de criação. O campo e-mail possui restrição de unicidade, garantindo que não existam registros duplicados.
+
+A coleção **Analise** armazena as análises realizadas pela aplicação, contendo o nome do arquivo, o texto analisado, os resultados obtidos e a nota atribuída. Os campos de pontos fortes, pontos fracos e sugestões correspondem a listas de dados, sendo armazenados como arrays no MongoDB.
+
+O relacionamento entre as coleções é do tipo **um-para-muitos**, no qual um usuário pode possuir várias análises associadas. Esse vínculo é implementado por meio do campo `userId`, que referencia o identificador do usuário.
+
+O modelo apresentado reflete fielmente a estrutura implementada no banco de dados. Algumas características específicas, como a restrição de unicidade do campo e-mail e valores padrão de data, não são exibidas diretamente no diagrama devido a limitações da ferramenta utilizada. Da mesma forma, os atributos que armazenam listas foram representados como texto para simplificação visual, embora no banco de dados sejam tratados como arrays.
 
 
-**Exemplo:**
-
-<img src="https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2021/11/09/BDB-1321-image005.png" width="85%">
-
-**FONTE:** <https://aws.amazon.com/pt/compare/the-difference-between-logical-and-physical-data-model/>
-
-<br>O grupo deverá gerar um diagrama físico do banco de dados (estrutura real das tabelas), evidenciando PKs, FKs e relacionamentos, conforme implementado no código.
-
-Este modelo deve exibir:
-- Tabelas ou coleções existentes
-- Atributos com seus respectivos tipos de dados
-- Chaves Primárias (PK)
-- Chaves Estrangeiras (FK)
-- Relacionamentos entre tabelas
-- Restrições implementadas (quando aplicável)
-
----
-
-### 📌 Requisitos Obrigatórios
-
-- O diagrama deve representar fielmente o banco já implementado.
-- Deve refletir exatamente o que foi criado nas Sprints 2 e 3.
-- Não incluir tabelas que não existam no código.
-- Deve contemplar o controle de acesso de usuários, quando implementado.
-- Deve respeitar as convenções e restrições da plataforma utilizada.
-
----
-
-### 📎 Representação do Modelo Físico de Dados
-🚨 O grupo deverá inserir aqui a imagem do diagrama físico de dados.
-
----
-🔧**Ferramentas Sugeridas**
-- MySQL Workbench (engenharia reversa automática)
-- DbDesigner
-- Lucidchart

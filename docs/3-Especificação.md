@@ -47,13 +47,20 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-16 |O sistema deve permitir que o usuário faça o download do relatório de análise em formato PDF através do botão “PDF”.| 🟡 MÉDIA   |
 | RF-17 |O sistema deve permitir que o usuário marque análises como favoritas, possibilitando acesso rápido a essas análises.| 🟡 MÉDIA   |
 | RF-18 |O sistema deve permitir que o usuário exclua uma análise específica do histórico através do botão “Excluir”.| 🔴 ALTA    |
-| RF-19 |O sistema deve apresentar um gráfico mostrando a evolução das pontuações do usuário ao longo do tempo.| 🔴 ALTA    |                                                                                    
+| RF-19 | O sistema deve permitir que o usuário visualize um gráfico com a evolução das notas das análises realizadas. | 🔴 ALTA |
+| RF-20 | O sistema deve exibir a média das notas das análises realizadas pelo usuário. | 🟡 MÉDIA |
+| RF-21 | O sistema deve exibir a maior nota obtida pelo usuário nas análises. | 🟡 MÉDIA |
+| RF-22 | O sistema deve exibir a quantidade total de análises realizadas pelo usuário. | 🟢 BAIXA |
+| RF-23 | O sistema deve classificar o desempenho do usuário em níveis (Baixo, Médio ou Bom) com base na média das notas. | 🟡 MÉDIA |
+| RF-24 | O sistema deve exibir o histórico das análises com nome do arquivo, data e nota. | 🔴 ALTA |
+
+                                                                                 
 # 3.2 Histórias de Usuário
 
 ---
 
 ## Histórias do Projeto
-
+   
 ---
 
 ### História 1 (relacionada ao RF-01)
@@ -200,10 +207,54 @@ Para que eu possa remover análises antigas ou irrelevantes e manter meu histór
 
 **Como usuário**  
 
-Eu quero visualizar um gráfico com a evolução das minhas pontuações ao longo do tempo.
+Eu quero visualizar um gráfico com a evolução das minhas pontuações ao longo do tempo.  
 Para que eu possa acompanhar meu progresso e identificar se meu currículo está melhorando.
 
 ---
+
+### História 20 (relacionada ao RF-20)
+
+**Como usuário**  
+
+Eu quero visualizar a média das minhas notas.  
+Para que eu possa entender meu desempenho geral nas análises.
+
+---
+### História 21 (relacionada ao RF-21)
+
+**Como usuário**  
+
+Eu quero visualizar minha maior nota obtida.  
+Para que eu possa identificar meu melhor desempenho.
+
+---
+### História 22 (relacionada ao RF-22)
+
+**Como usuário**  
+
+Eu quero visualizar a quantidade total de análises realizadas.  
+Para que eu possa acompanhar minha atividade no sistema.
+
+---
+
+### História 23 (relacionada ao RF-23)
+
+**Como usuário**  
+
+Eu quero visualizar uma classificação do meu desempenho.  
+Para que eu possa entender se meu nível está baixo, médio ou bom.
+
+---
+
+### História 24 (relacionada ao RF-24)
+
+**Como usuário**  
+
+Eu quero visualizar o histórico das minhas análises com informações detalhadas.  
+Para que eu possa revisar minhas pontuações e acompanhar minha evolução.
+
+---
+
 > 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
 
 ---
