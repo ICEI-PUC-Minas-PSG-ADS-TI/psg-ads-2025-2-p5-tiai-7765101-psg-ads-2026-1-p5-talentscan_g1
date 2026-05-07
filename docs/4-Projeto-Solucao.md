@@ -391,7 +391,7 @@ O arquivo .sql ou .js deve ser salvo na pasta: src/bd
 
 ## Modelo Físico de Dados – TalentScan
 
-<img src="images/modelofisico01.png" width="80%">
+<img src="images/modelofisco01.PNG" width="80%">
 
 O diagrama físico de dados representa a estrutura real das coleções implementadas no MongoDB para o sistema TalentScan. Embora o banco de dados utilizado seja não relacional, as coleções foram representadas de forma semelhante a tabelas relacionais com o objetivo de facilitar a visualização dos atributos, chaves primárias, referências e relacionamentos existentes entre os documentos.
 
