@@ -191,8 +191,34 @@ ${JSON.stringify(vaga, null, 2)}
   });
 }
 
+async function aprimorarTexto(texto, contexto) {
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+  const prompt = `
+Melhore o texto abaixo para um currículo profissional.
+O texto pertence à seção: ${contexto}.
+Reescreva-o de forma mais formal, impactante e profissional, corrigindo eventuais erros gramaticais e de coesão, mas mantendo a verdade e o sentido original.
+
+Responda APENAS com JSON válido.
+Sem explicações.
+Sem texto antes ou depois.
+
+Formato:
+{
+  "textoAprimorado": "string"
+}
+
+Texto original:
+${texto}
+`;
+
+  return gerarJson(prompt, {
+    textoAprimorado: texto
+  });
+}
+
 module.exports = analisarCurriculo;
 module.exports.analisarCurriculo = analisarCurriculo;
 module.exports.classificarCurriculo = classificarCurriculo;
 module.exports.gerarVaga = gerarVaga;
 module.exports.analisarCompatibilidade = analisarCompatibilidade;
+module.exports.aprimorarTexto = aprimorarTexto;
