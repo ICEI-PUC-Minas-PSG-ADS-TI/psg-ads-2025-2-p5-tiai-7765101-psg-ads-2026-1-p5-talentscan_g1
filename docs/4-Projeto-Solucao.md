@@ -127,6 +127,28 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 <img src="images/progresso.png" width="80%">
 
 **Descrição:** A tela de desempenho e histórico foi desenvolvida para permitir que o usuário acompanhe sua evolução nas análises realizadas. O sistema apresenta um gráfico com a evolução das notas ao longo do tempo, além de exibir informações estatísticas como média das notas, maior pontuação obtida, quantidade total de análises realizadas e classificação de desempenho (Baixo, Médio ou Bom). Também é possível visualizar o histórico completo das análises, contendo nome do arquivo enviado, data da análise e nota obtida.
+## 📌 Tela Classificação (RF-25, RF-26, RF-27, RF-28, RF-29, RF-30)
+
+**História associada:** Como usuário, eu quero acessar a área de Classificação e Compatibilidade para analisar meu currículo, identificar meu perfil profissional e verificar sua compatibilidade com vagas.
+
+<img src="images/Classificacao1.png" width="80%">
+<img src="images/Classificacao2.png" width="80%">
+<img src="images/Classificacao3.png" width="80%">
+<img src="images/Classificacao4.png" width="80%">
+<img src="images/Classificacao5.png" width="80%">
+<img src="images/Classificacao6.png" width="80%">
+
+
+**Descrição:** A tela “Classificação e Compatibilidade” foi criada para reunir em um único fluxo a classificação profissional do currículo e a análise de compatibilidade com vagas.
+
+Na primeira seção, o usuário pode selecionar um currículo já analisado anteriormente ou enviar um novo arquivo em formato PDF ou DOCX. Após selecionar ou enviar o currículo, o usuário aciona a análise de classificação.
+
+Na segunda seção, o sistema exibe o resultado da classificação profissional gerada pela IA, contendo área principal, nível profissional, tecnologias principais, hard skills, soft skills, pontuação geral, pontos fortes, pontos fracos e sugestões de melhoria.
+
+Na terceira seção, o usuário pode escolher entre gerar uma vaga automaticamente com IA ou inserir uma vaga real manualmente. Para a vaga gerada, o usuário informa a área e o nível desejado. Para a vaga personalizada, o usuário informa descrição, requisitos, responsabilidades, tecnologias e nível.
+
+Na quarta seção, o sistema apresenta o resultado da compatibilidade entre currículo e vaga, exibindo a porcentagem de compatibilidade, barra visual de progresso, pontos compatíveis, pontos ausentes, pontos parcialmente compatíveis, justificativa da nota, recomendação final e sugestões de melhoria.
+
 
 ---
 
@@ -201,6 +223,161 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
   "__v": 0
 }
 }
+```
+
+**classificacaocurriculos:**
+
+```json
+{
+  "_id": {
+    "$oid": "id_da_classificacao"
+  },
+  "userId": {
+    "$oid": "id_do_usuario"
+  },
+  "curriculoId": {
+    "$oid": "id_da_analise"
+  },
+  "nomeArquivo": "curriculo.pdf",
+  "areaPrincipal": "Desenvolvimento Front-end",
+  "nivelProfissional": "Junior",
+  "tecnologiasPrincipais": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+  ],
+  "hardSkills": [
+    "Desenvolvimento de interfaces",
+    "Consumo de APIs",
+    "Responsividade"
+  ],
+  "softSkills": [
+    "Comunicacao",
+    "Organizacao",
+    "Trabalho em equipe"
+  ],
+  "pontuacaoGeral": 78,
+  "pontosFortes": [
+    "Boa base em desenvolvimento front-end",
+    "Conhecimento em React"
+  ],
+  "pontosFracos": [
+    "Pouca experiencia profissional",
+    "Nao menciona testes automatizados"
+  ],
+  "sugestoesMelhoria": [
+    "Adicionar projetos praticos",
+    "Detalhar experiencias com APIs"
+  ],
+  "resumoProfissional": "Candidato com perfil voltado para desenvolvimento front-end em nivel junior.",
+  "dataCriacao": {
+    "$date": "2026-05-06T00:00:00.000Z"
+  }
+}
+
+
+```
+
+**vagageradas:**
+
+```json
+{
+  "_id": {
+    "$oid": "id_da_vaga"
+  },
+  "userId": {
+    "$oid": "id_do_usuario"
+  },
+  "area": "Desenvolvimento Front-end",
+  "nivel": "Junior",
+  "titulo": "Desenvolvedor Front-end Junior",
+  "descricao": "Buscamos uma pessoa desenvolvedora front-end para atuar na criacao de interfaces web responsivas.",
+  "responsabilidades": [
+    "Criar interfaces web",
+    "Integrar aplicacoes com APIs",
+    "Manter componentes reutilizaveis"
+  ],
+  "requisitosObrigatorios": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+  ],
+  "requisitosDesejaveis": [
+    "TypeScript",
+    "Testes automatizados",
+    "Acessibilidade"
+  ],
+  "tecnologias": [
+    "React",
+    "JavaScript",
+    "Git"
+  ],
+  "softSkills": [
+    "Comunicacao",
+    "Trabalho em equipe",
+    "Organizacao"
+  ],
+  "dataCriacao": {
+    "$date": "2026-05-06T00:00:00.000Z"
+  }
+}
+
+
+```
+
+**compatibilidadevagas:**
+
+```json
+{
+  "_id": {
+    "$oid": "id_da_compatibilidade"
+  },
+  "userId": {
+    "$oid": "id_do_usuario"
+  },
+  "classificacaoId": {
+    "$oid": "id_da_classificacao"
+  },
+  "vagaId": {
+    "$oid": "id_da_vaga"
+  },
+  "vagaPersonalizada": {
+    "titulo": "Desenvolvedor Front-end Junior",
+    "descricao": "Descricao completa da vaga informada pelo usuario",
+    "requisitos": "HTML, CSS, JavaScript, React e Git",
+    "responsabilidades": "Criar interfaces responsivas e consumir APIs",
+    "tecnologias": "React, JavaScript, Git",
+    "nivel": "Junior"
+  },
+  "porcentagemCompatibilidade": 84,
+  "pontosCompativeis": [
+    "Conhecimento em React",
+    "Experiencia com interfaces",
+    "Conhecimento em JavaScript"
+  ],
+  "pontosAusentes": [
+    "Nao menciona testes automatizados",
+    "Nao cita acessibilidade"
+  ],
+  "pontosParcialmenteCompativeis": [
+    "Conhecimento em JavaScript sem detalhar nivel",
+    "Projetos pouco detalhados"
+  ],
+  "justificativaNota": "O curriculo apresenta boa aderencia a vaga, mas faltam informacoes sobre testes e acessibilidade.",
+  "recomendacaoFinal": "Candidato adequado para vaga junior, com necessidade de melhorias no curriculo.",
+  "sugestoesMelhoria": [
+    "Adicionar projetos com React",
+    "Citar testes automatizados",
+    "Detalhar consumo de APIs"
+  ],
+  "dataCriacao": {
+    "$date": "2026-05-06T00:00:00.000Z"
+  }
+}
+
+
 ```
 
 ### 📁 Obrigatório

@@ -173,6 +173,12 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 | Washington Junio Lima | Arquiteto de Dados| Implementar página de progresso com gráfico de evolução       | 06/04 | 15/04 | ✔️ |
 | Washington Junio Lima | Arquiteto de Dados   | Modelar o banco de dados físico (MongoDB)                  | 16/04 | 20/04 | ✔️ |
 | Washington Junio Lima | Arquiteto de Dados   | Gerar diagrama físico no dbdiagram                         | 16/04 | 20/04 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil   | Implementar tela de Classificação e Compatibilidade.                       | 16/04 | 07/05 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil   | Implementar geração de vaga com IA.                      | 16/04 | 07/05 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil   | Implementar análise de compatibilidade currículo x vaga.                   | 20/04 | 07/05 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil   | Criar models/coleções para classificação, vaga gerada e compatibilidade.                   | 20/04 | 07/05 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil   | Criar rotas de API para classificação, vaga e compatibilidade.                | 20/04 | 07/05 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil   | Salvar histórico vinculado ao usuário logado.             | 27/04 | 07/05 | ✔️ |
 
 
 ---

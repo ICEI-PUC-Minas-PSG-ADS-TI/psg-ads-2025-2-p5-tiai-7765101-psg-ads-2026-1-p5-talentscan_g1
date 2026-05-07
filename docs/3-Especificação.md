@@ -53,7 +53,12 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-22 | O sistema deve exibir a quantidade total de análises realizadas pelo usuário. | 🟢 BAIXA |
 | RF-23 | O sistema deve classificar o desempenho do usuário em níveis (Baixo, Médio ou Bom) com base na média das notas. | 🟡 MÉDIA |
 | RF-24 | O sistema deve exibir o histórico das análises com nome do arquivo, data e nota. | 🔴 ALTA |
-
+| RF-25 | acessar a área de Classificação e Compatibilidade. | 🟡 Média |
+| RF-26 | selecionar currículo do histórico ou enviar novo currículo para classificação. | 🟡 Média |
+| RF-27 |  IA classificar área principal, nível, tecnologias, hard skills e soft skills. | 🟢 BAIXA |
+| RF-28 |  IA classificar área principal, nível, tecnologias, hard skills e soft skills e comparar | 🟡 Média | 
+| RF-29 |  Exibir porcentagem e compatibilidade / pontos compativeis/ vaga  | 🟡 Média | 
+| RF-30 |  salvar histórico de classificações e compatibilidades por usuário. | 🟡 Média | 
                                                                                  
 # 3.2 Histórias de Usuário
 
@@ -255,6 +260,61 @@ Para que eu possa revisar minhas pontuações e acompanhar minha evolução.
 
 ---
 
+### História 25 (relacionada ao RF-25)
+
+**Como usuário**  
+
+Eu quero acessar a área de Classificação e Compatibilidade
+Para que eu possa analisar meu currículo e verificar sua compatibilidade com vagas
+
+---
+
+### História 26 (relacionada ao RF-26)
+
+**Como usuário**  
+
+Eu quero selecionar um currículo do histórico ou enviar um novo currículo
+Para que eu possa realizar a classificação com base no currículo escolhido
+
+---
+
+### História 27 (relacionada ao RF-27)
+
+**Como usuário**  
+
+Eu quero que a IA classifique minha área principal, nível profissional, tecnologias, hard skills e soft skills
+Para que eu possa entender melhor o meu perfil profissional
+
+---
+
+### História 28 (relacionada ao RF-28)
+
+**Como usuário**  
+
+Eu quero que a IA classifique meu currículo e compare com uma vaga
+Para que eu possa saber se meu perfil está adequado aos requisitos da oportunidade
+
+---
+
+### História 29 (relacionada ao RF-29)
+
+**Como usuário**  
+
+Eu quero visualizar a porcentagem de compatibilidade, os pontos compatíveis e os requisitos da vaga
+Para que eu possa entender meu nível de aderência à oportunidade
+
+---
+
+### História 30 (relacionada ao RF-30)
+
+**Como usuário**  
+
+Eu quero que o sistema salve meu histórico de classificações e compatibilidades
+Para que eu possa consultar análises anteriores vinculadas à minha conta
+
+---
+
+
 > 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
 
 ---
@@ -332,15 +392,25 @@ Elas podem envolver:
 
 ---
 
- A tabela abaixo deve ser preenchida com as regras de negócio que **impactam seu projeto**. Os textos no quadro são apenas ilustrativos.
+ A tabela abaixo apresenta as regras de negócio que **impactam o funcionamento do TalentScan**.
 
 |ID    | Regra de Negócio                                                       |
 |-------|-----------------------------------------------------------------------|
-|RN-01 | Usuário só pode cadastrar até 10 tarefas por dia.                      |
-|RN-02 | Apenas administradores podem alterar permissões de usuários.           |
-|RN-03 | Tarefas vencidas devem ser destacadas em vermelho no sistema.          |
-|RN-04 | *(Descreva aqui a restrição 4 do seu projeto)*                         |
-|RN-05 | *(Descreva aqui a restrição 5 do seu projeto)*                         |
+|RN-01 | Se o usuário desejar acessar funcionalidades internas do sistema, então ele deve estar cadastrado e autenticado com e-mail e senha válidos. |
+|RN-02 | Se o usuário enviar um currículo para análise, então o arquivo deve estar em formato aceito pelo sistema, como PDF ou DOCX, para que o texto possa ser extraído corretamente. |
+|RN-03 | Se o currículo for analisado pela IA, então o sistema deve registrar o resultado da análise com pontos fortes, pontos fracos, sugestões de melhoria e nota geral. |
+|RN-04 | Se uma análise de currículo for salva, então ela deve ficar vinculada ao usuário logado por meio do seu identificador, garantindo que cada usuário visualize apenas seus próprios dados. |
+|RN-05 | Se o usuário acessar o histórico, então o sistema deve exibir somente as análises associadas à sua conta. |
+|RN-06 | Se o usuário selecionar uma análise do histórico, então o sistema deve permitir visualizar o relatório completo e realizar ações como favoritar, excluir ou baixar em PDF, quando disponíveis. |
+|RN-07 | Se o usuário alterar dados do perfil, então o sistema deve validar e atualizar as informações sem criar um novo cadastro. |
+|RN-08 | Se o usuário solicitar alteração de senha, então o sistema deve validar os dados informados antes de atualizar a credencial da conta. |
+|RN-09 | Se o usuário acessar a área de Classificação e Compatibilidade, então ele deve selecionar um currículo do histórico ou enviar um novo currículo antes de iniciar a classificação. |
+|RN-10 | Se um currículo for classificado pela IA, então o sistema deve identificar área principal, nível profissional, tecnologias, hard skills, soft skills, pontuação geral, pontos fortes, pontos fracos e sugestões de melhoria. |
+|RN-11 | Se o usuário desejar gerar uma vaga com IA, então ele deve informar obrigatoriamente a área e o nível da vaga. |
+|RN-12 | Se o usuário desejar analisar compatibilidade com uma vaga, então deve existir uma classificação de currículo previamente gerada. |
+|RN-13 | Se o usuário utilizar uma vaga gerada pela IA ou uma vaga personalizada, então o sistema deve comparar os dados da vaga com a classificação do currículo. |
+|RN-14 | Se a compatibilidade for analisada, então o sistema deve exibir porcentagem de compatibilidade, pontos compatíveis, pontos ausentes, pontos parcialmente compatíveis, justificativa da nota, recomendação final e sugestões de melhoria. |
+|RN-15 | Se uma classificação ou compatibilidade for concluída, então o sistema deve salvar o histórico vinculado ao usuário logado para consulta posterior. |
 
 💡 **Dica:** Explique sempre o motivo ou impacto da regra no sistema.
 
