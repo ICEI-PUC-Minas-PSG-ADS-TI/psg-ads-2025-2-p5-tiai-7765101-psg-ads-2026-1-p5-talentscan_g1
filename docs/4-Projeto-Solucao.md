@@ -389,9 +389,9 @@ O arquivo .sql ou .js deve ser salvo na pasta: src/bd
 ---
 ### 4.4.2 Representação do Modelo Físico de Dados (Entrega na Sprint 3 - Core)
 
-## Modelo Físico de Dados – TalentScan
+## Modelo Físico de Dados 
 
-![Modelo Físico](images/modelofisico01.PNG)
+<img src="images/modelofisico02.PNG" width="80%">
 
 O diagrama físico de dados representa a estrutura real das coleções implementadas no MongoDB para o sistema TalentScan. Embora o banco de dados utilizado seja não relacional, as coleções foram representadas de forma semelhante a tabelas relacionais com o objetivo de facilitar a visualização dos atributos, chaves primárias, referências e relacionamentos existentes entre os documentos.
 
@@ -407,5 +407,22 @@ Os relacionamentos implementados no modelo seguem principalmente a estrutura do 
 
 O modelo apresentado representa fielmente a estrutura implementada no banco de dados MongoDB. Algumas características específicas, como restrições de unicidade, valores padrão e armazenamento de listas, não são exibidas diretamente no diagrama devido às limitações da ferramenta utilizada. Os atributos que armazenam arrays no MongoDB foram representados como campos do tipo texto para simplificação visual da modelagem.
 
+---
 
+### 4.4.3 Representação do Diagrama de Classes
 
+## Diagrama de Classes 
+
+<img src="images/digramadeclasse.PNG" width="80%">
+
+O diagrama de classes representa a estrutura lógica do sistema TalentScan, demonstrando as principais classes, atributos e relacionamentos da aplicação.
+
+A classe User armazena os dados dos usuários do sistema, como nome, e-mail, telefone, senha e data de criação. Essa classe possui relacionamento com as análises, classificações de currículo e avaliações de compatibilidade.
+
+A classe Analise é responsável por armazenar os resultados das análises realizadas nos currículos enviados pelos usuários, incluindo pontos fortes, pontos fracos, sugestões de melhoria e nota atribuída pela inteligência artificial.
+
+A classe ClassificacaoCurriculo representa a classificação detalhada dos currículos, contendo informações como área principal, nível profissional, tecnologias, hard skills, soft skills e pontuação geral.
+
+A classe CompatibilidadeVaga armazena os resultados da comparação entre currículos e vagas, registrando percentual de compatibilidade, requisitos atendidos, pontos ausentes e recomendações finais.
+
+Os relacionamentos do diagrama seguem principalmente a estrutura um-para-muitos, permitindo que um usuário possua diversas análises e avaliações dentro do sistema.

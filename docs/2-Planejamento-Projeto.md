@@ -166,8 +166,6 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Implementar Regra de Negócio Y | 06/04 | 15/04 | ❌ |
-|             |        | Implementar Cálculo/Processo Z | 06/04 | 15/04 | ❌ |
 | Washington Junio Lima | Arquiteto de Dados| Implementar cálculo de média, melhor nota e status            | 06/04 | 25/04 | ✔️ |
 | Washington Junio Lima | Arquiteto de Dados| Implementar exibição de histórico de análises                 | 06/04 | 25/04 | ✔️ |
 | Washington Junio Lima | Arquiteto de Dados| Implementar página de progresso com gráfico de evolução       | 06/04 | 15/04 | ✔️ |
