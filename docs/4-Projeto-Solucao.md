@@ -108,13 +108,25 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 
 ---
 
-## 📌 Tela histórico (RF-15, RF-16, RF-17, RF-18, RF-19)
+## 📌 Tela histórico (RF-15, RF-16, RF-17, RF-18)
 
 **História associada:** Como usuário, eu quero visualizar um gráfico com a evolução das minhas pontuações ao longo do tempo. Para que eu possa acompanhar meu progresso e identificar se meu currículo está melhorando.
 
 <img src="images/historico.png" width="80%">
 
 **Descrição:** A tela de histórico foi desenvolvida para que o usuário pesquise o hisórico e visualize todas as análises de currículos já realizadas, com data, pontuação e status. Também oferece filtros e pesquisa para facilitar a organização. Além disso, permite acessar relatórios, baixar em PDF, favoritar e excluir análises.
+
+---
+
+---
+
+## 📌 Tela de desempenho e histórico (RF-19, RF-20, RF-21, RF-22, RF-23, RF-24)
+
+**História associada:** Como usuário, eu quero visualizar meu desempenho nas análises de currículo realizadas no sistema, para que eu possa acompanhar minha evolução, identificar melhorias e analisar meu histórico de resultados.
+
+<img src="images/progresso.png" width="80%">
+
+**Descrição:** A tela de desempenho e histórico foi desenvolvida para permitir que o usuário acompanhe sua evolução nas análises realizadas. O sistema apresenta um gráfico com a evolução das notas ao longo do tempo, além de exibir informações estatísticas como média das notas, maior pontuação obtida, quantidade total de análises realizadas e classificação de desempenho (Baixo, Médio ou Bom). Também é possível visualizar o histórico completo das análises, contendo nome do arquivo enviado, data da análise e nota obtida.
 
 ---
 
