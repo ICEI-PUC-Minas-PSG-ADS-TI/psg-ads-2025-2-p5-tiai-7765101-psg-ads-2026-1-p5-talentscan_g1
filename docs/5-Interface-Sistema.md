@@ -34,8 +34,8 @@ Apresente as imagens reais das telas implementadas, associando-as à funcionalid
 > 💡 **Importante:** Uma mesma funcionalidade (fatia) pode render **várias telas** (ex: tela de listagem, formulário de cadastro e modal de sucesso). **Coloque prints de todas as etapas do fluxo.** <br><br>
 
 **🔵 Sprint 3: Core (Regras de Negócio)**
-* **Funcionalidade:** Análise de currículos com IA e compatibilidade com vagas, histórico e envio do curriculo.
-* **Descrição:** Dashboard principal para análise de currículos enviados, exibindo resultados de compatibilidade (pontuações, classificações) gerados pela IA. Inclui listagem de análises históricas e detalhes de compatibilidade por vaga.
+* **Funcionalidade:** Análise de currículos com IA e compatibilidade com vagas, histórico, envio do currículo e Criador de Currículo.
+* **Descrição:** Dashboard principal para análise de currículos enviados, exibindo resultados de compatibilidade (pontuações, classificações) gerados pela IA. Inclui listagem de análises históricas, detalhes de compatibilidade por vaga e o novo Criador de Currículo para edição manual e exportação em PDF. A interface recebeu refinamentos na Navbar para facilitar a navegação e botões interativos (CTA) para as ações principais.
 
 * <img src="images/envcurriculo.png" width="80%">
 * <img src="images/dashboardcv.png" width="80%">
@@ -46,6 +46,7 @@ Apresente as imagens reais das telas implementadas, associando-as à funcionalid
 * <img src="images/Classificacao5.png" width="80%">
 * <img src="images/Classificacao6.png" width="80%">
 * <img src="images/historico.png" width="80%">
+* <img src="images/criador-cv.png" width="80%">
 
 <br><br>
 > 💡 **Importante:** Uma mesma funcionalidade (fatia) pode render **várias telas** (ex: tela de listagem, formulário de cadastro e modal de sucesso). **Coloque prints de todas as etapas do fluxo.** <br><br>

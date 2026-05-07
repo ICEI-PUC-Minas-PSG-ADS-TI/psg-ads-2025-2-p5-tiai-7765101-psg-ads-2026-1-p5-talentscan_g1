@@ -179,6 +179,8 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 | Henrique Gonçalves Sousa | Facilitador Ágil   | Criar models/coleções para classificação, vaga gerada e compatibilidade.                   | 20/04 | 07/05 | ✔️ |
 | Henrique Gonçalves Sousa | Facilitador Ágil   | Criar rotas de API para classificação, vaga e compatibilidade.                | 20/04 | 07/05 | ✔️ |
 | Henrique Gonçalves Sousa | Facilitador Ágil   | Salvar histórico vinculado ao usuário logado.             | 27/04 | 07/05 | ✔️ |
+| Gabriel Baumgratz de Paula Botaro | Gerente de Qualidade | Implementar Criador de Currículo com aprimoramento por IA e exportação em PDF | 27/04 | 07/05 | ✔️ |
+| Gabriel Baumgratz de Paula Botaro | Gerente de Qualidade | Refinamento da Navbar e UI/UX global do sistema | 01/05 | 07/05 | ✔️ |
 
 
 ---

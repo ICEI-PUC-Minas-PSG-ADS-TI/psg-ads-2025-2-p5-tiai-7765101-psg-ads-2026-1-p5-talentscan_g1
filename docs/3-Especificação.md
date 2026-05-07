@@ -314,6 +314,42 @@ Para que eu possa consultar análises anteriores vinculadas à minha conta
 
 ---
 
+### História 31 (relacionada ao RF-31)
+
+**Como usuário**  
+
+Eu quero preencher meus dados em um formulário estruturado
+Para que eu possa criar um currículo profissional sem me preocupar com formatação
+
+---
+
+### História 32 (relacionada ao RF-32)
+
+**Como usuário**  
+
+Eu quero utilizar inteligência artificial para aprimorar o texto do meu resumo e experiências
+Para que meu currículo tenha uma linguagem mais profissional e impactante
+
+---
+
+### História 33 (relacionada ao RF-33)
+
+**Como usuário**  
+
+Eu quero visualizar a prévia do meu currículo em tempo real enquanto preencho os dados
+Para que eu possa ver exatamente como ele será impresso
+
+---
+
+### História 34 (relacionada ao RF-34)
+
+**Como usuário**  
+
+Eu quero imprimir ou salvar meu currículo em PDF
+Para que eu possa enviá-lo para candidaturas de emprego
+
+---
+
 
 > 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
 
