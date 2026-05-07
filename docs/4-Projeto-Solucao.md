@@ -391,7 +391,7 @@ O arquivo .sql ou .js deve ser salvo na pasta: src/bd
 
 ## Modelo Físico de Dados 
 
-<img src="images/modelofisico02.PNG" width="80%">
+<img src="images/modelofisico02.PNG"
 
 O diagrama físico de dados representa a estrutura real das coleções implementadas no MongoDB para o sistema TalentScan. Embora o banco de dados utilizado seja não relacional, as coleções foram representadas de forma semelhante a tabelas relacionais com o objetivo de facilitar a visualização dos atributos, chaves primárias, referências e relacionamentos existentes entre os documentos.
 
@@ -413,7 +413,7 @@ O modelo apresentado representa fielmente a estrutura implementada no banco de d
 
 ## Diagrama de Classes 
 
-<img src="images/digramadeclasse.PNG" width="80%">
+<img src="images/digramadeclasse.PNG"
 
 O diagrama de classes representa a estrutura lógica do sistema TalentScan, demonstrando as principais classes, atributos e relacionamentos da aplicação.
 
