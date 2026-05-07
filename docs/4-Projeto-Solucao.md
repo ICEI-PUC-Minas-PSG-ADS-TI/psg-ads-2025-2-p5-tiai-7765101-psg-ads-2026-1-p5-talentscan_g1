@@ -389,18 +389,23 @@ O arquivo .sql ou .js deve ser salvo na pasta: src/bd
 ---
 ### 4.4.2 Representação do Modelo Físico de Dados (Entrega na Sprint 3 - Core)
 
-##  Modelo Físico de Dados – TalentScan
+## Modelo Físico de Dados – TalentScan
 
-<img src="images/modelofisico.png" width="80%">
+<img src="images/modelofisico01.png" width="80%">
 
-O diagrama físico de dados representa a estrutura real das coleções implementadas no MongoDB para o sistema TalentScan. Embora o banco utilizado seja não relacional, as coleções foram representadas como tabelas com o objetivo de facilitar a visualização de elementos estruturais, como chaves primárias, chaves estrangeiras e seus respectivos relacionamentos.
+O diagrama físico de dados representa a estrutura real das coleções implementadas no MongoDB para o sistema TalentScan. Embora o banco de dados utilizado seja não relacional, as coleções foram representadas de forma semelhante a tabelas relacionais com o objetivo de facilitar a visualização dos atributos, chaves primárias, referências e relacionamentos existentes entre os documentos.
 
-A coleção **User** armazena os dados dos usuários do sistema, incluindo identificador único, nome, e-mail, telefone, senha e data de criação. O campo e-mail possui restrição de unicidade, garantindo que não existam registros duplicados.
+A coleção **User** é responsável pelo armazenamento dos dados dos usuários do sistema, incluindo identificador único, nome, e-mail, telefone, senha e data de criação. O campo e-mail possui restrição de unicidade, garantindo que não existam registros duplicados na aplicação.
 
-A coleção **Analise** armazena as análises realizadas pela aplicação, contendo o nome do arquivo, o texto analisado, os resultados obtidos e a nota atribuída. Os campos de pontos fortes, pontos fracos e sugestões correspondem a listas de dados, sendo armazenados como arrays no MongoDB.
+A coleção **Analise** armazena as análises realizadas a partir dos currículos enviados pelos usuários. Nela são registrados o nome do arquivo, o texto extraído, os pontos fortes, pontos fracos, sugestões de melhoria e a nota atribuída pela inteligência artificial. O relacionamento entre **User** e **Analise** é do tipo um-para-muitos, permitindo que um usuário possua várias análises associadas.
 
-O relacionamento entre as coleções é do tipo **um-para-muitos**, no qual um usuário pode possuir várias análises associadas. Esse vínculo é implementado por meio do campo `userId`, que referencia o identificador do usuário.
+A coleção **ClassificacaoCurriculo** é responsável por armazenar a classificação detalhada dos currículos analisados. Essa coleção contém informações como área principal de atuação, nível profissional, tecnologias principais, hard skills, soft skills, pontuação geral, resumo profissional e sugestões de melhoria. Além disso, mantém referência tanto ao usuário quanto à análise associada.
 
-O modelo apresentado reflete fielmente a estrutura implementada no banco de dados. Algumas características específicas, como a restrição de unicidade do campo e-mail e valores padrão de data, não são exibidas diretamente no diagrama devido a limitações da ferramenta utilizada. Da mesma forma, os atributos que armazenam listas foram representados como texto para simplificação visual, embora no banco de dados sejam tratados como arrays.
+A coleção **CompatibilidadeVaga** registra os resultados de compatibilidade entre currículos e vagas analisadas pelo sistema. Nela são armazenadas informações como porcentagem de compatibilidade, pontos compatíveis, pontos ausentes, recomendações finais e justificativas da avaliação realizada. Essa coleção possui relacionamento com o usuário e com a classificação do currículo, permitindo armazenar diferentes avaliações de compatibilidade.
+
+Os relacionamentos implementados no modelo seguem principalmente a estrutura do tipo **um-para-muitos**, na qual um usuário pode possuir diversas análises, classificações e verificações de compatibilidade cadastradas no sistema. Esses vínculos são realizados por meio de campos de referência utilizando `ObjectId`.
+
+O modelo apresentado representa fielmente a estrutura implementada no banco de dados MongoDB. Algumas características específicas, como restrições de unicidade, valores padrão e armazenamento de listas, não são exibidas diretamente no diagrama devido às limitações da ferramenta utilizada. Os atributos que armazenam arrays no MongoDB foram representados como campos do tipo texto para simplificação visual da modelagem.
+
 
 
