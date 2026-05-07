@@ -5,6 +5,7 @@ const connectDB = require("./config/connection");
 const authRoutes = require("./routes/authRoutes");
 const uploadRoutes = require("./routes/uploadRoutes");
 const analysisRoutes = require("./routes/analysisRoutes");
+const classificacaoCompatibilidadeRoutes = require("./routes/classificacaoCompatibilidadeRoutes");
 
 
 dotenv.config();
@@ -29,6 +30,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api", uploadRoutes);
 
 app.use("/api", analysisRoutes); 
+app.use("/api", classificacaoCompatibilidadeRoutes);
 
 const PORT = process.env.PORT || 3000;
 

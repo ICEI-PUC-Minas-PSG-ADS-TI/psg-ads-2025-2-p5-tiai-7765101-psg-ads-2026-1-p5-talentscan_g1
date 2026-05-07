@@ -45,6 +45,7 @@ function Navbar() {
 
             <Link to="/">Home</Link>
             <Link to="/progress">Progresso</Link>
+            <Link to="/classificacao-compatibilidade">Classificacao</Link>
             
             <Link to="/dashboard">Minhas Análises</Link>
 

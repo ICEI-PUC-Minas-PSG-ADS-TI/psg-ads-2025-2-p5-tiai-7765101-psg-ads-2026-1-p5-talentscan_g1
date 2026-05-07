@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
 import Profile from "../pages/Profile";
 import Progress from "../pages/Progress";
+import ClassificacaoCompatibilidade from "../pages/ClassificacaoCompatibilidade";
 
 function AppRoutes() {
   return (
@@ -17,6 +18,8 @@ function AppRoutes() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/progress" element={<Progress />} />
+        <Route path="/classificacao-compatibilidade" element={<ClassificacaoCompatibilidade />} />
+        <Route path="/classificao-compatibilidade" element={<ClassificacaoCompatibilidade />} />
       </Routes>
     </BrowserRouter>
   );
