@@ -28,20 +28,20 @@ const areas = [
   "Desenvolvimento Front-end",
   "Desenvolvimento Back-end",
   "Desenvolvimento Full Stack",
-  "Analise de Dados",
-  "Ciencia de Dados",
+  "Análise de Dados",
+  "Ciência de Dados",
   "UX/UI Design",
-  "Suporte Tecnico",
+  "Suporte Técnico",
   "Infraestrutura",
-  "Seguranca da Informacao",
-  "Gestao de Projetos",
+  "Segurança da Informação",
+  "Gestão de Projetos",
   "Recursos Humanos",
-  "Administracao",
+  "Administração",
   "Marketing",
   "Vendas"
 ];
 
-const niveis = ["Estagio", "Junior", "Pleno", "Senior"];
+const niveis = ["Estágio", "Júnior", "Pleno", "Sênior"];
 
 function Lista({ itens }) {
   if (!itens?.length) {
@@ -85,7 +85,7 @@ function ClassificacaoCompatibilidade() {
   const [loadingCompatibilidade, setLoadingCompatibilidade] = useState(false);
   const [vagaGeradaForm, setVagaGeradaForm] = useState({
     area: "Desenvolvimento Front-end",
-    nivel: "Junior"
+    nivel: "Júnior"
   });
   const [vagaPersonalizada, setVagaPersonalizada] = useState({
     titulo: "",
@@ -127,11 +127,11 @@ function ClassificacaoCompatibilidade() {
 
   async function handleClassificar() {
     if (!user?._id) {
-      return Swal.fire("Login necessario", "Entre na sua conta para salvar o historico.", "warning");
+      return Swal.fire("Login necessário", "Entre na sua conta para salvar o histórico.", "warning");
     }
 
     if (!curriculoId && !arquivo) {
-      return Swal.fire("Curriculo obrigatorio", "Selecione um curriculo do historico ou envie um arquivo.", "warning");
+      return Swal.fire("Currículo obrigatório", "Selecione um currículo do histórico ou envie um arquivo.", "warning");
     }
 
     const formData = new FormData();
@@ -151,7 +151,7 @@ function ClassificacaoCompatibilidade() {
       const historico = await buscarClassificacoes(user._id);
       setClassificacoes(Array.isArray(historico) ? historico : []);
     } catch (erro) {
-      Swal.fire("Erro", erro.message || "Nao foi possivel classificar o curriculo.", "error");
+      Swal.fire("Erro", erro.message || "Não foi possível classificar o currículo.", "error");
     } finally {
       setLoadingClassificacao(false);
     }
@@ -159,7 +159,7 @@ function ClassificacaoCompatibilidade() {
 
   async function handleGerarVaga() {
     if (!user?._id) {
-      return Swal.fire("Login necessario", "Entre na sua conta para gerar vagas.", "warning");
+      return Swal.fire("Login necessário", "Entre na sua conta para gerar vagas.", "warning");
     }
 
     try {
@@ -175,7 +175,7 @@ function ClassificacaoCompatibilidade() {
       setVaga(data.vaga);
       setModoVaga("gerada");
     } catch (erro) {
-      Swal.fire("Erro", erro.message || "Nao foi possivel gerar a vaga.", "error");
+      Swal.fire("Erro", erro.message || "Não foi possível gerar a vaga.", "error");
     } finally {
       setLoadingVaga(false);
     }
@@ -183,19 +183,19 @@ function ClassificacaoCompatibilidade() {
 
   async function handleCompatibilidade() {
     if (!user?._id) {
-      return Swal.fire("Login necessario", "Entre na sua conta para salvar a analise.", "warning");
+      return Swal.fire("Login necessário", "Entre na sua conta para salvar a análise.", "warning");
     }
 
     if (!classificacao?._id) {
-      return Swal.fire("Classificacao obrigatoria", "Analise o curriculo antes de comparar com a vaga.", "warning");
+      return Swal.fire("Classificação obrigatória", "Analise o currículo antes de comparar com a vaga.", "warning");
     }
 
     if (modoVaga === "gerada" && !vaga?._id) {
-      return Swal.fire("Vaga obrigatoria", "Gere uma vaga ou use a opcao de vaga personalizada.", "warning");
+      return Swal.fire("Vaga obrigatória", "Gere uma vaga ou use a opção de vaga personalizada.", "warning");
     }
 
     if (modoVaga === "personalizada" && !vagaPersonalizada.descricao.trim()) {
-      return Swal.fire("Vaga obrigatoria", "Cole a descricao completa da vaga personalizada.", "warning");
+      return Swal.fire("Vaga obrigatória", "Cole a descrição completa da vaga personalizada.", "warning");
     }
 
     try {
@@ -211,7 +211,7 @@ function ClassificacaoCompatibilidade() {
 
       setCompatibilidade(data.compatibilidade);
     } catch (erro) {
-      Swal.fire("Erro", erro.message || "Nao foi possivel analisar a compatibilidade.", "error");
+      Swal.fire("Erro", erro.message || "Não foi possível analisar a compatibilidade.", "error");
     } finally {
       setLoadingCompatibilidade(false);
     }
@@ -224,8 +224,8 @@ function ClassificacaoCompatibilidade() {
       <main className="cc-container">
         <header className="cc-title">
           <span>TalentScan IA</span>
-          <h1>Classificacao e Compatibilidade</h1>
-          <p>Classifique o perfil profissional do candidato e use essa analise como base para comparar o curriculo com uma vaga.</p>
+          <h1>Classificação e Compatibilidade</h1>
+          <p>Classifique o perfil profissional do candidato e use essa análise como base para comparar o currículo com uma vaga.</p>
         </header>
 
         <section className="cc-layout">
@@ -233,14 +233,14 @@ function ClassificacaoCompatibilidade() {
             <div className="cc-panel-title">
               <FileText size={22} />
               <div>
-                <h2>Curriculo</h2>
-                <p>Selecione do historico ou envie um novo PDF/DOCX.</p>
+                <h2>Currículo</h2>
+                <p>Selecione do histórico ou envie um novo PDF/DOCX.</p>
               </div>
             </div>
 
-            <label>Curriculo do historico</label>
+            <label>Currículo do histórico</label>
             <select value={curriculoId} onChange={(e) => { setCurriculoId(e.target.value); setArquivo(null); }}>
-              <option value="">Selecionar curriculo</option>
+              <option value="">Selecionar currículo</option>
               {curriculos.map((item) => (
                 <option key={item._id} value={item._id}>
                   {item.nomeArquivo} - {item.analise?.nota || 0}/100
@@ -248,7 +248,7 @@ function ClassificacaoCompatibilidade() {
               ))}
             </select>
 
-            <label>Novo curriculo</label>
+            <label>Novo currículo</label>
             <div className="cc-file">
               <UploadCloud size={20} />
               <input
@@ -265,7 +265,7 @@ function ClassificacaoCompatibilidade() {
 
             <button className="cc-btn cc-btn-primary" onClick={handleClassificar} disabled={loadingClassificacao}>
               {loadingClassificacao ? <Loader2 className="cc-spin" size={18} /> : <SearchCheck size={18} />}
-              Analisar classificacao
+              Analisar classificação
             </button>
           </div>
 
@@ -273,8 +273,8 @@ function ClassificacaoCompatibilidade() {
             <div className="cc-panel-title">
               <BarChart3 size={22} />
               <div>
-                <h2>Historico</h2>
-                <p>Classificações salvas por usuario.</p>
+                <h2>Histórico</h2>
+                <p>Classificações salvas por usuário.</p>
               </div>
             </div>
 
@@ -283,7 +283,7 @@ function ClassificacaoCompatibilidade() {
               {classificacoes.slice(0, 5).map((item) => (
                 <button key={item._id} onClick={() => setClassificacao(item)}>
                   <strong>{item.areaPrincipal}</strong>
-                  <span>{item.nomeArquivo || "Curriculo"}</span>
+                  <span>{item.nomeArquivo || "Currículo"}</span>
                   <small>{item.pontuacaoGeral}/100</small>
                 </button>
               ))}
@@ -307,7 +307,7 @@ function ClassificacaoCompatibilidade() {
 
             <div className="cc-summary">
               <div><span>Nível</span><strong>{classificacao.nivelProfissional}</strong></div>
-              <div><span>Arquivo</span><strong>{classificacao.nomeArquivo || "Curriculum"}</strong></div>
+              <div><span>Arquivo</span><strong>{classificacao.nomeArquivo || "Currículo"}</strong></div>
               <div><span>Base da comparação</span><strong>Classificação salva</strong></div>
             </div>
 
@@ -317,7 +317,7 @@ function ClassificacaoCompatibilidade() {
               <CardLista titulo="Soft skills" icon={CheckCircle} itens={classificacao.softSkills} tipo="yellow" />
               <CardLista titulo="Pontos fortes" icon={Briefcase} itens={classificacao.pontosFortes} tipo="green" />
               <CardLista titulo="Pontos fracos" icon={AlertCircle} itens={classificacao.pontosFracos} tipo="red" />
-              <CardLista titulo="Sugestoes de melhoria" icon={Lightbulb} itens={classificacao.sugestoesMelhoria} />
+              <CardLista titulo="Sugestões de melhoria" icon={Lightbulb} itens={classificacao.sugestoesMelhoria} />
             </div>
           </section>
         )}
@@ -340,7 +340,7 @@ function ClassificacaoCompatibilidade() {
             <>
               <div className="cc-form-grid">
                 <div>
-                  <label>Area desejada</label>
+                  <label>Área desejada</label>
                   <select value={vagaGeradaForm.area} onChange={(e) => setVagaGeradaForm({ ...vagaGeradaForm, area: e.target.value })}>
                     {areas.map((area) => <option key={area}>{area}</option>)}
                   </select>
@@ -363,8 +363,8 @@ function ClassificacaoCompatibilidade() {
                   <p>{vaga.descricao}</p>
                   <div className="cc-grid">
                     <CardLista titulo="Responsabilidades" icon={Briefcase} itens={vaga.responsabilidades} />
-                    <CardLista titulo="Requisitos obrigatorios" icon={Target} itens={vaga.requisitosObrigatorios} tipo="green" />
-                    <CardLista titulo="Requisitos desejaveis" icon={Lightbulb} itens={vaga.requisitosDesejaveis} tipo="yellow" />
+                    <CardLista titulo="Requisitos obrigatórios" icon={Target} itens={vaga.requisitosObrigatorios} tipo="green" />
+                    <CardLista titulo="Requisitos desejáveis" icon={Lightbulb} itens={vaga.requisitosDesejaveis} tipo="yellow" />
                     <CardLista titulo="Tecnologias" icon={Sparkles} itens={vaga.tecnologias} />
                   </div>
                 </div>
@@ -372,8 +372,8 @@ function ClassificacaoCompatibilidade() {
             </>
           ) : (
             <div className="cc-custom">
-              <input placeholder="Titulo da vaga" value={vagaPersonalizada.titulo} onChange={(e) => setVagaPersonalizada({ ...vagaPersonalizada, titulo: e.target.value })} />
-              <textarea placeholder="Descricao completa da vaga" rows="6" value={vagaPersonalizada.descricao} onChange={(e) => setVagaPersonalizada({ ...vagaPersonalizada, descricao: e.target.value })} />
+              <input placeholder="Título da vaga" value={vagaPersonalizada.titulo} onChange={(e) => setVagaPersonalizada({ ...vagaPersonalizada, titulo: e.target.value })} />
+              <textarea placeholder="Descrição completa da vaga" rows="6" value={vagaPersonalizada.descricao} onChange={(e) => setVagaPersonalizada({ ...vagaPersonalizada, descricao: e.target.value })} />
               <div className="cc-form-grid">
                 <textarea placeholder="Requisitos" rows="4" value={vagaPersonalizada.requisitos} onChange={(e) => setVagaPersonalizada({ ...vagaPersonalizada, requisitos: e.target.value })} />
                 <textarea placeholder="Responsabilidades" rows="4" value={vagaPersonalizada.responsabilidades} onChange={(e) => setVagaPersonalizada({ ...vagaPersonalizada, responsabilidades: e.target.value })} />
@@ -394,7 +394,7 @@ function ClassificacaoCompatibilidade() {
             <div className="cc-result-head">
               <div>
                 <span>Resultado da compatibilidade</span>
-                <h2>Compatibilidade curriculo x vaga</h2>
+                <h2>Compatibilidade currículo x vaga</h2>
                 <p>{compatibilidade.justificativaNota}</p>
               </div>
               <div className={`cc-match cc-match-${nivelMatch}`}>
@@ -407,17 +407,17 @@ function ClassificacaoCompatibilidade() {
             </div>
 
             <div className="cc-grid">
-              <CardLista titulo="Pontos compativeis" icon={CheckCircle} itens={compatibilidade.pontosCompativeis} tipo="green" />
+              <CardLista titulo="Pontos compatíveis" icon={CheckCircle} itens={compatibilidade.pontosCompativeis} tipo="green" />
               <CardLista titulo="Pontos ausentes" icon={AlertCircle} itens={compatibilidade.pontosAusentes} tipo="red" />
-              <CardLista titulo="Parcialmente compativeis" icon={Target} itens={compatibilidade.pontosParcialmenteCompativeis} tipo="yellow" />
+              <CardLista titulo="Parcialmente compatíveis" icon={Target} itens={compatibilidade.pontosParcialmenteCompativeis} tipo="yellow" />
               <section className="cc-card cc-wide">
                 <div className="cc-card-header">
                   <Briefcase size={20} />
-                  <h3>Recomendacao final</h3>
+                  <h3>Recomendação final</h3>
                 </div>
                 <p>{compatibilidade.recomendacaoFinal}</p>
               </section>
-              <CardLista titulo="Sugestoes para o curriculo" icon={Lightbulb} itens={compatibilidade.sugestoesMelhoria} />
+              <CardLista titulo="Sugestões para o currículo" icon={Lightbulb} itens={compatibilidade.sugestoesMelhoria} />
             </div>
           </section>
         )}
