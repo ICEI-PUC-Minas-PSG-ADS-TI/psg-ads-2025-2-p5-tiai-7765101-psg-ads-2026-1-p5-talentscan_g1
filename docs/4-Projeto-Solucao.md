@@ -149,6 +149,15 @@ Na terceira seção, o usuário pode escolher entre gerar uma vaga automaticamen
 
 Na quarta seção, o sistema apresenta o resultado da compatibilidade entre currículo e vaga, exibindo a porcentagem de compatibilidade, barra visual de progresso, pontos compatíveis, pontos ausentes, pontos parcialmente compatíveis, justificativa da nota, recomendação final e sugestões de melhoria.
 
+---
+
+## 📌 Tela Criador de Currículo (RF-31, RF-32, RF-33, RF-34)
+
+**História associada:** Como usuário, eu quero preencher meus dados em um formulário para gerar um currículo estruturado, podendo aprimorar o texto com IA e salvar em PDF.
+
+<img src="images/criador-cv.png" width="80%">
+
+**Descrição:** A tela do Criador de Currículo oferece uma interface dividida: à esquerda, um formulário detalhado para entrada de dados (pessoais, resumo, experiências, formação, habilidades e idiomas); à direita, uma pré-visualização em tempo real do documento formatado. O usuário conta com botões de "Aprimorar com IA" para otimizar o conteúdo e um botão final para gerar o PDF através da função de impressão do navegador.
 
 ---
 
