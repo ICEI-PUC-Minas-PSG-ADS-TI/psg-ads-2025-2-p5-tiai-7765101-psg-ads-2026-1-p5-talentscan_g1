@@ -1,171 +1,14 @@
-import { useMemo, useState } from "react";
-import "./HistoricoAnalises.css";
+import "./Historico.css";
 
-export default function HistoricoAnalises() {
-  const [analises, setAnalises] = useState([
-    {
-      id: 1,
-      data: "06/04/2026",
-      arquivo: "curriculo_andre_v3.pdf",
-      tipo: "Júnior",
-      area: "Tecnologia",
-      pontuacao: 92,
-      status: "Completo",
-      favorito: true,
-      resumo:
-        "Currículo muito bem estruturado. Sugestão: incluir mais projetos práticos e detalhar experiências.",
-    },
-    {
-      id: 2,
-      data: "05/04/2026",
-      arquivo: "curriculo_andre_v2.pdf",
-      tipo: "Estágio",
-      area: "Tecnologia",
-      pontuacao: 85,
-      status: "Completo",
-      favorito: false,
-      resumo:
-        "Bom currículo, mas falta clareza em objetivos e maior uso de palavras-chave relacionadas à vaga.",
-    },
-    {
-      id: 3,
-      data: "30/03/2026",
-      arquivo: "curriculo_andre_v1.pdf",
-      tipo: "Estágio",
-      area: "Administração",
-      pontuacao: 78,
-      status: "Completo",
-      favorito: false,
-      resumo:
-        "Estrutura aceitável. Sugestão: melhorar formatação e adicionar competências técnicas e cursos extras.",
-    },
-    {
-      id: 4,
-      data: "20/03/2026",
-      arquivo: "curriculo_teste.pdf",
-      tipo: "Júnior",
-      area: "Marketing",
-      pontuacao: 70,
-      status: "Em processamento",
-      favorito: false,
-      resumo:
-        "Análise ainda em processamento. Aguarde para visualizar recomendações detalhadas.",
-    },
-    {
-      id: 5,
-      data: "10/03/2026",
-      arquivo: "curriculo_incompleto.docx",
-      tipo: "Estágio",
-      area: "Tecnologia",
-      pontuacao: 62,
-      status: "Erro",
-      favorito: false,
-      resumo:
-        "Erro na análise. Possível arquivo corrompido ou com formato inválido. Reenvie em PDF.",
-    },
-  ]);
-
-  const [mostrarSomenteFavoritos, setMostrarSomenteFavoritos] = useState(false);
-  const [ordenacao, setOrdenacao] = useState("maisRecentes");
-
-  const [modalDetalhes, setModalDetalhes] = useState(false);
-  const [analiseSelecionada, setAnaliseSelecionada] = useState(null);
-
-  const [modalRenomear, setModalRenomear] = useState(false);
-  const [novoNome, setNovoNome] = useState("");
-
-  function parseDataBR(dataStr) {
-    const [dia, mes, ano] = dataStr.split("/");
-    return new Date(`${ano}-${mes}-${dia}`);
-  }
-
-  function calcularMelhoria(index, listaOrdenadaPorData) {
-    if (index === listaOrdenadaPorData.length - 1) return "neutro";
-
-    const atual = listaOrdenadaPorData[index].pontuacao;
-    const anterior = listaOrdenadaPorData[index + 1].pontuacao;
-
-    if (atual > anterior) return "subiu";
-    if (atual < anterior) return "desceu";
-    return "neutro";
-  }
-
-  const listaFinal = useMemo(() => {
-    let lista = [...analises];
-
-    if (mostrarSomenteFavoritos) {
-      lista = lista.filter((a) => a.favorito);
-    }
-
-    if (ordenacao === "maisRecentes") {
-      lista.sort((a, b) => parseDataBR(b.data) - parseDataBR(a.data));
-    }
-
-    if (ordenacao === "maisAntigas") {
-      lista.sort((a, b) => parseDataBR(a.data) - parseDataBR(b.data));
-    }
-
-    if (ordenacao === "maiorPontuacao") {
-      lista.sort((a, b) => b.pontuacao - a.pontuacao);
-    }
-
-    if (ordenacao === "menorPontuacao") {
-      lista.sort((a, b) => a.pontuacao - b.pontuacao);
-    }
-
-    return lista;
-  }, [analises, mostrarSomenteFavoritos, ordenacao]);
-
-  const listaPorData = useMemo(() => {
-    let lista = [...analises];
-    lista.sort((a, b) => parseDataBR(b.data) - parseDataBR(a.data));
-    return lista;
-  }, [analises]);
-
-  function alternarFavorito(id) {
-    setAnalises((prev) =>
-      prev.map((a) =>
-        a.id === id ? { ...a, favorito: !a.favorito } : a
-      )
-    );
-  }
-
-  function abrirDetalhes(analise) {
-    setAnaliseSelecionada(analise);
-    setModalDetalhes(true);
-  }
-
-  function abrirRenomear(analise) {
-    setAnaliseSelecionada(analise);
-    setNovoNome(analise.arquivo);
-    setModalRenomear(true);
-  }
-
-  function salvarNovoNome() {
-    setAnalises((prev) =>
-      prev.map((a) =>
-        a.id === analiseSelecionada.id ? { ...a, arquivo: novoNome } : a
-      )
-    );
-
-    setModalRenomear(false);
-    setAnaliseSelecionada(null);
-  }
-
-  function excluirAnalise(id) {
-    const confirmacao = window.confirm("Tem certeza que deseja excluir essa análise?");
-    if (!confirmacao) return;
-
-    setAnalises((prev) => prev.filter((a) => a.id !== id));
-  }
-
+function Historico() {
   return (
-    <div className="page-container">
+    <div className="historico-page">
+
       {/* HEADER */}
-      <header className="header">
+      <header className="historico-header">
         <div className="logo">TalentScan</div>
 
-        <nav className="nav">
+        <nav className="historico-nav">
           <a href="#">Home</a>
           <a href="#">Dashboard</a>
           <a href="#" className="active">Histórico</a>
@@ -176,49 +19,129 @@ export default function HistoricoAnalises() {
       </header>
 
       {/* MAIN */}
-      <main className="main">
+      <main className="historico-main">
+
+        {/* TITLE + ACTIONS */}
         <div className="page-title">
           <div>
             <h1>📌 Histórico de Análises</h1>
-            <p>
-              Acompanhe suas análises anteriores, veja sua evolução e revise relatórios antigos.
-            </p>
+            <p>Acompanhe suas análises anteriores, veja sua evolução e revise relatórios antigos.</p>
           </div>
 
           <div className="actions-top">
             <button className="btn btn-primary">➕ Nova Análise</button>
-
-            <button className="btn btn-outline">
-              📥 Exportar Histórico
-            </button>
-
-            <button
-              className="btn btn-outline"
-              onClick={() => setMostrarSomenteFavoritos(!mostrarSomenteFavoritos)}
-            >
-              ⭐ {mostrarSomenteFavoritos ? "Mostrar Todos" : "Mostrar Favoritos"}
-            </button>
-
+            <button className="btn btn-outline">📥 Exportar Histórico</button>
+            <button className="btn btn-outline">⭐ Mostrar Favoritos</button>
             <button className="btn btn-danger">🧹 Limpar Histórico</button>
           </div>
         </div>
 
-        {/* ORDENAÇÃO */}
+        {/* EVOLUTION CARD */}
         <section className="card">
-          <h2>📌 Ordenação</h2>
-          <small>Organize as análises como preferir.</small>
+          <h2>📈 Evolução de Pontuação</h2>
+          <small>Visualize seu progresso ao longo do tempo.</small>
 
-          <div className="order-area">
-            <label>Ordenar por:</label>
-            <select
-              value={ordenacao}
-              onChange={(e) => setOrdenacao(e.target.value)}
-            >
-              <option value="maisRecentes">Mais recentes</option>
-              <option value="maisAntigas">Mais antigas</option>
-              <option value="maiorPontuacao">Maior pontuação</option>
-              <option value="menorPontuacao">Menor pontuação</option>
-            </select>
+          <div className="evolution">
+            <div>
+              <div className="bar" style={{ height: "60px" }}>
+                <span>62</span>
+              </div>
+              <div className="bar-label">10/03</div>
+            </div>
+
+            <div>
+              <div className="bar" style={{ height: "75px" }}>
+                <span>70</span>
+              </div>
+              <div className="bar-label">20/03</div>
+            </div>
+
+            <div>
+              <div className="bar" style={{ height: "82px" }}>
+                <span>78</span>
+              </div>
+              <div className="bar-label">30/03</div>
+            </div>
+
+            <div>
+              <div className="bar" style={{ height: "92px" }}>
+                <span>85</span>
+              </div>
+              <div className="bar-label">05/04</div>
+            </div>
+
+            <div>
+              <div className="bar" style={{ height: "100px" }}>
+                <span>92</span>
+              </div>
+              <div className="bar-label">06/04</div>
+            </div>
+          </div>
+        </section>
+
+        {/* FILTERS CARD */}
+        <section className="card">
+          <h2>🔎 Buscar e Filtrar Análises</h2>
+          <small>Encontre análises antigas por nome, data, pontuação ou status.</small>
+
+          <div className="filters-grid">
+            <div className="field">
+              <label htmlFor="search">Pesquisar análise</label>
+              <input
+                id="search"
+                type="text"
+                placeholder="Digite nome do arquivo, área ou vaga..."
+              />
+            </div>
+
+            <div className="field">
+              <label htmlFor="date">Filtro por Data</label>
+              <select id="date">
+                <option>Todas</option>
+                <option>Hoje</option>
+                <option>Últimos 7 dias</option>
+                <option>Últimos 30 dias</option>
+                <option>Personalizado</option>
+              </select>
+            </div>
+
+            <div className="field">
+              <label htmlFor="score">Filtro por Pontuação</label>
+              <select id="score">
+                <option>Todas</option>
+                <option>0 a 50</option>
+                <option>51 a 70</option>
+                <option>71 a 90</option>
+                <option>91 a 100</option>
+              </select>
+            </div>
+
+            <div className="field">
+              <label htmlFor="type">Tipo de Currículo</label>
+              <select id="type">
+                <option>Todos</option>
+                <option>Estágio</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+              </select>
+            </div>
+
+            <div className="field">
+              <label htmlFor="status">Status</label>
+              <select id="status">
+                <option>Todos</option>
+                <option>Completo</option>
+                <option>Em processamento</option>
+                <option>Erro</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="filter-buttons">
+            <button className="btn btn-primary">Pesquisar</button>
+            <button className="btn btn-outline">Aplicar Filtros</button>
+            <button className="btn btn-outline">Limpar Filtros</button>
           </div>
         </section>
 
@@ -227,183 +150,184 @@ export default function HistoricoAnalises() {
           <div className="table-header">
             <div>
               <h2>📄 Lista de Análises</h2>
-              <small>
-                Clique em "Detalhes" para visualizar um resumo rápido.
-              </small>
+              <small>Selecione análises para comparar ou excluir em lote.</small>
+            </div>
+
+            <div className="bulk-actions">
+              <button className="btn btn-outline">📊 Comparar Selecionados</button>
+              <button className="btn btn-outline">⬇️ Baixar Selecionados</button>
+              <button className="btn btn-danger">🗑️ Excluir Selecionados</button>
             </div>
           </div>
 
           <table>
             <thead>
               <tr>
+                <th><input type="checkbox" /></th>
                 <th>Data</th>
                 <th>Arquivo</th>
                 <th>Tipo</th>
                 <th>Área</th>
                 <th>Pontuação</th>
-                <th>Melhoria</th>
                 <th>Status</th>
                 <th>Ações</th>
               </tr>
             </thead>
 
             <tbody>
-              {listaFinal.map((analise) => {
-                const indexData = listaPorData.findIndex((a) => a.id === analise.id);
-                const melhoria = calcularMelhoria(indexData, listaPorData);
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>06/04/2026</td>
+                <td>curriculo_andre_v3.pdf</td>
+                <td>Júnior</td>
+                <td>Tecnologia</td>
+                <td className="score">92/100</td>
+                <td><span className="status complete">Completo</span></td>
+                <td>
+                  <div className="row-actions">
+                    <button className="btn-mini primary">📄 Relatório</button>
+                    <button className="btn-mini">⬇️ PDF</button>
+                    <button className="btn-mini">👁️ Ver</button>
+                    <button className="btn-mini">🔁 Reanalisar</button>
+                    <button className="btn-mini">📊 Comparar</button>
+                    <button className="btn-mini star">⭐ Favoritar</button>
+                    <button className="btn-mini danger">🗑️ Excluir</button>
+                  </div>
+                </td>
+              </tr>
 
-                return (
-                  <tr key={analise.id}>
-                    <td>{analise.data}</td>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>05/04/2026</td>
+                <td>curriculo_andre_v2.pdf</td>
+                <td>Estágio</td>
+                <td>Tecnologia</td>
+                <td className="score">85/100</td>
+                <td><span className="status complete">Completo</span></td>
+                <td>
+                  <div className="row-actions">
+                    <button className="btn-mini primary">📄 Relatório</button>
+                    <button className="btn-mini">⬇️ PDF</button>
+                    <button className="btn-mini">👁️ Ver</button>
+                    <button className="btn-mini">🔁 Reanalisar</button>
+                    <button className="btn-mini">📊 Comparar</button>
+                    <button className="btn-mini star">⭐ Favoritar</button>
+                    <button className="btn-mini danger">🗑️ Excluir</button>
+                  </div>
+                </td>
+              </tr>
 
-                    <td>
-                      {analise.arquivo}{" "}
-                      {analise.favorito && <span className="favorito-tag">⭐</span>}
-                    </td>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>30/03/2026</td>
+                <td>curriculo_andre_v1.pdf</td>
+                <td>Estágio</td>
+                <td>Administração</td>
+                <td className="score">78/100</td>
+                <td><span className="status complete">Completo</span></td>
+                <td>
+                  <div className="row-actions">
+                    <button className="btn-mini primary">📄 Relatório</button>
+                    <button className="btn-mini">⬇️ PDF</button>
+                    <button className="btn-mini">👁️ Ver</button>
+                    <button className="btn-mini">🔁 Reanalisar</button>
+                    <button className="btn-mini">📊 Comparar</button>
+                    <button className="btn-mini star">⭐ Favoritar</button>
+                    <button className="btn-mini danger">🗑️ Excluir</button>
+                  </div>
+                </td>
+              </tr>
 
-                    <td>{analise.tipo}</td>
-                    <td>{analise.area}</td>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>20/03/2026</td>
+                <td>curriculo_teste.pdf</td>
+                <td>Júnior</td>
+                <td>Marketing</td>
+                <td className="score">70/100</td>
+                <td><span className="status processing">Em processamento</span></td>
+                <td>
+                  <div className="row-actions">
+                    <button className="btn-mini primary">📄 Relatório</button>
+                    <button className="btn-mini">⬇️ PDF</button>
+                    <button className="btn-mini">👁️ Ver</button>
+                    <button className="btn-mini">🔁 Reanalisar</button>
+                    <button className="btn-mini">📊 Comparar</button>
+                    <button className="btn-mini star">⭐ Favoritar</button>
+                    <button className="btn-mini danger">🗑️ Excluir</button>
+                  </div>
+                </td>
+              </tr>
 
-                    <td className="score">{analise.pontuacao}/100</td>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>10/03/2026</td>
+                <td>curriculo_incompleto.docx</td>
+                <td>Estágio</td>
+                <td>Tecnologia</td>
+                <td className="score">62/100</td>
+                <td><span className="status error">Erro</span></td>
+                <td>
+                  <div className="row-actions">
+                    <button className="btn-mini primary">📄 Relatório</button>
+                    <button className="btn-mini">⬇️ PDF</button>
+                    <button className="btn-mini">👁️ Ver</button>
+                    <button className="btn-mini">🔁 Reanalisar</button>
+                    <button className="btn-mini">📊 Comparar</button>
+                    <button className="btn-mini star">⭐ Favoritar</button>
+                    <button className="btn-mini danger">🗑️ Excluir</button>
+                  </div>
+                </td>
+              </tr>
 
-                    <td>
-                      {melhoria === "subiu" && <span className="melhoria up">↑ Melhorou</span>}
-                      {melhoria === "desceu" && <span className="melhoria down">↓ Piorou</span>}
-                      {melhoria === "neutro" && <span className="melhoria neutral">— Igual</span>}
-                    </td>
-
-                    <td>
-                      <span
-                        className={`status ${
-                          analise.status === "Completo"
-                            ? "complete"
-                            : analise.status === "Em processamento"
-                            ? "processing"
-                            : "error"
-                        }`}
-                      >
-                        {analise.status}
-                      </span>
-                    </td>
-
-                    <td>
-                      <div className="row-actions">
-                        <button
-                          className="btn-mini primary"
-                          onClick={() => abrirDetalhes(analise)}
-                        >
-                          👁️ Detalhes
-                        </button>
-
-                        <button className="btn-mini">📄 Relatório</button>
-                        <button className="btn-mini">⬇️ PDF</button>
-
-                        <button className="btn-mini">🔁 Reanalisar</button>
-
-                        <button
-                          className="btn-mini star"
-                          onClick={() => alternarFavorito(analise.id)}
-                        >
-                          ⭐ Favoritar
-                        </button>
-
-                        <button
-                          className="btn-mini"
-                          onClick={() => abrirRenomear(analise)}
-                        >
-                          ✏️ Renomear
-                        </button>
-
-                        <button
-                          className="btn-mini danger"
-                          onClick={() => excluirAnalise(analise.id)}
-                        >
-                          🗑️ Excluir
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
-
-              {listaFinal.length === 0 && (
-                <tr>
-                  <td colSpan="8" style={{ textAlign: "center", padding: "20px" }}>
-                    Nenhuma análise encontrada.
-                  </td>
-                </tr>
-              )}
             </tbody>
           </table>
         </section>
+
       </main>
 
       {/* FOOTER */}
       <footer className="footer">
-        <p>
-          © 2026 TalentScan - Sistema de análise inteligente de currículos.
-          <br /><br />
-          <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> |{" "}
-          <a href="#">Suporte</a> | <a href="#">Contato</a>
-        </p>
+        <div className="footer-container">
+
+          <div className="footer-brand">
+            <h2>TalentScan</h2>
+            <p>
+              Melhore seu currículo com inteligência artificial e
+              aumente suas chances no mercado.
+            </p>
+          </div>
+
+          <div className="footer-links">
+            <div>
+              <h4>Produto</h4>
+              <a href="#">Como funciona</a>
+              <a href="#">Funcionalidades</a>
+              <a href="#">Dashboard</a>
+            </div>
+
+            <div>
+              <h4>Empresa</h4>
+              <a href="#">Sobre</a>
+              <a href="#">Contato</a>
+            </div>
+
+            <div>
+              <h4>Legal</h4>
+              <a href="#">Privacidade</a>
+              <a href="#">Termos</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="footer-bottom">
+          <p>© 2026 TalentScan. Todos os direitos reservados.</p>
+        </div>
       </footer>
 
-      {/* MODAL DETALHES */}
-      {modalDetalhes && analiseSelecionada && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <h2>📌 Detalhes Rápidos</h2>
-            <p><strong>Arquivo:</strong> {analiseSelecionada.arquivo}</p>
-            <p><strong>Data:</strong> {analiseSelecionada.data}</p>
-            <p><strong>Pontuação:</strong> {analiseSelecionada.pontuacao}/100</p>
-            <p><strong>Status:</strong> {analiseSelecionada.status}</p>
-
-            <div className="modal-resumo">
-              <strong>Resumo da IA:</strong>
-              <p>{analiseSelecionada.resumo}</p>
-            </div>
-
-            <div className="modal-actions">
-              <button
-                className="btn btn-outline"
-                onClick={() => setModalDetalhes(false)}
-              >
-                Fechar
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* MODAL RENOMEAR */}
-      {modalRenomear && analiseSelecionada && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <h2>✏️ Renomear Análise</h2>
-            <p>Digite um novo nome para o arquivo:</p>
-
-            <input
-              className="modal-input"
-              type="text"
-              value={novoNome}
-              onChange={(e) => setNovoNome(e.target.value)}
-            />
-
-            <div className="modal-actions">
-              <button
-                className="btn btn-outline"
-                onClick={() => setModalRenomear(false)}
-              >
-                Cancelar
-              </button>
-
-              <button className="btn btn-primary" onClick={salvarNovoNome}>
-                Salvar
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
+
+export default Historico;
