@@ -7,18 +7,37 @@ function Navbar() {
   const user = JSON.parse(localStorage.getItem("user"));
 
   const handleLogout = async () => {
-    localStorage.removeItem("user");
-    await Swal.fire({
-      icon: "success",
-      title: "Logout realizado!",
-      text: "Você saiu da sua conta com sucesso.",
-      confirmButtonColor: "#2563eb",
-      background: "#0f172a",
-      color: "#fff"
-    });
-    navigate("/");
-    window.location.reload();
-  };
+  const result = await Swal.fire({
+    icon: "warning",
+    title: "Sair da conta?",
+    text: "Você será desconectado da sessão atual.",
+    showCancelButton: true,
+    confirmButtonText: "Sair",
+    cancelButtonText: "Cancelar",
+    confirmButtonColor: "#ef4444",
+    cancelButtonColor: "#475569",
+    background: "#ffffff",
+    color: "#111827"
+  });
+
+  if (!result.isConfirmed) {
+    return;
+  }
+
+  localStorage.removeItem("user");
+
+  await Swal.fire({
+    icon: "success",
+    title: "Logout realizado!",
+    text: "Você saiu da sua conta com sucesso.",
+    confirmButtonColor: "#2563eb",
+    background: "#0f172a",
+    color: "#fff"
+  });
+
+  navigate("/");
+  window.location.reload();
+};
 
   return (
     <nav className="navbar">

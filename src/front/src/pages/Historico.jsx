@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import "./HistoricoAnalises.css";
+
 
 export default function HistoricoAnalises() {
   const [analises, setAnalises] = useState([

@@ -2,7 +2,6 @@
 .cv-creator-container {
   display: flex;
   height: calc(100vh - 70px);
-  background: #020617;
   overflow: hidden;
   color: white;
 }
@@ -12,7 +11,7 @@
   width: 40%;
   padding: 2rem;
   overflow-y: auto;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.8), rgba(2, 6, 23, 0.9));
+  
   border-right: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
 }
@@ -201,7 +200,6 @@
   overflow-y: auto;
   display: flex;
   justify-content: center;
-  background: #020617;
 }
 
 .cv-preview-section::-webkit-scrollbar {

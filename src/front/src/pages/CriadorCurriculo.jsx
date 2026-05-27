@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { aprimorarTextoComIA } from "../services/cvService";
 import "./CriadorCurriculo.css";
 
+
 function CriadorCurriculo() {
   // Estado
   const [cvData, setCvData] = useState({

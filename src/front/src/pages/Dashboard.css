@@ -1,6 +1,5 @@
 /* Fundo */
 .dashboard-page {
-  background: #020617;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
