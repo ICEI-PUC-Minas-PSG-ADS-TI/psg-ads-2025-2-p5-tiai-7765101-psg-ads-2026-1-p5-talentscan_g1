@@ -364,6 +364,24 @@ Para que eu possa entender meu progresso detalhado e receber recomendações per
 
 ---
 
+### História 36 (relacionada ao RF-32)
+
+**Como usuário**  
+
+Eu quero visualizar um gráfico dinâmico com as pontuações das minhas análises
+Para que eu consiga identificar visualmente e de forma rápida como meu desempenho mudou ao longo do tempo.
+
+---
+
+### História 37 (relacionada ao RF-33)
+
+**Como usuário**  
+
+Eu quero filtrar minhas análises por data, área, tipo e pontuação
+Para que eu encontre rapidamente registros específicos em meio ao meu histórico sem precisar rolar toda a lista.
+
+---
+
 # 3.3 Requisitos Não Funcionais
 
 ## Tabela de Requisitos Não Funcionais
