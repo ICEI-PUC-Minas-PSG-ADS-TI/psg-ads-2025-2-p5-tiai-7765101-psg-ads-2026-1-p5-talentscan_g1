@@ -183,6 +183,6 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 | Washington Junio Lima | Arquiteto de Dados | Consolidação do README e documentação final | 10/06 | 17/06 | ✔️ |
 | André Oliveira Burle | Facilitador Ágil | Implementação das funcionalidades finais de relatório automático | 11/06 | 18/06 | ✔️ |
 | André Oliveira Burle | Facilitador Ágil | Implementação da funcionalidade de gráfico dinâmico | 11/06 | 18/06 | ✔️ |
-| André Oliveira Burle | Facilitador Ágil | Implementação da funcionalidade de filtros inteligentes | 11/06 | 18/06 | ✔️ |
+| André Oliveira Burle | Facilitador Ágil | Implementação da funcionalidade de filtro inteligente e estatísticas em tempo real | 11/06 | 18/06 | ✔️ |
 | André Oliveira Burle | Facilitador Ágil | Ajustes finais e revisão e complementação da documentação final | 11/06 | 18/06 | ✔️ |
 ---
