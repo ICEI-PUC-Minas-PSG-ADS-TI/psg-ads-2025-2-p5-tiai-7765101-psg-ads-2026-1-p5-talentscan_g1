@@ -1,15 +1,8 @@
 
 # 5. Interface do Sistema
 
-> ⚠️ **Aviso aos Squads:**
-> Diferente da Seção 4 (onde vocês colocaram os wireframes/Mockups), esta seção é o **Portfólio Visual** do software real. Aqui devem constar apenas as capturas de tela (screenshots) do **sistema já codificado e funcionando**.
-
-Esta seção deve ser atualizada a cada Sprint, servindo como um registro histórico da evolução da interface da aplicação web. <br><br>
-
-
 ## 5.1. Galeria de Telas (Por Sprint)
 
-Apresente as imagens reais das telas implementadas, associando-as à funcionalidade (Fatia Vertical) entregue na Sprint correspondente. Descreva brevemente o que cada tela faz.<br><br>
 
 **🟢 Sprint 1: Hello World / Tela Inicial**
 * **Funcionalidade:** Ponto de entrada do sistema e navegação principal (tela Home conectada à API).
@@ -18,8 +11,6 @@ Apresente as imagens reais das telas implementadas, associando-as à funcionalid
 * <img src="images/home02.png" width="80%">
 * <img src="images/home03.png" width="80%">
 
-<br><br>
-> 💡 **Importante:** Uma mesma funcionalidade (fatia) pode render **várias telas** (ex: tela de listagem, formulário de cadastro e modal de sucesso). **Coloque prints de todas as etapas do fluxo.** <br><br>
 
 **🟡 Sprint 2: MVP (Primeira Fatia Vertical)**
 * **Funcionalidade:** Autenticação de usuários (Login e Cadastro) + Upload de currículos.
@@ -30,8 +21,7 @@ Apresente as imagens reais das telas implementadas, associando-as à funcionalid
 * <img src="images/envcurriculo.png" width="80%">
 * <img src="images/Editar1.png" width="80%">
 * <img src="images/validacao.png" width="80%">
-<br><br>
-> 💡 **Importante:** Uma mesma funcionalidade (fatia) pode render **várias telas** (ex: tela de listagem, formulário de cadastro e modal de sucesso). **Coloque prints de todas as etapas do fluxo.** <br><br>
+
 
 **🔵 Sprint 3: Core (Regras de Negócio)**
 * **Funcionalidade:** Análise de currículos com IA e compatibilidade com vagas, histórico, envio do currículo e Criador de Currículo.
@@ -48,19 +38,14 @@ Apresente as imagens reais das telas implementadas, associando-as à funcionalid
 * <img src="images/historico.png" width="80%">
 * <img src="images/criador-cv.png" width="80%">
 
-<br><br>
-> 💡 **Importante:** Uma mesma funcionalidade (fatia) pode render **várias telas** (ex: tela de listagem, formulário de cadastro e modal de sucesso). **Coloque prints de todas as etapas do fluxo.** <br><br>
 
 **🔴 Sprint 4: Entrega Final**
-* **Funcionalidade:** Polimento visual e telas secundárias.
-* **Descrição:** Telas finais de relatórios, perfis de usuário, tratamento de erros e refinamento de CSS/UX.
-* *(Insira a imagem real da tela aqui - ex: `![Tela Final](images/sprint4_final.png)`)* <br><br>
-> 💡 **Importante:** Uma mesma funcionalidade (fatia) pode render **várias telas** (ex: tela de listagem, formulário de cadastro e modal de sucesso). **Coloque prints de todas as etapas do fluxo.** <br><br>
+* **Funcionalidade:** Dashboard de Progresso, métricas de desempenho e refinamentos finais do sistema.
+* **Descrição:** Nesta etapa foram realizados ajustes finais, correção de bugs, testes de funcionalidades e refinamento da experiência do usuário. Também foi concluída a tela de Progresso, permitindo ao usuário acompanhar sua evolução por meio de indicadores como média das análises, melhor nota obtida, quantidade total de análises realizadas, classificação de desempenho e gráfico de evolução ao longo do tempo. A tela também disponibiliza o histórico detalhado das análises realizadas, facilitando o acompanhamento dos resultados e da evolução do currículo.
 
-> 📸 **Dica:** Certifiquem-se de que as imagens tenham boa resolução e mostrem o sistema rodando no navegador. Salvem todas as imagens na pasta `images/` do repositório.
+* <img src="images/progressox.png" width="80%">
 
-
-
+* <img src="images/progressoy.png" width="80%">
 
 
 

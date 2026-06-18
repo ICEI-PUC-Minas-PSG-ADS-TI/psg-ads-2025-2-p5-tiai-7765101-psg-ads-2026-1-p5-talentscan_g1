@@ -1,13 +1,6 @@
 
 # 4. Projeto da Solução
 
-> ⚠️ **Aviso aos Squads (Software House)**
->
-> Esta seção **não deve ser preenchida integralmente antes da codificação**.
-> Trata-se de um **Documento Vivo**, que deverá ser atualizado **incrementalmente a cada Sprint**, refletindo fielmente o código real implementado.
-
----
-
 ## 4.1 Arquitetura da Solução (Sprint 1 e 2)
 
 O TalentScan segue uma arquitetura de aplicação web  com separação entre front-end, back-end, banco de dados e integração com inteligência artificial.

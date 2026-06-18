@@ -187,9 +187,9 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Correção de bugs | 22/05 | 05/06 | ❌ |
-|             |        | Finalizar relatórios e dashboards | 01/06 | 15/06 | ❌ |
-|             |        | Preencher Relatório APC | 10/06 | 20/06 | ❌ |
-|             |        | Testes finais e consolidar README | 15/06 | 25/06 | ❌ |
-
+| Washington Junio Lima | Arquiteto de Dados | Correção de bugs e ajustes finais do sistema | 08/05 | 17/06 | ✔️ |
+| Gabriel Baumgratz de Paula Botaro | Gerente de Qualidade | Testes finais das funcionalidades implementadas | 10/06 | 15/06 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil | Produção e edição do vídeo de apresentação do projeto | 14/06 | 17/06 | ✔️ |
+| Henrique Gonçalves Sousa | Facilitador Ágil | Revisão e complementação da documentação final do projeto | 02/06 | 17/06 | ✔️ |
+| Washington Junio Lima | Arquiteto de Dados | Consolidação do README e documentação final | 10/06 | 17/06 | ✔️ |
 ---

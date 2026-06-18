@@ -350,9 +350,6 @@ Para que eu possa enviá-lo para candidaturas de emprego
 
 ---
 
-
-> 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
-
 ---
 
 # 3.3 Requisitos Não Funcionais
@@ -436,6 +433,5 @@ Elas podem envolver:
 |RN-14 | Se a compatibilidade for analisada, então o sistema deve exibir porcentagem de compatibilidade, pontos compatíveis, pontos ausentes, pontos parcialmente compatíveis, justificativa da nota, recomendação final e sugestões de melhoria. |
 |RN-15 | Se uma classificação ou compatibilidade for concluída, então o sistema deve salvar o histórico vinculado ao usuário logado para consulta posterior. |
 
-💡 **Dica:** Explique sempre o motivo ou impacto da regra no sistema.
 
 ---
