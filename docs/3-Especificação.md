@@ -400,6 +400,15 @@ Para que eu possa salvar meus dados localmente ou utilizá-los em planilhas exte
 
 ---
 
+### História 40 (relacionada ao RF-36)
+
+**Como usuário**  
+
+Eu quero selecionar e excluir várias análises de uma só vez através de checkboxes
+Para que eu consiga organizar e limpar meu histórico de forma rápida e eficiente quando necessário.
+
+---
+
 # 3.3 Requisitos Não Funcionais
 
 ## Tabela de Requisitos Não Funcionais
