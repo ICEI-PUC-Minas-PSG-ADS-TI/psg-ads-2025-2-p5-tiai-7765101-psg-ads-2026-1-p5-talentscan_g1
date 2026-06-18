@@ -179,6 +179,11 @@
   background: rgba(239, 68, 68, 0.25);
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* CARDS */
 .card {
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.85), rgba(2, 6, 23, 0.9));
@@ -223,6 +228,7 @@
   justify-content: center;
   overflow: hidden;
   transition: 0.2s;
+  flex: 1;
 }
 
 .bar span {
@@ -412,16 +418,28 @@ tr:hover td {
   color: #60a5fa;
 }
 
+.btn-mini.primary:hover {
+  background: rgba(59, 130, 246, 0.25);
+}
+
 .btn-mini.danger {
   border-color: rgba(239, 68, 68, 0.35);
   background: rgba(239, 68, 68, 0.15);
   color: #fca5a5;
 }
 
+.btn-mini.danger:hover {
+  background: rgba(239, 68, 68, 0.25);
+}
+
 .btn-mini.star {
   border-color: rgba(245, 158, 11, 0.35);
   background: rgba(245, 158, 11, 0.15);
   color: #fbbf24;
+}
+
+.btn-mini.star:hover {
+  background: rgba(245, 158, 11, 0.25);
 }
 
 /* RESPONSIVE */
@@ -438,6 +456,10 @@ tr:hover td {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .actions-top {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 500px) {
@@ -447,6 +469,46 @@ tr:hover td {
 
   .bar {
     width: 40px;
+  }
+
+  .btn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .page-title h1 {
+    font-size: 22px;
+  }
+
+  .actions-top {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .actions-top .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .row-actions {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .btn-mini {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 11px;
   }
 }
 
@@ -517,4 +579,15 @@ tr:hover td {
 .footer-bottom p {
   color: #64748b;
   font-size: 12px;
+}
+
+/* EMPTY STATE */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+}
+
+.empty-state p {
+  font-size: 14px;
 }
