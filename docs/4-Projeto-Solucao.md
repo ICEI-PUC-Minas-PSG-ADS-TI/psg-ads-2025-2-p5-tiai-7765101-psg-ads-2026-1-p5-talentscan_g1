@@ -382,12 +382,6 @@ Na quarta seção, o sistema apresenta o resultado da compatibilidade entre curr
 
 ```
 
-### 📁 Obrigatório
-
-O arquivo .sql ou .js deve ser salvo na pasta: src/bd
-
- - É permitido colar um trecho do script no README apenas para visualização rápida.
- 
 ---
 ### 4.4.2 Representação do Modelo Físico de Dados (Entrega na Sprint 3 - Core)
 

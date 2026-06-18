@@ -1,7 +1,7 @@
-
 # 6. Conclusão
 
 ## 6.1 Síntese dos Resultados
+
 O TalentScan atendeu ao objetivo proposto inicialmente ao disponibilizar uma plataforma capaz de analisar currículos utilizando Inteligência Artificial, oferecendo feedbacks, sugestões de melhoria e recursos que auxiliam os usuários na construção e aperfeiçoamento de seu perfil profissional. O sistema permite que estudantes, recém-formados e profissionais identifiquem pontos fortes e oportunidades de melhoria em seus currículos, contribuindo para uma apresentação mais clara e competitiva no mercado de trabalho.
 
 Além da análise automatizada de currículos, a solução evoluiu ao longo do desenvolvimento e passou a oferecer funcionalidades como classificação profissional, geração de vagas com Inteligência Artificial, análise de compatibilidade entre currículo e vaga, histórico de desempenho e criador de currículos com exportação em PDF. Esses recursos ampliam o potencial da ferramenta como apoio à preparação profissional dos usuários.
@@ -11,6 +11,7 @@ O projeto está diretamente relacionado à ODS 8 Trabalho Decente e Crescimento 
 Como resultado, o TalentScan proporcionou uma solução digital capaz de apoiar o crescimento profissional dos usuários, incentivando a qualificação, a preparação para processos seletivos e a utilização da Inteligência Artificial como ferramenta de desenvolvimento de carreira.
 
 ---
+
 ## 6.2 Limitações e Trabalhos Futuros
 
 Embora o TalentScan tenha alcançado os objetivos propostos e disponibilize diversas funcionalidades voltadas para análise e aprimoramento de currículos, algumas limitações ainda podem ser observadas.
@@ -25,17 +26,19 @@ O sistema também não possui integração direta com plataformas de recrutament
 
 Para uma futura versão 2.0, são propostas as seguintes melhorias:
 
-- Integração com plataformas de emprego e recrutamento;
-- Análises especializadas por área profissional;
-- Autenticação utilizando contas Google e LinkedIn;
-- Recomendação de cursos, certificações e trilhas de aprendizagem com base nas competências identificadas;
-- Sistema de otimização para ATS (Applicant Tracking Systems);
-- Disponibilização de modelos profissionais adicionais para geração de currículos;
-- Dashboard avançado com indicadores de evolução profissional;
-- Desenvolvimento de aplicativo mobile para Android e iOS;
+* Integração com plataformas de emprego e recrutamento;
+* Análises especializadas por área profissional;
+* Autenticação utilizando contas Google e LinkedIn;
+* Recomendação de cursos, certificações e trilhas de aprendizagem com base nas competências identificadas;
+* Sistema de otimização para ATS (Applicant Tracking Systems);
+* Disponibilização de modelos profissionais adicionais para geração de currículos;
+* Dashboard avançado com indicadores de evolução profissional;
+* Desenvolvimento de aplicativo mobile para Android e iOS;
 
 Dessa forma, o TalentScan apresenta uma base sólida para futuras expansões, com potencial para se tornar uma plataforma ainda mais completa de apoio ao desenvolvimento profissional, à empregabilidade e à preparação para processos seletivos.
+
 ---
+
 ## 6.3 Lições Aprendidas
 
 O desenvolvimento do TalentScan permitiu acompanhar todas as etapas da construção de um sistema, desde o levantamento dos requisitos até a implementação das funcionalidades e documentação final do projeto. A organização por Sprints e a utilização do Kanban contribuíram para um melhor acompanhamento das atividades, permitindo visualizar a evolução do sistema ao longo do semestre e definir prioridades para cada entrega.

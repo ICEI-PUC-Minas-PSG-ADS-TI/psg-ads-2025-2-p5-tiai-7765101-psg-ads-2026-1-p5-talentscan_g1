@@ -5,17 +5,6 @@ O projeto adota uma metodologia ágil, simulando o ambiente de uma Software Hous
 
 ---
 
-### 🚨 Regra de Ouro: 
-
-> ❗Não existe divisão entre “quem faz documento”, “quem faz Front-end” e “quem faz Back-end”.
-
-<br>Todos os integrantes são **Desenvolvedores Full-Stack** e devem implementar **Fatias Verticais (Vertical Slices)**.
-
-✔️ Cada membro deve entregar a funcionalidade completa:  
-**Banco de Dados → API → Tela**
-
----
-
 # 2.1 Sprints do Projeto
 
 O projeto será realizado em **4 Sprints**, com entregas contínuas de código e documentação.

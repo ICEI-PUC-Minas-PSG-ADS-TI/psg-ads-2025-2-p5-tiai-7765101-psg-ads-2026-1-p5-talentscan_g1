@@ -354,18 +354,6 @@ Para que eu possa enviá-lo para candidaturas de emprego
 
 # 3.3 Requisitos Não Funcionais
 
-Os **Requisitos Não Funcionais (RNF)** definem características de qualidade do sistema, como:
-
-- ⚡ Desempenho  
-- 🔒 Segurança  
-- 🎨 Usabilidade  
-- 📈 Escalabilidade  
-- 🌐 Compatibilidade  
-
-Eles garantem a qualidade da solução.
-
----
-
 ## Tabela de Requisitos Não Funcionais
 
 | ID     | Descrição do Requisito                                                               | Prioridade |
@@ -383,19 +371,6 @@ Eles garantem a qualidade da solução.
 ---
 
 # 3.4 Restrições do Projeto
-
-📌 **Restrições** são limitações externas impostas ao projeto.
-
-Elas podem envolver:
-- 📅 Prazo
-- 🖥️ Tecnologia obrigatória ou proibida
-- 🌐 Ambiente de execução
-- 📜 Normas legais
-- 🏢 Políticas institucionais
-
-⚠️ Diferente dos RNFs, as restrições impõem **limites fixos** ao projeto.
-
----
 
 ## Tabela de Restrições
 
