@@ -62,6 +62,7 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-31 | O sistema deve permitir que o usuário gere um relatório textual automático que consolida o progresso das análises. | 🔴 ALTA |
 | RF-32 | O sistema deve exibir um gráfico de barras que se atualiza automaticamente com base nos dados filtrados. | 🔴 ALTA |
 | RF-33 | O sistema deve permitir a filtragem de dados por múltiplos critérios simultâneos. | 🟡 Média |
+| RF-34 | O sistema deve calcular e exibir em tempo real indicadores de desempenho, incluindo a pontuação atual. | 🟡 Média |
 # 3.2 Histórias de Usuário
 
 ---
