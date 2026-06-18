@@ -59,6 +59,7 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-28 |  IA classificar área principal, nível, tecnologias, hard skills e soft skills e comparar | 🟡 Média | 
 | RF-29 |  Exibir porcentagem e compatibilidade / pontos compativeis/ vaga  | 🟡 Média | 
 | RF-30 |  salvar histórico de classificações e compatibilidades por usuário. | 🟡 Média | 
+| RF-31 | O sistema deve permitir que o usuário gere um relatório textual automático que consolida o progresso das análises. | 🔴 ALTA |
                                                                                  
 # 3.2 Histórias de Usuário
 
