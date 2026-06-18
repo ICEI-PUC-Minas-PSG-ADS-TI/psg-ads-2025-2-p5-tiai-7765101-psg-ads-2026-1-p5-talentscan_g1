@@ -425,6 +425,7 @@ Para que eu consiga organizar e limpar meu histórico de forma rápida e eficien
 | RNF-08 | O sistema deve apresentar uma interface simples e intuitiva para gerenciamento do perfil do usuário.  | 🟡 MÉDIA   |
 | RNF-09 | O sistema deve atualizar os dados do perfil e refletir as alterações no sistema sem necessidade de novo cadastro.  | 🟡 MÉDIA   |
 | RNF-10 |O sistema deve exibir feedback visual ao confirmar alterações de perfil, senha e logout.  | 🟡 MÉDIA   |
+| RNF-11 | O sistema deve processar a filtragem de dados e a renderização dos gráficos de evolução em tempo real, garantindo que o tempo de resposta da interface seja inferior a 200ms. | 🔴 ALTA    |
 ---
 
 # 3.4 Restrições do Projeto
