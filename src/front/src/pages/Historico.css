@@ -512,7 +512,6 @@ tr:hover td {
   }
 }
 
-/* FOOTER */
 .footer {
   margin-top: 100px;
   padding-top: 60px;
@@ -581,7 +580,6 @@ tr:hover td {
   font-size: 12px;
 }
 
-/* EMPTY STATE */
 .empty-state {
   text-align: center;
   padding: 40px 20px;
