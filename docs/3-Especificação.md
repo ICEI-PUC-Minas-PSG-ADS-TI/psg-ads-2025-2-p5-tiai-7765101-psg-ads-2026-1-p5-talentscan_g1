@@ -355,6 +355,13 @@ Para que eu possa enviá-lo para candidaturas de emprego
 
 ---
 
+### História 35 (relacionada ao RF-31)
+
+**Como usuário**  
+
+Eu quero gerar um relatório de evolução automático em formato de texto
+Para que eu possa entender meu progresso detalhado e receber recomendações personalizadas para melhorar meu currículo.
+
 ---
 
 # 3.3 Requisitos Não Funcionais
