@@ -382,6 +382,15 @@ Para que eu encontre rapidamente registros específicos em meio ao meu históric
 
 ---
 
+### História 38 (relacionada ao RF-34)
+
+**Como usuário**  
+
+Eu quero ver métricas automáticas como minha média, melhor pontuação e tendência
+Para que eu tenha uma visão clara do meu nível atual de competitividade sem precisar fazer cálculos manuais.
+
+---
+
 # 3.3 Requisitos Não Funcionais
 
 ## Tabela de Requisitos Não Funcionais
