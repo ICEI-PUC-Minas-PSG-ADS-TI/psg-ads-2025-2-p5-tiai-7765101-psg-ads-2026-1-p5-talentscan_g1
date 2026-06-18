@@ -7,9 +7,9 @@
 **🟢 Sprint 1: Hello World / Tela Inicial**
 * **Funcionalidade:** Ponto de entrada do sistema e navegação principal (tela Home conectada à API).
 * **Descrição:** Tela inicial do TalentScan, exibindo o menu de navegação (Home, Login, etc.) e provando a conexão com o backend (ex.: carregamento de dados básicos via API). Inclui links para cadastro e login.
-* <img src="images/homeo1.png" width="80%">
-* <img src="images/home02.png" width="80%">
-* <img src="images/home03.png" width="80%">
+<img src="images/homeo1.png" width="80%">
+<img src="images/home02.png" width="80%">
+<img src="images/home03.png" width="80%">
 
 
 **🟡 Sprint 2: MVP (Primeira Fatia Vertical)**
