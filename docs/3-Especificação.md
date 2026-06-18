@@ -391,6 +391,15 @@ Para que eu tenha uma visão clara do meu nível atual de competitividade sem pr
 
 ---
 
+### História 39 (relacionada ao RF-35)
+
+**Como usuário**  
+
+Eu quero exportar meu histórico de análises para um arquivo CSV
+Para que eu possa salvar meus dados localmente ou utilizá-los em planilhas externas para meu controle pessoal.
+
+---
+
 # 3.3 Requisitos Não Funcionais
 
 ## Tabela de Requisitos Não Funcionais
