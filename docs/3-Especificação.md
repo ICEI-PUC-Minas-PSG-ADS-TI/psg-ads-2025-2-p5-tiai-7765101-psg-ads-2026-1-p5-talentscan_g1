@@ -426,7 +426,7 @@ Para que eu consiga organizar e limpar meu histórico de forma rápida e eficien
 | RNF-09 | O sistema deve atualizar os dados do perfil e refletir as alterações no sistema sem necessidade de novo cadastro.  | 🟡 MÉDIA   |
 | RNF-10 |O sistema deve exibir feedback visual ao confirmar alterações de perfil, senha e logout.  | 🟡 MÉDIA   |
 | RNF-11 | O sistema deve processar a filtragem de dados e a renderização dos gráficos de evolução em tempo real, garantindo que o tempo de resposta da interface seja inferior a 200ms. | 🔴 ALTA    |
-| RNF-12 | A interface do histórico deve ser totalmente responsiva, adaptando automaticamente o layout das tabelas, cards de métricas e gráficos para garantir usabilidade em telas desde 320px até 1920px. | 🟡 MÉDIA   |
+| RNF-12 | A interface do histórico deve ser totalmente responsiva, adaptando automaticamente o layout das tabelas, cards de métricas e gráficos.| 🟡 MÉDIA   |
 
 ---
 
