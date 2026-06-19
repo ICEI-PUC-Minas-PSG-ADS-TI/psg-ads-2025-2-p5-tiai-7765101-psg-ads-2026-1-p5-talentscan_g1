@@ -36,6 +36,7 @@ function Historico() {
           </div>
         </div>
 
+        {/* EVOLUTION CARD */}
         <section className="card">
           <h2>📈 Evolução de Pontuação</h2>
           <small>Visualize seu progresso ao longo do tempo.</small>
@@ -78,6 +79,7 @@ function Historico() {
           </div>
         </section>
 
+        {/* FILTERS CARD */}
         <section className="card">
           <h2>🔎 Buscar e Filtrar Análises</h2>
           <small>Encontre análises antigas por nome, data, pontuação ou status.</small>
