@@ -13,12 +13,18 @@ ODS Alinhados: ODS 8 – Trabalho Decente e Crescimento Econômico
 Muitos candidatos, especialmente estudantes e profissionais em início de carreira, enfrentam dificuldades na elaboração de currículos eficazes e não possuem acesso a orientação profissional especializada. Como consequência, acabam apresentando currículos com informações incompletas, mal estruturadas ou que não destacam adequadamente suas competências.
 Isso pode reduzir significativamente suas chances de inserção no mercado de trabalho.
 
-## Integrantes
+## 👥 Integrantes
 
-* Gabriel Baumgratz de Paula Botaro
-* Henrique Gonçalves Sousa 
-* Washington Junio Lima
-* André Oliveira Burle
+- **Gabriel Baumgratz de Paula Botaro**  
+  📧 gabrielbotaro100@gmail.com
+
+- **Henrique Gonçalves Sousa**  
+  📧 henriquegsousa.contato1@gmail.com
+
+- **Washington Junio Lima**  
+  📧 Washington_jlp@hotmail.com
+
+- **André Oliveira Burle**
 
 ## Orientador
 
